@@ -1,0 +1,44 @@
+{
+  "mimic_iv": {
+    "n_patients": 2749,
+    "n_rows": 82327,
+    "median_meas_72h": 27.0,
+    "n_patients_motor": 2749,
+    "ett_verbal_rows": 33587,
+    "ett_verbal_patients": 1379,
+    "gcs_total_domain": [
+      3.0,
+      15.0
+    ]
+  },
+  "mimic_iii": {
+    "n_patients": 1413,
+    "n_rows": 41225,
+    "median_meas_72h": 26.0,
+    "n_patients_motor": 1413,
+    "ett_verbal_rows": 17048,
+    "ett_verbal_patients": 752,
+    "carevue_stays": 835,
+    "metavision_stays": 578,
+    "gcs_total_domain": [
+      3.0,
+      15.0
+    ]
+  },
+  "eicu": {
+    "n_patients": 4579,
+    "n_rows": 118717,
+    "median_meas_72h": 19.0,
+    "n_patients_motor": 3910,
+    "verbal_zero_rows": 0,
+    "motor_row_share_pct": 83.8,
+    "gcs_total_domain": [
+      3.0,
+      15.0
+    ]
+  },
+  "anchors": {
+    "median_meas_expect": "mimic_iv≈27 / eicu≈19 / mimic_iii≈22 (SAP_v2:11)",
+    "mimic4_coverage_expect": "2748/2751"
+  }
+}

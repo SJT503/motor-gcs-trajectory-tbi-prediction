@@ -1,0 +1,39 @@
+{
+  "pupil_mimic4": {
+    "itemids": "223907,224671,224733,227121,227288,229769,230103,230105,230106",
+    "labels": "Pupil Size Right | Pupils | Pupil Size Left | Pupil Response Right | Pupil Response Left | Pupil Size (COWS) | Pupil Size - Left. | Pupil Size - Right. | Pupil Size - Diff",
+    "n_covered": 2740,
+    "n_total": 2751,
+    "coverage_pct": 99.6
+  },
+  "pupil_mimic3": {
+    "itemids": "584,585,3593,6764,8466,8467,8530,223907,224671,224733,227121,227288",
+    "labels": "Pupil Response [Right] | Pupil Size [Right] | Pupil Reactivity [Left] | pupil deviation | Pupil Response [Left] | Pupil Size [Left] | Pupil Reactivity [Right] | Pupil Size Right | Pupils | Pupil Size Left | Pupil Response Right | Pupil Response Left",
+    "n_covered": 1390,
+    "n_total": 1425,
+    "coverage_pct": 97.5
+  },
+  "pupil_eicu_cellattribute_probe": {
+    "rows": [
+      "Pupils / Pupils / n=247421 / n_pat=11654"
+    ],
+    "n_pat_total": 11654,
+    "scope": "n_pat_total=全表口径(未限队列/时间窗), 仅尽调参考, 非队列覆盖率"
+  },
+  "pupil_eicu": {
+    "celllabels": "Pupils",
+    "n_covered": 415,
+    "n_total": 4440,
+    "coverage_pct": 9.3
+  },
+  "sedation_interruption": {
+    "definition": "镇静输注合并区间间 ≥30min 间隙, 间隙结束后 2h 内有 GCS-motor 复测 = 可配对中断事件",
+    "n_stays_with_infusion": 1234,
+    "n_stays_paired": 659,
+    "paired_share_pct": 53.4
+  },
+  "verdict": {
+    "pupil": "NO-GO(三库最低覆盖9.3%<80% → 整族退出主分析转敏感性, 记log)",
+    "sedation_interruption": "GO"
+  }
+}

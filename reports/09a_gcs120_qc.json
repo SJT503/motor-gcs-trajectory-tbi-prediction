@@ -1,0 +1,19 @@
+{
+ "mimic4": {
+  "n_pat": 2749,
+  "rows": 101911,
+  "added_patients_vs_72h": 0
+ },
+ "mimic3": {
+  "n_pat": 1413,
+  "rows": 50189,
+  "carevue_stays": 835,
+  "metavision_stays": 578,
+  "added_patients_vs_72h": 0
+ },
+ "eicu": {
+  "n_pat": 4591,
+  "rows": 153933,
+  "added_patients_vs_72h": 12
+ }
+}

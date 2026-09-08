@@ -1,0 +1,99 @@
+{
+ "method": "08j methodology (base LR fitted on MIMIC-IV train; z-scored with train stats); full = frozen v2 (25-feature) external predictions; complete-case pairs on base variables",
+ "results": {
+  "eicu_base5": {
+   "AUC_1": 0.8634,
+   "AUC_2": 0.8338,
+   "delta": 0.0296,
+   "se": 0.01,
+   "p": 0.002983568461040642,
+   "n_total": 4440,
+   "n_eval": 3385,
+   "events_eval": 395,
+   "base_missing": {
+    "admission_age": 0,
+    "sex_female": 0,
+    "gcs_total_first": 1055,
+    "charlson_comorbidity_score": 0,
+    "sofa": 0
+   }
+  },
+  "eicu_trad2": {
+   "AUC_1": 0.8634,
+   "AUC_2": 0.8359,
+   "delta": 0.0275,
+   "se": 0.0108,
+   "p": 0.010499384875093831,
+   "n_total": 4440,
+   "n_eval": 3385,
+   "events_eval": 395,
+   "base_missing": {
+    "sofa": 0,
+    "gcs_total_first": 1055
+   }
+  },
+  "mimic3_base5": {
+   "AUC_1": 0.8841,
+   "AUC_2": 0.8267,
+   "delta": 0.0574,
+   "se": 0.0123,
+   "p": 2.9214334984484225e-06,
+   "n_total": 839,
+   "n_eval": 830,
+   "events_eval": 155,
+   "base_missing": {
+    "admission_age": 0,
+    "sex_female": 0,
+    "gcs_total_first": 9,
+    "charlson_comorbidity_score": 0,
+    "sofa": 0
+   }
+  },
+  "mimic3_trad2": {
+   "AUC_1": 0.8841,
+   "AUC_2": 0.7607,
+   "delta": 0.1234,
+   "se": 0.0158,
+   "p": 5.551115123125783e-15,
+   "n_total": 839,
+   "n_eval": 830,
+   "events_eval": 155,
+   "base_missing": {
+    "sofa": 0,
+    "gcs_total_first": 9
+   }
+  }
+ },
+ "holm": {
+  "intval_base5": {
+   "p_raw": 0.00213,
+   "p_holm": 0.00639,
+   "significant_0.05": true
+  },
+  "intval_trad2": {
+   "p_raw": 0.0,
+   "p_holm": 0.0,
+   "significant_0.05": true
+  },
+  "eicu_base5": {
+   "p_raw": 0.002983568461040642,
+   "p_holm": 0.00639,
+   "significant_0.05": true
+  },
+  "eicu_trad2": {
+   "p_raw": 0.010499384875093831,
+   "p_holm": 0.010499384875093831,
+   "significant_0.05": true
+  },
+  "mimic3_base5": {
+   "p_raw": 2.9214334984484225e-06,
+   "p_holm": 1.168573399379369e-05,
+   "significant_0.05": true
+  },
+  "mimic3_trad2": {
+   "p_raw": 5.551115123125783e-15,
+   "p_holm": 2.7755575615628914e-14,
+   "significant_0.05": true
+  }
+ }
+}

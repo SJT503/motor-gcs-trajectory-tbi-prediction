@@ -1,0 +1,48 @@
+{
+  "object": "motor GBTM ng=3 (08a2 选定, 预测层主特征族 Block C) — U3 缺口闭合补验",
+  "design": "patient-level bootstrap with replacement; duplicates as new subjects; hlme identical spec; gridsearch rep=5 (与 12g 同强度降档, 已披露); conv_rate_among_fits = 分母校正收敛率 (12g 教训: conv_rate 分母含未跑 b)",
+  "criteria": {
+    "criterion": "median ARI>=0.75 & all appearance>=0.80 (purity>=0.5)",
+    "median_ari_pass": true,
+    "appearance_pass": true,
+    "overall": true
+  },
+  "summary": {
+    "3": {
+      "B_target": 100,
+      "n_ari": 100,
+      "conv_rate": 1,
+      "conv_rate_among_fits": 1,
+      "median_ari": 0.9874,
+      "q25_ari": 0.9813,
+      "q75_ari": 0.9914,
+      "median_purity_by_class": [0.989, 0.999, 1],
+      "appearance_rate_by_class": [1, 1, 1]
+    },
+    "2": {
+      "B_target": 50,
+      "n_ari": 50,
+      "conv_rate": 0.5,
+      "conv_rate_among_fits": 1,
+      "median_ari": 0.3826,
+      "q25_ari": 0.371,
+      "q75_ari": 0.3964,
+      "median_purity_by_class": [0.913, 1],
+      "appearance_rate_by_class": [1, 1]
+    },
+    "4": {
+      "B_target": 50,
+      "n_ari": 50,
+      "conv_rate": 0.5,
+      "conv_rate_among_fits": 1,
+      "median_ari": 0.8889,
+      "q25_ari": 0.8739,
+      "q75_ari": 0.9022,
+      "median_purity_by_class": [0.818, 0.968, 0.798, "NA"],
+      "appearance_rate_by_class": [1, 1, 1, "NaN"]
+    }
+  },
+  "elapsed_total_min": 332.2,
+  "seed": 20260905,
+  "saved": "2026-09-05 10:29:21"
+}

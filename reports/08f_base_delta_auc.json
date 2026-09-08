@@ -1,0 +1,47 @@
+{
+ "eval_set": "mimic4 intval (temporal 内验, 与 08d 同集)",
+ "n_intval": 483,
+ "events": 81,
+ "flags": [
+  "统计ML档(L1-LR/RF/XGBoost)与DL档(LSTM 仅Supp)未在本脚本 — 独立 benchmark 工作包 (SAP L112-113)"
+ ],
+ "base5_vars": [
+  "admission_age",
+  "sex_female",
+  "gcs_total_first",
+  "charlson_comorbidity_score",
+  "sofa"
+ ],
+ "trad2_vars": [
+  "sofa",
+  "gcs_total_first"
+ ],
+ "base5": {
+  "AUC_full": 0.9054,
+  "AUC_base": 0.8581,
+  "delta": 0.0473,
+  "se": 0.0174,
+  "z": 2.723,
+  "p": 0.00646,
+  "var_full": 0.000248,
+  "var_base": 0.000384,
+  "cov": 0.000165,
+  "AUC_base_alone": 0.8581,
+  "Brier_base": 0.1079,
+  "n_eval": 483
+ },
+ "trad2": {
+  "AUC_full": 0.9054,
+  "AUC_base": 0.7993,
+  "delta": 0.1061,
+  "se": 0.0212,
+  "z": 5.015,
+  "p": 0.0,
+  "var_full": 0.000248,
+  "var_base": 0.00055,
+  "cov": 0.000175,
+  "AUC_trad_alone": 0.7993,
+  "Brier_trad": 0.1202,
+  "n_eval": 483
+ }
+}

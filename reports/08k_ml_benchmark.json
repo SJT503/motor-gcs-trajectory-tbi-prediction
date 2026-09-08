@@ -1,0 +1,193 @@
+{
+ "eval_set": "mimic4 intval (与 08d 同集)",
+ "n_intval": 483,
+ "events_intval": 81,
+ "anchor_08d_full": 0.9054,
+ "learners": {
+  "L1_LR": {
+   "best_cfg": {
+    "C": 0.1,
+    "cw": "balanced"
+   },
+   "nested_cv_oof_auc": 0.8984,
+   "inner_best_by_fold": [
+    0.8896,
+    0.9024,
+    0.8864,
+    0.8925,
+    0.8964
+   ],
+   "intval": {
+    "AUROC": 0.8975,
+    "AUROC_lo": 0.8636,
+    "AUROC_hi": 0.9295,
+    "AUPRC": 0.6742,
+    "Brier": 0.1244
+   },
+   "delong_vs_full": {
+    "AUC_full": 0.9054,
+    "AUC_base": 0.8975,
+    "delta": 0.008,
+    "se": 0.0099,
+    "p": 0.42319
+   },
+   "elapsed_s": 8.8
+  },
+  "RF": {
+   "best_cfg": {
+    "md": 8,
+    "msl": 5,
+    "mf": 0.3,
+    "cw": "balanced_subsample"
+   },
+   "nested_cv_oof_auc": 0.8875,
+   "inner_best_by_fold": [
+    0.8853,
+    0.8858,
+    0.8801,
+    0.8888,
+    0.883
+   ],
+   "intval": {
+    "AUROC": 0.8936,
+    "AUROC_lo": 0.8613,
+    "AUROC_hi": 0.9237,
+    "AUPRC": 0.6671,
+    "Brier": 0.0926
+   },
+   "delong_vs_full": {
+    "AUC_full": 0.9054,
+    "AUC_base": 0.8936,
+    "delta": 0.0118,
+    "se": 0.0077,
+    "p": 0.12612
+   },
+   "elapsed_s": 304.6
+  },
+  "XGB": {
+   "best_cfg": {
+    "md": 3,
+    "lr_": 0.05,
+    "sub": 0.8,
+    "col": 0.8,
+    "w": 1.0
+   },
+   "nested_cv_oof_auc": 0.8804,
+   "inner_best_by_fold": [
+    0.8813,
+    0.8865,
+    0.8604,
+    0.8779,
+    0.8741
+   ],
+   "intval": {
+    "AUROC": 0.9083,
+    "AUROC_lo": 0.8758,
+    "AUROC_hi": 0.9367,
+    "AUPRC": 0.6999,
+    "Brier": 0.0873
+   },
+   "delong_vs_full": {
+    "AUC_full": 0.9054,
+    "AUC_base": 0.9083,
+    "delta": -0.0029,
+    "se": 0.0045,
+    "p": 0.52311
+   },
+   "elapsed_s": 399.6
+  }
+ },
+ "flags": [],
+ "l1_sparsity_check": {
+  "n_coef": 79,
+  "n_zero": 42,
+  "frac_zero": 0.5316,
+  "note": "frac_zero>0 即 L1 生效; L2/无罚不会产生精确零系数"
+ },
+ "external": {
+  "eicu": {
+   "n": 4440,
+   "events": 520,
+   "excl_died24": 0,
+   "excl_short": 0,
+   "L1_LR": {
+    "AUROC": 0.8128,
+    "AUPRC": 0.4665,
+    "AUROC_08d_full_ref": 0.83,
+    "delong_vs_full": {
+     "AUC_full": 0.83,
+     "AUC_base": 0.8128,
+     "delta": 0.0172,
+     "se": 0.0076,
+     "p": 0.02261
+    }
+   },
+   "RF": {
+    "AUROC": 0.8343,
+    "AUPRC": 0.4944,
+    "AUROC_08d_full_ref": 0.83,
+    "delong_vs_full": {
+     "AUC_full": 0.83,
+     "AUC_base": 0.8343,
+     "delta": -0.0043,
+     "se": 0.0046,
+     "p": 0.34616
+    }
+   },
+   "XGB": {
+    "AUROC": 0.8285,
+    "AUPRC": 0.4747,
+    "AUROC_08d_full_ref": 0.83,
+    "delong_vs_full": {
+     "AUC_full": 0.83,
+     "AUC_base": 0.8285,
+     "delta": 0.0015,
+     "se": 0.0027,
+     "p": 0.57964
+    }
+   }
+  },
+  "mimic3": {
+   "n": 839,
+   "events": 155,
+   "excl_died24": 2,
+   "excl_short": 0,
+   "L1_LR": {
+    "AUROC": 0.8732,
+    "AUPRC": 0.6517,
+    "AUROC_08d_full_ref": 0.8823,
+    "delong_vs_full": {
+     "AUC_full": 0.8823,
+     "AUC_base": 0.8732,
+     "delta": 0.0091,
+     "se": 0.0087,
+     "p": 0.29606
+    }
+   },
+   "RF": {
+    "AUROC": 0.8837,
+    "AUPRC": 0.6657,
+    "AUROC_08d_full_ref": 0.8823,
+    "delong_vs_full": {
+     "AUC_full": 0.8823,
+     "AUC_base": 0.8837,
+     "delta": -0.0014,
+     "se": 0.0063,
+     "p": 0.82614
+    }
+   },
+   "XGB": {
+    "AUROC": 0.8854,
+    "AUPRC": 0.6537,
+    "AUROC_08d_full_ref": 0.8823,
+    "delong_vs_full": {
+     "AUC_full": 0.8823,
+     "AUC_base": 0.8854,
+     "delta": -0.0031,
+     "se": 0.0026,
+     "p": 0.22837
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "n": 4440,
+ "source": "eicu-crd-2.0 + 07b cohort_eicu (n=4440)",
+ "window_convention": "08z: 测量[-360,+1440]min, UO[0,+1440]min, GCS[0,24h]",
+ "component_coverage": {
+  "respiration": 1280,
+  "coagulation": 4189,
+  "liver": 2277,
+  "cardiovascular": 4388,
+  "cns": 3403,
+  "renal": 4392
+ },
+ "any_component_coverage": "4436/4440",
+ "thresholds": "对齐 mimic-code sofa.sql (severityscores)",
+ "vent_flag": {
+  "n_vent": 1760,
+  "level": "患者级0/24h (偏离官方行级状态机, 已披露)",
+  "resp_cats": [],
+  "rc_labels": [
+   "PEEP",
+   "Tidal Volume (set)",
+   "TV/kg IBW",
+   "Vent Rate",
+   "Mean Airway Pressure",
+   "Pressure Support",
+   "Peak Insp. Pressure",
+   "Exhaled TV (machine)",
+   "Exhaled MV",
+   "Exhaled TV (patient)",
+   "Plateau Pressure",
+   "Flow Sensitivity",
+   "Peak Flow",
+   "Pressure Control",
+   "PEEP/CPAP"
+  ],
+  "treatment": [
+   "mechanical ventilation",
+   "ventilatory support"
+  ]
+ },
+ "vaso": {
+  "n_scored": 49,
+  "unit_rule": "mcg/kg/min 直用; mcg/min÷行内patientweight(缺→该患者vaso行中位体重); 其余除外",
+  "excluded_counts": {
+   "Norepinephrine (mcg/min) [无体重]": 496,
+   "Epinephrine (mcg/min) [无体重]": 42,
+   "Norepinephrine (ml/hr)": 895,
+   "Dopamine (ml/hr)": 59,
+   "Epinephrine (ml/hr)": 101,
+   "Dobutamine (ml/hr)": 25,
+   "Dopamine ()": 12,
+   "Norepinephrine ()": 127,
+   "Epinephrine (mg/kg/min)": 9,
+   "DOPamine STD 400 mg Dextrose 5% 250 ml  Premix (mcg/kg/min)": 4,
+   "Norepinephrine STD 4 mg Dextrose 5% 250 ml (mcg/min)": 19,
+   "EPINEPHrine(Adrenalin)MAX 30 mg Sodium Chloride 0.9% 250 ml (mcg/min)": 1,
+   "norepinephrine Volume (ml) (ml/hr)": 3
+  },
+  "observed_literals": {
+   "Norepinephrine (mcg/min)": 502,
+   "Epinephrine (mcg/min)": 42,
+   "Norepinephrine (ml/hr)": 895,
+   "Dopamine (ml/hr)": 59,
+   "Epinephrine (ml/hr)": 101,
+   "Dobutamine (ml/hr)": 25,
+   "Norepinephrine (mcg/kg/min)": 647,
+   "Epinephrine (mcg/kg/min)": 63,
+   "Dobutamine (mcg/kg/min)": 5,
+   "Dopamine ()": 12,
+   "Norepinephrine ()": 127,
+   "Dopamine (mcg/kg/min)": 76,
+   "Epinephrine (mg/kg/min)": 9,
+   "DOPamine STD 400 mg Dextrose 5% 250 ml  Premix (mcg/kg/min)": 4,
+   "Norepinephrine STD 4 mg Dextrose 5% 250 ml (mcg/min)": 19,
+   "EPINEPHrine(Adrenalin)MAX 30 mg Sodium Chloride 0.9% 250 ml (mcg/min)": 1,
+   "norepinephrine Volume (ml) (ml/hr)": 3
+  }
+ },
+ "pf": {
+  "n_paO2_without_preceding_FiO2": 625,
+  "n_pf_rows": 3299,
+  "fio2_unit_rule": "≤1→×100; 21-100 保留; 其余 NULL 丢弃"
+ },
+ "uo": {
+  "labels_in": [
+   "Urine",
+   "URINE CATHETER",
+   "Urine Count",
+   "Urine Output (mL)-Urethral Catheter",
+   "Urine Output-Foley",
+   "Urine Output-foley",
+   "SN Urine Output(ml)",
+   "OR urine",
+   "urine count"
+  ],
+  "labels_known_excluded": [
+   "Urine Occurrence",
+   "Urine Incontinence",
+   "incontinent urine",
+   "urine incontinence",
+   "Mixed Urine/Stool Volume"
+  ],
+  "other_labels_seen": {
+   "Urine Output (mL)-Urethral Catheter  ": 10
+  }
+ },
+ "cns": {
+  "source": "gcs_long_eicu.parquet (07a; ETT verbal=0→15 已实现)",
+  "n": 4503,
+  "id_overlap_with_cohort": 3487
+ },
+ "labs": {
+  "plt": 4189,
+  "creatinine": 4246,
+  "bilirubin": 2277
+ },
+ "deviations_disclosed": [
+  "窗口统一 08z 约定 (官方 M3 各组件窗口不同)",
+  "FiO2 仅 lab 表 + 最近前置 ASOF 配对 (无回看上限) + 双单位规则 (≤1 分数/21-100 百分数)",
+  "通气患者级标志 (官方为行级 ventnum 状态机); vent 患者按总体最小 P/F 走 4 档梯",
+  "升压药仅 base 精确匹配 + mcg/kg/min|mcg/min; ml/hr|mg/kg/min|MAX|STD|裸名除外",
+  "CNS 复用 07a gcs_long 调和产物",
+  "missing 组件计 0 分 (官方 coalesce 语义), 覆盖率全量披露"
+ ],
+ "provenance": "literals: reports/08i_probe_{lab,drug,uo,respchart,treatment}.csv (实测落盘)"
+}

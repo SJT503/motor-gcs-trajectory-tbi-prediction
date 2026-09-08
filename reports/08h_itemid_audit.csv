@@ -1,0 +1,175 @@
+concept,src,itemid,label
+chart,D_ITEMS,456,NBP Mean
+chart,D_ITEMS,52,Arterial BP Mean
+chart,D_ITEMS,6702,Arterial BP Mean #2
+chart,D_ITEMS,443,Manual BP Mean(calc)
+chart,D_ITEMS,220052,Arterial Blood Pressure mean
+chart,D_ITEMS,220181,Non Invasive Blood Pressure mean
+chart,D_ITEMS,225312,ART BP mean
+chart,D_ITEMS,723,Verbal Response
+chart,D_ITEMS,223900,GCS - Verbal Response
+chart,D_ITEMS,454,Motor Response
+chart,D_ITEMS,223901,GCS - Motor Response
+chart,D_ITEMS,184,Eye Opening
+chart,D_ITEMS,220739,GCS - Eye Opening
+chart,D_ITEMS,762,Admit Wt
+chart,D_ITEMS,763,Daily Weight
+chart,D_ITEMS,3723,Birth Weight    (kg)
+chart,D_ITEMS,3580,Present Weight  (kg)
+chart,D_ITEMS,226512,Admission Weight (Kg)
+chart,D_ITEMS,3581,Present Weight  (lb)
+chart,D_ITEMS,3582,Present Weight  (oz)
+chart,D_ITEMS,3420,FIO2
+chart,D_ITEMS,190,FiO2 Set
+chart,D_ITEMS,223835,Inspired O2 Fraction
+chart,D_ITEMS,3422,FIO2 [Meas]
+chart,D_ITEMS,720,Ventilator Mode
+chart,D_ITEMS,223849,Ventilator Mode
+chart,D_ITEMS,223848,Ventilator Type
+chart,D_ITEMS,445,Mech. Minute Volume
+chart,D_ITEMS,448,Minute Volume
+chart,D_ITEMS,449,Minute Volume (Set)
+chart,D_ITEMS,450,Minute Volume(Obser)
+chart,D_ITEMS,1340,high minute volume
+chart,D_ITEMS,1486,High Minute Volume
+chart,D_ITEMS,1600,HIGH MINUTE VOLUME
+chart,D_ITEMS,224687,Minute Volume
+chart,D_ITEMS,639,Sigh Tidal Volume
+chart,D_ITEMS,654,Spont. Tidal Volume
+chart,D_ITEMS,681,Tidal Volume
+chart,D_ITEMS,682,Tidal Volume (Obser)
+chart,D_ITEMS,683,Tidal Volume (Set)
+chart,D_ITEMS,684,Tidal Volume (Spont)
+chart,D_ITEMS,224685,Tidal Volume (observed)
+chart,D_ITEMS,224684,Tidal Volume (set)
+chart,D_ITEMS,224686,Tidal Volume (spontaneous)
+chart,D_ITEMS,218,High Insp. Pressure
+chart,D_ITEMS,436,Low Insp. Pressure
+chart,D_ITEMS,535,Peak Insp. Pressure
+chart,D_ITEMS,444,Mean Airway Pressure
+chart,D_ITEMS,224697,Mean Airway Pressure
+chart,D_ITEMS,224695,Peak Insp. Pressure
+chart,D_ITEMS,224696,Plateau Pressure
+chart,D_ITEMS,224746,Transpulmonary Pressure (Exp. Hold)
+chart,D_ITEMS,224747,Transpulmonary Pressure (Insp. Hold)
+chart,D_ITEMS,221,I:E Ratio
+chart,D_ITEMS,1,% Inspir. Time
+chart,D_ITEMS,1211,Insp Time %
+chart,D_ITEMS,1655,Insp. Time
+chart,D_ITEMS,2000,Inspiratory Time
+chart,D_ITEMS,226873,Inspiratory Ratio
+chart,D_ITEMS,224738,Inspiratory Time
+chart,D_ITEMS,224419,Negative Insp. Force
+chart,D_ITEMS,224750,Nitric Oxide Tank Pressure
+chart,D_ITEMS,227187,Pinsp (Draeger only)
+chart,D_ITEMS,543,Plateau Pressure
+chart,D_ITEMS,5865,APRV Pressure High
+chart,D_ITEMS,5866,APRV Pressure Low
+chart,D_ITEMS,224707,T High (APRV)
+chart,D_ITEMS,224709,T Low (APRV)
+chart,D_ITEMS,224705,P High (APRV)
+chart,D_ITEMS,224706,P Low (APRV)
+chart,D_ITEMS,60,Auto-PEEP Level
+chart,D_ITEMS,437,Low Peep
+chart,D_ITEMS,505,PEEP
+chart,D_ITEMS,506,PEEP Set
+chart,D_ITEMS,686,Total PEEP Level
+chart,D_ITEMS,220339,PEEP set
+chart,D_ITEMS,224700,Total PEEP Level
+chart,D_ITEMS,3459,High Pressure Relief
+chart,D_ITEMS,501,PCV Exh Vt (Obser)
+chart,D_ITEMS,502,PCV Insp Vt (Obser)
+chart,D_ITEMS,503,PCV Set Insp. Press
+chart,D_ITEMS,224702,PCV Level (Avea)
+chart,D_ITEMS,223,I:E Ratio-TCPCV
+chart,D_ITEMS,667,TCPCV Apnea Settings
+chart,D_ITEMS,668,TCPCV Fixed I Time
+chart,D_ITEMS,669,TCPCV I:E Ratio
+chart,D_ITEMS,670,TCPCV Insp. Pressure
+chart,D_ITEMS,671,TCPCV Insp. Time
+chart,D_ITEMS,672,TCPCV-MAP
+chart,D_ITEMS,224701,PSV Level
+chart,D_ITEMS,640,Significant Events
+chart,D_ITEMS,468,O2 Delivery Device#2
+chart,D_ITEMS,469,O2 Delivery Mode
+chart,D_ITEMS,470,O2 Flow (lpm)
+chart,D_ITEMS,471,O2 Flow (lpm) #2
+chart,D_ITEMS,227287,O2 Flow (additional cannula)
+chart,D_ITEMS,226732,O2 Delivery Device(s)
+chart,D_ITEMS,223834,O2 Flow
+chart,D_ITEMS,467,O2 Delivery Device
+chart,D_ITEMS,30047,Levophed
+chart,D_ITEMS,30120,Levophed-k
+chart,D_ITEMS,30044,Epinephrine
+chart,D_ITEMS,30119,Epinephrine-k
+chart,D_ITEMS,30309,Epinephrine Drip
+chart,D_ITEMS,30043,Dopamine
+chart,D_ITEMS,30307,Dopamine Drip
+chart,D_ITEMS,30042,Dobutamine
+chart,D_ITEMS,30306,Dobutamine Drip
+chart,D_ITEMS,221906,Norepinephrine
+chart,D_ITEMS,221289,Epinephrine
+chart,D_ITEMS,221662,Dopamine
+chart,D_ITEMS,221653,Dobutamine
+chart,D_ITEMS,40055,Urine Out Foley
+chart,D_ITEMS,43175,Urine .
+chart,D_ITEMS,40069,Urine Out Void
+chart,D_ITEMS,40094,Urine Out Condom Cath
+chart,D_ITEMS,40715,Urine Out Suprapubic
+chart,D_ITEMS,40473,Urine Out IleoConduit
+chart,D_ITEMS,40085,Urine Out Incontinent
+chart,D_ITEMS,40057,Urine Out Rt Nephrostomy
+chart,D_ITEMS,40056,Urine Out Lt Nephrostomy
+chart,D_ITEMS,40405,Urine Out Other
+chart,D_ITEMS,40428,Urine Out Straight Cath
+chart,D_ITEMS,40086,Drain Out #2 Pigtail
+chart,D_ITEMS,40096,Urine Out Ureteral Stent #1
+chart,D_ITEMS,40651,Urine Out Ureteral Stent #2
+chart,D_ITEMS,226559,Foley
+chart,D_ITEMS,226560,Void
+chart,D_ITEMS,226561,Condom Cath
+chart,D_ITEMS,226584,Ileoconduit
+chart,D_ITEMS,226563,Suprapubic
+chart,D_ITEMS,226564,R Nephrostomy
+chart,D_ITEMS,226565,L Nephrostomy
+chart,D_ITEMS,226567,Straight Cath
+chart,D_ITEMS,226557,R Ureteral Stent
+chart,D_ITEMS,226558,L Ureteral Stent
+chart,D_ITEMS,227488,GU Irrigant Volume In
+chart,D_ITEMS,227489,GU Irrigant/Urine Volume Out
+chart,D_ITEMS,227194,Extubation
+chart,D_ITEMS,225468,Unplanned Extubation (patient-initiated)
+chart,D_ITEMS,225477,Unplanned Extubation (non-patient initiated)
+lab,D_LABITEMS,50800,SPECIMEN TYPE
+lab,D_LABITEMS,50801,Alveolar-arterial Gradient
+lab,D_LABITEMS,50802,Base Excess
+lab,D_LABITEMS,50803,"Calculated Bicarbonate, Whole Blood"
+lab,D_LABITEMS,50804,Calculated Total CO2
+lab,D_LABITEMS,50805,Carboxyhemoglobin
+lab,D_LABITEMS,50806,"Chloride, Whole Blood"
+lab,D_LABITEMS,50807,Comments
+lab,D_LABITEMS,50808,Free Calcium
+lab,D_LABITEMS,50809,Glucose
+lab,D_LABITEMS,50810,"Hematocrit, Calculated"
+lab,D_LABITEMS,50811,Hemoglobin
+lab,D_LABITEMS,50812,Intubated
+lab,D_LABITEMS,50813,Lactate
+lab,D_LABITEMS,50814,Methemoglobin
+lab,D_LABITEMS,50815,O2 Flow
+lab,D_LABITEMS,50816,Oxygen
+lab,D_LABITEMS,50817,Oxygen Saturation
+lab,D_LABITEMS,50818,pCO2
+lab,D_LABITEMS,50819,PEEP
+lab,D_LABITEMS,50820,pH
+lab,D_LABITEMS,50821,pO2
+lab,D_LABITEMS,50822,"Potassium, Whole Blood"
+lab,D_LABITEMS,50823,Required O2
+lab,D_LABITEMS,50824,"Sodium, Whole Blood"
+lab,D_LABITEMS,50825,Temperature
+lab,D_LABITEMS,50826,Tidal Volume
+lab,D_LABITEMS,50827,Ventilation Rate
+lab,D_LABITEMS,50828,Ventilator
+lab,D_LABITEMS,51545,VOIDED SPECIMEN
+lab,D_LABITEMS,50885,"Bilirubin, Total"
+lab,D_LABITEMS,50912,Creatinine
+lab,D_LABITEMS,51265,Platelet Count

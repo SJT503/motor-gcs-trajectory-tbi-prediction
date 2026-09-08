@@ -1,0 +1,45 @@
+{
+  "object": "discovery GBTM total-GCS ng=5 (12f_gbtm.R, MIMIC-IV n=2749) — END_TRAJ_FRAMEWORK §8 H1",
+  "design": "patient-level bootstrap with replacement; duplicates as new subjects; hlme identical spec; gridsearch rep=5 (原版 rep=20 降强度, 已披露)",
+  "criteria": {
+    "criterion": "median ARI>=0.75 & all appearance>=0.80 (purity>=0.5)",
+    "median_ari_pass": true,
+    "appearance_pass": true,
+    "overall": true
+  },
+  "summary": {
+    "5": {
+      "B_target": 100,
+      "n_ari": 100,
+      "conv_rate": 1,
+      "median_ari": 0.9772,
+      "q25_ari": 0.9618,
+      "q75_ari": 0.9849,
+      "median_purity_by_class": [0.994, 1, 0.977, 0.982, 0.979],
+      "appearance_rate_by_class": [1, 1, 1, 1, 1]
+    },
+    "4": {
+      "B_target": 50,
+      "n_ari": 50,
+      "conv_rate": 0.5,
+      "median_ari": 0.8933,
+      "q25_ari": 0.8785,
+      "q75_ari": 0.8987,
+      "median_purity_by_class": [1, 1, 0.968, 0.635],
+      "appearance_rate_by_class": [1, 1, 1, 1]
+    },
+    "6": {
+      "B_target": 50,
+      "n_ari": 50,
+      "conv_rate": 0.5,
+      "median_ari": 0.9091,
+      "q25_ari": 0.897,
+      "q75_ari": 0.9197,
+      "median_purity_by_class": [0.963, 1, 0.932, 0.957, 0.774, "NA"],
+      "appearance_rate_by_class": [1, 1, 1, 1, 0.92, "NaN"]
+    }
+  },
+  "elapsed_total_min": 0,
+  "seed": 20260903,
+  "saved": "2026-09-05 04:02:39"
+}

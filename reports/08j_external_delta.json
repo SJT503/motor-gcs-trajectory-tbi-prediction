@@ -1,0 +1,95 @@
+{
+ "method": "base LR 拟合于 M4 train (08f 同方法学); full = 08e 冻结模型外验预测; 外库 SOFA = 08h(M3)/08i(eICU) 移植; 评估集 = 08e 风险集",
+ "inputs": {
+  "sofa_eicu": "08i_sofa_eicu.parquet (sofa 恒有值, 缺失组件计0)",
+  "sofa_m3": "08h_sofa_mimic3.parquet (同)"
+ },
+ "results": {
+  "eicu_base5": {
+   "AUC_full": 0.8657,
+   "AUC_base": 0.8338,
+   "delta": 0.0319,
+   "se": 0.0097,
+   "z": 3.285,
+   "p": 0.00102,
+   "n": 4440,
+   "n_eval": 3385,
+   "n_died": 395,
+   "base_missing": {
+    "admission_age": 0,
+    "sex_female": 0,
+    "gcs_total_first": 1055,
+    "charlson_comorbidity_score": 0,
+    "sofa": 0
+   }
+  },
+  "eicu_trad2": {
+   "AUC_full": 0.8657,
+   "AUC_base": 0.8359,
+   "delta": 0.0298,
+   "se": 0.0102,
+   "z": 2.916,
+   "p": 0.00354,
+   "n": 4440,
+   "n_eval": 3385,
+   "n_died": 395,
+   "base_missing": {
+    "admission_age": 0,
+    "sex_female": 0,
+    "gcs_total_first": 1055,
+    "charlson_comorbidity_score": 0,
+    "sofa": 0
+   }
+  },
+  "mimic3_base5": {
+   "AUC_full": 0.883,
+   "AUC_base": 0.8267,
+   "delta": 0.0563,
+   "se": 0.0123,
+   "z": 4.59,
+   "p": 0.0,
+   "n": 839,
+   "n_eval": 830,
+   "n_died": 155,
+   "base_missing": {
+    "admission_age": 0,
+    "sex_female": 0,
+    "gcs_total_first": 9,
+    "charlson_comorbidity_score": 0,
+    "sofa": 0
+   }
+  },
+  "mimic3_trad2": {
+   "AUC_full": 0.883,
+   "AUC_base": 0.7607,
+   "delta": 0.1223,
+   "se": 0.0162,
+   "z": 7.56,
+   "p": 0.0,
+   "n": 839,
+   "n_eval": 830,
+   "n_died": 155,
+   "base_missing": {
+    "admission_age": 0,
+    "sex_female": 0,
+    "gcs_total_first": 9,
+    "charlson_comorbidity_score": 0,
+    "sofa": 0
+   }
+  }
+ },
+ "gates": {
+  "eicu_paired_computable": true,
+  "mimic3_paired_computable": true
+ },
+ "auc_full_riskset_08e": {
+  "eicu": 0.83,
+  "mimic3": 0.8823
+ },
+ "evaluable_subset_note": "complete-case 配对 DeLong (与 08f 内验基线同惯例)。eICU gcs_total_first 缺 1055/4440 (23.8%) = eICU GCS 记录稀疏, 与 08b 后验不可得人群高度重叠 (见 08g: 后验可得 0.8793 vs 插补 0.7063); AUC_full 在该子集高于 08e 全风险集 0.830 — 与 08g '轨迹特征价值集中于有 GCS 记录者' 同向, Methods/Discussion 需同时报告两口径 (全集 0.830 与 complete-case 0.8657)",
+ "train": {
+  "n": 1661,
+  "base5_n": 1656,
+  "trad2_n": 1656
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "design": "deployment tier cascade (availability-driven; F=79 frozen reference from 08d, B=47 no-labs, G=25 GCS-core); SAP §12 2026-09-06",
+ "tiers": {
+  "B_n_features": 47,
+  "G_n_features": 25,
+  "labs_removed": 32,
+  "vitals_removed": 21
+ },
+ "reference_F": {
+  "intval": {
+   "AUROC": 0.9054
+  }
+ },
+ "B47": {
+  "n_features": 47,
+  "best_cfg": {
+   "nl": "15",
+   "md": "3",
+   "lr": "0.03",
+   "col": "0.8",
+   "sub": "0.8",
+   "mcs": "40"
+  },
+  "intval": {
+   "AUROC": 0.8952,
+   "AUPRC": 0.6575,
+   "Brier": 0.1006,
+   "delong_vs_full": {
+    "AUC_full": 0.9054,
+    "AUC_tier": 0.8952,
+    "delta": 0.0102,
+    "p": 0.37521
+   }
+  },
+  "eicu": {
+   "AUROC": 0.7923,
+   "AUPRC": 0.4579,
+   "delong_vs_full": {
+    "AUC_full": 0.83,
+    "AUC_tier": 0.7923,
+    "delta": 0.0378,
+    "p": 0.0
+   }
+  },
+  "mimic3": {
+   "AUROC": 0.9157,
+   "AUPRC": 0.7312,
+   "delong_vs_full": {
+    "AUC_full": 0.9285,
+    "AUC_tier": 0.9157,
+    "delta": 0.0128,
+    "p": 0.00405
+   }
+  }
+ },
+ "G25": {
+  "n_features": 25,
+  "best_cfg": {
+   "nl": "15",
+   "md": "3",
+   "lr": "0.03",
+   "col": "0.8",
+   "sub": "0.8",
+   "mcs": "20"
+  },
+  "intval": {
+   "AUROC": 0.8581,
+   "AUPRC": 0.6402,
+   "Brier": 0.1183,
+   "delong_vs_full": {
+    "AUC_full": 0.9054,
+    "AUC_tier": 0.8581,
+    "delta": 0.0473,
+    "p": 0.00874
+   }
+  },
+  "eicu": {
+   "AUROC": 0.7307,
+   "AUPRC": 0.3738,
+   "delong_vs_full": {
+    "AUC_full": 0.83,
+    "AUC_tier": 0.7307,
+    "delta": 0.0993,
+    "p": 0.0
+   }
+  },
+  "mimic3": {
+   "AUROC": 0.8881,
+   "AUPRC": 0.6783,
+   "delong_vs_full": {
+    "AUC_full": 0.9285,
+    "AUC_tier": 0.8881,
+    "delta": 0.0404,
+    "p": 0.0
+   }
+  }
+ },
+ "elapsed_s": 479.5
+}

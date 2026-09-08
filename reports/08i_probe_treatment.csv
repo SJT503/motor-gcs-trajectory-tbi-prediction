@@ -1,0 +1,31 @@
+treatmentstring,n,n_pat
+pulmonary|ventilation and oxygenation|mechanical ventilation,6133,1184
+pulmonary|ventilation and oxygenation|oxygen therapy (40% to 60%),1933,340
+pulmonary|ventilation and oxygenation|tracheal suctioning,1849,204
+pulmonary|ventilation and oxygenation|CPAP/PEEP therapy,1557,234
+pulmonary|ventilation and oxygenation|ventilator weaning,1235,211
+pulmonary|ventilation and oxygenation|oxygen therapy (< 40%)|nasal cannula,991,296
+pulmonary|ventilation and oxygenation|oxygen therapy (< 40%),938,198
+pulmonary|ventilation and oxygenation|mechanical ventilation|assist controlled,798,141
+pulmonary|ventilation and oxygenation|CPAP/PEEP therapy|5-10 cm H2O,704,52
+pulmonary|ventilation and oxygenation|oxygen therapy (40% to 60%)|50-60%,540,19
+pulmonary|ventilation and oxygenation|mechanical ventilation|volume controlled,473,84
+pulmonary|ventilation and oxygenation|mechanical ventilation|pressure controlled,470,26
+pulmonary|ventilation and oxygenation|mechanical ventilation|tidal volume 6-10 ml/kg,452,41
+pulmonary|surgery / incision and drainage of thorax|tracheostomy|performed during current admission for ventilatory support,448,70
+pulmonary|ventilation and oxygenation|oxygen therapy (> 60%),434,92
+pulmonary|ventilation and oxygenation|oxygen therapy (40% to 60%)|40-50%,269,57
+pulmonary|ventilation and oxygenation|mechanical ventilation|pressure support,226,29
+pulmonary|ventilation and oxygenation|oxygen therapy (< 40%)|25-30%,173,38
+pulmonary|ventilation and oxygenation|oxygen therapy (> 60%)|reduce FIO2 as tolerated,169,21
+pulmonary|ventilation and oxygenation|non-invasive ventilation,156,81
+pulmonary|ventilation and oxygenation|ventilator weaning|active,152,31
+pulmonary|ventilation and oxygenation|oxygen therapy (40% to 60%)|reduce FIO2 as tolerated,141,45
+pulmonary|ventilation and oxygenation|oxygen therapy (< 40%)|30-40%,129,24
+pulmonary|ventilation and oxygenation|CPAP/PEEP therapy|reduce PEEP as tolerated,124,7
+pulmonary|ventilation and oxygenation|oxygen therapy (> 60%)|>90%,118,30
+pulmonary|ventilation and oxygenation|CPAP/PEEP therapy|10-15 cm H2O,114,14
+pulmonary|ventilation and oxygenation|physiotherapy of chest,114,10
+pulmonary|ventilation and oxygenation|lung recruitment maneuver,112,11
+pulmonary|ventilation and oxygenation|oxygen therapy (< 40%)|trach collar,98,30
+pulmonary|ventilation and oxygenation|ventilator weaning|slow,98,13

@@ -1,0 +1,114 @@
+{
+ "script": "08z_sofa.py",
+ "n_stays": 2751,
+ "source": "mimic-code/mimic-iv/concepts_postgres first_day_sofa + 12 依赖概念 (DuckDB 忠实移植, 2026-09-03 逐字核证)",
+ "itemid_verification": {
+  "icu_checked": 41,
+  "hosp_checked": 6,
+  "fails": []
+ },
+ "windows": {
+  "vitals_gcs_bg_labs": "[intime-6h, intime+24h]",
+  "vaso_starttime": "[intime-6h, intime+24h]",
+  "uo": "[intime, intime+24h]"
+ },
+ "ingredient_coverage_pct": {
+  "mbp_min": 99.9,
+  "gcs_min": 99.9,
+  "creatinine_max": 99.1,
+  "bilirubin_max": 36.6,
+  "platelet_min": 99.0,
+  "pao2fio2_novent_min": 16.0,
+  "pao2fio2_vent_min": 36.8,
+  "urineoutput": 97.0,
+  "rate_norepinephrine": 6.5,
+  "rate_epinephrine": 0.4,
+  "rate_dopamine": 0.6,
+  "rate_dobutamine": 0.0
+ },
+ "component_distributions": {
+  "respiration": {
+   "0": 612,
+   "1": 88,
+   "2": 118,
+   "3": 225,
+   "4": 109
+  },
+  "coagulation": {
+   "0": 1818,
+   "1": 589,
+   "2": 244,
+   "3": 61,
+   "4": 11
+  },
+  "liver": {
+   "0": 769,
+   "1": 134,
+   "2": 80,
+   "3": 13,
+   "4": 11
+  },
+  "cardiovascular": {
+   "0": 739,
+   "1": 1815,
+   "2": 2,
+   "3": 50,
+   "4": 141
+  },
+  "cns": {
+   "0": 1118,
+   "1": 938,
+   "2": 350,
+   "3": 273,
+   "4": 68
+  },
+  "renal": {
+   "0": 1893,
+   "1": 558,
+   "2": 93,
+   "3": 136,
+   "4": 69
+  }
+ },
+ "sofa": {
+  "mean": 3.56,
+  "median": 3.0,
+  "min": 0,
+  "max": 19,
+  "component_missing_pct": {
+   "respiration": 58.1,
+   "coagulation": 1.0,
+   "liver": 63.4,
+   "cardiovascular": 0.1,
+   "cns": 0.1,
+   "renal": 0.1
+  }
+ },
+ "gates": [
+  {
+   "gate": "n_rows",
+   "pass": true,
+   "detail": "2751 vs 2751"
+  },
+  {
+   "gate": "unique_stay",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "gate": "component_range_0_4",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "gate": "sofa_equals_sum",
+   "pass": true,
+   "detail": "max diff 0"
+  },
+  {
+   "gate": "sofa_range_0_24",
+   "pass": true,
+   "detail": "min 0 max 19"
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "design": "25-feature screened model (Zhang-style dual screen, 后备并集截25 (交集 13 < 15): LASSO 37 ∪ RF top-20 → 44 按 RF imp 截 25); same protocol as 08d",
+ "n_features": 25,
+ "features": [
+  "admission_age",
+  "motor_max",
+  "motor_last",
+  "bun_min",
+  "prob_m3",
+  "gcs_total_first",
+  "prob_m2",
+  "bun_max",
+  "gcs_motor_first",
+  "gcs_eye_first",
+  "motor_slope",
+  "hemoglobin_max",
+  "hematocrit_max",
+  "creatinine_min",
+  "prob_m1",
+  "temp_min",
+  "rr_mean",
+  "pt_max",
+  "platelet_max",
+  "wbc_min",
+  "hemoglobin_min",
+  "motor_sd",
+  "pt_min",
+  "platelet_min",
+  "creatinine_max"
+ ],
+ "best_cfg": {
+  "nl": "15",
+  "md": "3",
+  "lr": "0.03",
+  "col": "0.8",
+  "sub": "0.8",
+  "mcs": "20"
+ },
+ "nested_cv_oof_auc": 0.8844,
+ "intval": {
+  "AUROC": 0.9054,
+  "AUPRC": 0.7177,
+  "Brier": 0.0991,
+  "delong_vs_79feat": {
+   "AUC_79": 0.9054,
+   "AUC_25": 0.9054,
+   "delta": 0.0,
+   "p": 1.0
+  }
+ },
+ "reference_79feat": {
+  "AUROC": 0.9054
+ },
+ "eicu": {
+  "n": 4440,
+  "events": 520,
+  "AUROC_25": 0.8176,
+  "AUROC_79": 0.83,
+  "delong_vs_79": {
+   "delta": 0.0125,
+   "p": 0.01006
+  }
+ },
+ "mimic3": {
+  "n": 839,
+  "events": 155,
+  "AUROC_25": 0.8839,
+  "AUROC_79": 0.8823,
+  "delong_vs_79": {
+   "delta": -0.0016,
+   "p": 0.81073
+  }
+ },
+ "elapsed_s": 596.1
+}

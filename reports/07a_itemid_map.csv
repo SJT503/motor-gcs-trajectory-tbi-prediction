@@ -1,0 +1,15 @@
+source_db,system,concept,key_type,key,verified_by
+mimic_iv,metavision,GCS eye,itemid,220739,03b/12e 已跑通
+mimic_iv,metavision,GCS verbal (ETT→1 rule),itemid,223900,03b/12e 已跑通
+mimic_iv,metavision,GCS motor,itemid,223901,03b/12e 已跑通
+mimic_iii,carevue,^Eye Opening$,itemid,184,D_ITEMS 实测 label='Eye Opening'
+mimic_iii,carevue,^Verbal Response$,itemid,723,D_ITEMS 实测 label='Verbal Response'
+mimic_iii,carevue,^Motor Response$,itemid,454,D_ITEMS 实测 label='Motor Response'
+mimic_iii,carevue,GCS total,itemid,198,SAP_v2:64 锚点
+mimic_iii,metavision,GCS eye,itemid,220739,MIMIC-IV 同号+SAP_v2:64
+mimic_iii,metavision,GCS verbal,itemid,223900,MIMIC-IV 同号+SAP_v2:64
+mimic_iii,metavision,GCS motor,itemid,223901,MIMIC-IV 同号+SAP_v2:64
+eicu,eicu,GCS total,nursingchartcelltypevalname,GCS Total,nurseCharting 实测分布
+eicu,eicu,GCS motor,nursingchartcelltypevalname,Motor,nurseCharting 实测分布
+eicu,eicu,GCS eye,nursingchartcelltypevalname,Eyes,nurseCharting 实测分布
+eicu,eicu,GCS verbal,nursingchartcelltypevalname,Verbal,nurseCharting 实测分布

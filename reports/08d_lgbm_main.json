@@ -1,0 +1,225 @@
+{
+ "threshold_yuden_train_oof": 0.154134,
+ "nested_cv_train_oof_auc": 0.8646,
+ "selected_params": {
+  "num_leaves": 15,
+  "max_depth": 6,
+  "learning_rate": 0.03,
+  "colsample_bytree": 1.0,
+  "subsample": 0.8,
+  "min_child_samples": 50,
+  "scale_pos_weight": 1.0
+ },
+ "scale_pos_weight_value": 5.6976,
+ "inner_fold_scores": {
+  "0": {
+   "best_auc": 0.8884,
+   "cfg": {
+    "num_leaves": 15,
+    "max_depth": 6,
+    "learning_rate": 0.03,
+    "colsample_bytree": 1.0,
+    "subsample": 0.8,
+    "min_child_samples": 50,
+    "scale_pos_weight": 1.0
+   }
+  },
+  "1": {
+   "best_auc": 0.8856,
+   "cfg": {
+    "num_leaves": 31,
+    "max_depth": -1,
+    "learning_rate": 0.03,
+    "colsample_bytree": 0.8,
+    "subsample": 0.8,
+    "min_child_samples": 20,
+    "scale_pos_weight": 1.0
+   }
+  },
+  "2": {
+   "best_auc": 0.8756,
+   "cfg": {
+    "num_leaves": 15,
+    "max_depth": 6,
+    "learning_rate": 0.03,
+    "colsample_bytree": 1.0,
+    "subsample": 0.8,
+    "min_child_samples": 50,
+    "scale_pos_weight": 5.69758064516129
+   }
+  },
+  "3": {
+   "best_auc": 0.8786,
+   "cfg": {
+    "num_leaves": 15,
+    "max_depth": -1,
+    "learning_rate": 0.03,
+    "colsample_bytree": 0.8,
+    "subsample": 0.8,
+    "min_child_samples": 50,
+    "scale_pos_weight": 1.0
+   }
+  },
+  "4": {
+   "best_auc": 0.8824,
+   "cfg": {
+    "num_leaves": 15,
+    "max_depth": -1,
+    "learning_rate": 0.03,
+    "colsample_bytree": 1.0,
+    "subsample": 0.8,
+    "min_child_samples": 50,
+    "scale_pos_weight": 1.0
+   }
+  }
+ },
+ "tune": {
+  "full": {
+   "variant": "full",
+   "n": 556,
+   "events": 73,
+   "AUROC": 0.8736,
+   "AUROC_lo": 0.824,
+   "AUROC_hi": 0.9165,
+   "AUPRC": 0.5967,
+   "sens": 0.6986,
+   "spec": 0.8923,
+   "PPV": 0.4951,
+   "NPV": 0.9514,
+   "slope": 0.6397,
+   "intercept": -0.1095,
+   "ECE": 0.0279,
+   "Brier": 0.0748
+  }
+ },
+ "intval": {
+  "full": {
+   "variant": "full",
+   "n": 483,
+   "events": 81,
+   "AUROC": 0.9054,
+   "AUROC_lo": 0.8736,
+   "AUROC_hi": 0.9361,
+   "AUPRC": 0.6993,
+   "sens": 0.679,
+   "spec": 0.9129,
+   "PPV": 0.6111,
+   "NPV": 0.9338,
+   "slope": 0.7584,
+   "intercept": 0.5968,
+   "ECE": 0.0621,
+   "Brier": 0.0907
+  }
+ },
+ "ablation": {
+  "A": {
+   "variant": "A",
+   "n": 483,
+   "events": 81,
+   "AUROC": 0.8858,
+   "AUROC_lo": 0.8505,
+   "AUROC_hi": 0.9182,
+   "AUPRC": 0.6035,
+   "sens": 0.5926,
+   "spec": 0.903,
+   "PPV": 0.5517,
+   "NPV": 0.9167,
+   "slope": 0.7198,
+   "intercept": 0.4691,
+   "ECE": 0.0661,
+   "Brier": 0.1035
+  },
+  "AB": {
+   "variant": "AB",
+   "n": 483,
+   "events": 81,
+   "AUROC": 0.9055,
+   "AUROC_lo": 0.8738,
+   "AUROC_hi": 0.9358,
+   "AUPRC": 0.6897,
+   "sens": 0.6667,
+   "spec": 0.9055,
+   "PPV": 0.587,
+   "NPV": 0.9309,
+   "slope": 0.7755,
+   "intercept": 0.6082,
+   "ECE": 0.0618,
+   "Brier": 0.0905
+  },
+  "ABC": {
+   "variant": "ABC",
+   "n": 483,
+   "events": 81,
+   "AUROC": 0.9054,
+   "AUROC_lo": 0.8736,
+   "AUROC_hi": 0.9361,
+   "AUPRC": 0.6993,
+   "sens": 0.679,
+   "spec": 0.9129,
+   "PPV": 0.6111,
+   "NPV": 0.9338,
+   "slope": 0.7584,
+   "intercept": 0.5968,
+   "ECE": 0.0621,
+   "Brier": 0.0907
+  }
+ },
+ "seeds_sensitivity": {
+  "seed42": 0.9054,
+  "seed43": 0.902,
+  "seed44": 0.9027,
+  "seed45": 0.9026,
+  "seed46": 0.9038
+ },
+ "complete_case": {
+  "variant": "cc",
+  "n": 417,
+  "events": 70,
+  "AUROC": 0.9102,
+  "AUROC_lo": 0.8738,
+  "AUROC_hi": 0.9409,
+  "AUPRC": 0.6935,
+  "sens": 0.7,
+  "spec": 0.9251,
+  "PPV": 0.6533,
+  "NPV": 0.9386,
+  "slope": 0.7708,
+  "intercept": 0.7377,
+  "ECE": 0.0687,
+  "Brier": 0.0921
+ },
+ "shap_top20": {
+  "admission_age": 1.04015,
+  "gcs_eye_first": 0.32524,
+  "motor_last": 0.31948,
+  "pt_min": 0.25991,
+  "wbc_min": 0.23798,
+  "prob_m2": 0.21911,
+  "gcs_total_first": 0.21842,
+  "hemoglobin_min": 0.21686,
+  "calcium_max": 0.20447,
+  "motor_max": 0.19557,
+  "platelet_max": 0.17147,
+  "prob_m3": 0.15307,
+  "temp_min": 0.15264,
+  "hr_min": 0.14522,
+  "hr_max": 0.14338,
+  "hr_mean": 0.13242,
+  "temp_max": 0.13221,
+  "bun_min": 0.11771,
+  "spo2_mean": 0.11278,
+  "hematocrit_min": 0.11088
+ },
+ "flags": [
+  "ΔAUC vs base(含SOFA) 已由 08f_base_delta_auc.json 补算 (intval: +0.0473, p=0.0065 vs base5)",
+  "END_post 次要结局矩阵未建 (需 END_TRAJ_FRAMEWORK 判据逐字对齐, 独立脚本)",
+  "calib() 2026-09-03 修正为 logistic 重校准 (原 OLS+符号翻转作废), 本次为确定性重跑"
+ ],
+ "model_persist": {
+  "dir": "E:\\TBI subtype\\07_prediction_system\\models",
+  "boosters": "08d_lgbm_full_imp[0-4].txt",
+  "imputers": "08d_mice_imp[0-4].joblib",
+  "card": "08d_model_card.json",
+  "note": "08e 零接触外验: 加载 booster+M4-fitted MICE, transform 外库特征, 禁 refit/调参/换阈值"
+ }
+}

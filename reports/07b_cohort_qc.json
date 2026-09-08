@@ -1,0 +1,30 @@
+{
+  "eicu": {
+    "n_dx_hits": 6677,
+    "n_adult_firststay": 5990,
+    "anchor_nolos": 6681,
+    "n_los24": 4440,
+    "died_hosp_pct": 11.9,
+    "died_hosp_28d_pct": 11.7,
+    "age_median": 66.0,
+    "male_pct": 60.4
+  },
+  "mimic_iii": {
+    "n_los24_preadult": 1444,
+    "n_final": 1425,
+    "anchor": 1950,
+    "d28_pct": 17.3,
+    "died_hosp_pct": 14.3,
+    "age_median": 69.31690622861053,
+    "male_pct": 59.1,
+    "n_los24_854only_prerank": 1444,
+    "n_los24_854only_adult": 1425
+  },
+  "three_db_total": {
+    "mimic_iv": 2751,
+    "eicu_los24": 4440,
+    "mimic3_final": 1425,
+    "total": 8616,
+    "expect_note": "SAP §7.7 工程量级按 2751+6681+1950≈11382 估"
+  }
+}

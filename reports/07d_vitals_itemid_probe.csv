@@ -1,0 +1,24 @@
+itemid,label,n_rows,n_pat,v_mean
+677,Temperature C (calc),5794,832,37.1
+678,Temperature F,5795,832,98.7
+455,NBP [Systolic],12490,763,124.3
+456,NBP Mean,12339,762,79.3
+8441,NBP [Diastolic],12478,762,58.6
+223761,Temperature Fahrenheit,4081,576,99.0
+220179,Non Invasive Blood Pressure systolic,10369,553,125.4
+220180,Non Invasive Blood Pressure diastolic,10362,553,64.5
+220181,Non Invasive Blood Pressure mean,10361,552,78.9
+51,Arterial BP [Systolic],13543,502,127.2
+8368,Arterial BP [Diastolic],13534,502,61.2
+52,Arterial BP Mean,13208,500,83.8
+220052,Arterial Blood Pressure mean,6478,222,83.0
+220050,Arterial Blood Pressure systolic,6439,220,124.6
+220051,Arterial Blood Pressure diastolic,6438,220,62.5
+676,Temperature C,650,44,37.0
+679,Temperature F (calc),650,44,98.5
+223762,Temperature Celsius,182,17,38.2
+227243,Manual Blood Pressure Systolic Right,11,10,121.5
+227242,Manual Blood Pressure Diastolic Right,7,7,65.7
+224167,Manual Blood Pressure Systolic Left,6,6,131.5
+224643,Manual Blood Pressure Diastolic Left,5,5,66.8
+1321,map,6,1,79.3

@@ -1,0 +1,50 @@
+{
+ "version": "08d_v2 (25-feature screened main model)",
+ "date": "2026-09-07",
+ "features": [
+  "admission_age",
+  "motor_max",
+  "motor_last",
+  "bun_min",
+  "prob_m3",
+  "gcs_total_first",
+  "prob_m2",
+  "bun_max",
+  "gcs_motor_first",
+  "gcs_eye_first",
+  "motor_slope",
+  "hemoglobin_max",
+  "hematocrit_max",
+  "creatinine_min",
+  "prob_m1",
+  "temp_min",
+  "rr_mean",
+  "pt_max",
+  "platelet_max",
+  "wbc_min",
+  "hemoglobin_min",
+  "motor_sd",
+  "pt_min",
+  "platelet_min",
+  "creatinine_max"
+ ],
+ "n_features": 25,
+ "screening": "后备并集截25 (交集 13 < 15): LASSO 37 ∪ RF top-20 → 44 按 RF imp 截 25",
+ "best_cfg": {
+  "nl": "15",
+  "md": "3",
+  "lr": "0.03",
+  "col": "0.8",
+  "sub": "0.8",
+  "mcs": "20"
+ },
+ "threshold_youden_train_oof": 0.313408,
+ "scale_pos_weight": 5.6976,
+ "nested_cv_train_oof_auc": 0.8844,
+ "model_persist": {
+  "dir": "E:/TBI subtype/07_prediction_system/models",
+  "boosters": "08d_v2_lgbm_sel_imp[0-4].txt",
+  "imputers": "复用 08d_mice_imp[0-4].joblib (79 特征插补, 取 25 列子集)",
+  "card": "08d_v2_model_card.json"
+ }
+}

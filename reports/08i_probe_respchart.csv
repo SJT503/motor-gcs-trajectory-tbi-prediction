@@ -1,0 +1,41 @@
+celllabel,n,n_pat
+FiO2,180987,1985
+RR (patient),102685,1520
+PEEP,88511,1468
+Tidal Volume (set),67104,1325
+TV/kg IBW,65894,1460
+Vent Rate,64071,1315
+Total RR,59218,1058
+Mean Airway Pressure,46128,1067
+Pressure Support,34556,883
+Peak Insp. Pressure,33293,755
+Exhaled TV (machine),32388,719
+Exhaled MV,31736,903
+Exhaled TV (patient),29321,861
+O2 Device,26945,249
+Flow Sensitivity,23409,471
+LPM O2,18802,954
+SaO2,18723,893
+Plateau Pressure,17482,846
+Head of Bed Elevation,15581,619
+Humidifier Temp,13997,483
+Compliance,10014,471
+PEEP/CPAP,9653,244
+FIO2 (%),9627,82
+Peak Flow,8310,358
+Pressure to Trigger PS,4552,128
+Pressure Control,3380,102
+Vti,3171,26
+Adult Con Setting Set RR,2721,25
+Adult Con Setting Set Vt,2691,24
+Adult Con Pt/Vent MinuteVentil,2691,25
+Adult Con Pt/Vent InspiratorTV,2688,25
+Adult Con Pt/Vent Spont Rate,2648,25
+Oxygen Delivery Method,2068,30
+O2 Percentage,2022,23
+f Total,1950,12
+"Set Vt (Servo,LTV)",1868,11
+Measured Ve,1736,52
+Endotracheal Tube Placement,1714,32
+Resp Rate Total,1667,52
+RT Vent On/Off,1586,48

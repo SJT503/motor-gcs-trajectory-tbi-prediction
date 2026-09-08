@@ -1,0 +1,158 @@
+{
+  "generated": "2026-09-03 02:47:53",
+  "spec": {
+    "formula": "y ~ t10 + I(t10^2), mixture = ~ t10 + I(t10^2), random = ~ -1 (random intercept), t10 = t/10, binned 6h grid, seed 20260610",
+    "var_time": "t10",
+    "resp_scale": "motor 0-6 / total 3-15",
+    "selection": "motor ng 由 08a2 冻结规则选出 (见 13b_gbtm_motor_metrics.json); total ng=5 锁定 (12f)"
+  },
+  "motor": {
+    "n": 2749,
+    "ng": 3,
+    "class_share": [548, 2012, 189],
+    "APP": [0.971, 0.993, 0.999],
+    "fit": {
+      "BIC": 56211.5,
+      "best_vec": [
+        {
+          "name": "intercept class1",
+          "value": 1.05591241032587
+        },
+        {
+          "name": "intercept class2",
+          "value": 2.36069213839507
+        },
+        {
+          "name": "intercept class1",
+          "value": 4.09562974121438
+        },
+        {
+          "name": "intercept class2",
+          "value": 5.68645854840926
+        },
+        {
+          "name": "intercept class3",
+          "value": 2.13356358355652
+        },
+        {
+          "name": "t10 class1",
+          "value": 0.347943643277922
+        },
+        {
+          "name": "t10 class2",
+          "value": 0.118260130303136
+        },
+        {
+          "name": "t10 class3",
+          "value": -0.204394568587287
+        },
+        {
+          "name": "I(t10^2) class1",
+          "value": -0.039964592469372
+        },
+        {
+          "name": "I(t10^2) class2",
+          "value": -0.0141017399511238
+        },
+        {
+          "name": "I(t10^2) class3",
+          "value": 0.0261008648498169
+        },
+        {
+          "name": "stderr",
+          "value": 0.663774701037232
+        }
+      ]
+    }
+  },
+  "total": {
+    "n": 2749,
+    "ng": 5,
+    "class_share": [1374, 186, 445, 339, 405],
+    "fit": {
+      "BIC": 101236.9,
+      "best_vec": [
+        {
+          "name": "intercept class1",
+          "value": 1.21733072525955
+        },
+        {
+          "name": "intercept class2",
+          "value": -0.778654199451387
+        },
+        {
+          "name": "intercept class3",
+          "value": 0.0948666132193835
+        },
+        {
+          "name": "intercept class4",
+          "value": -0.179713401347035
+        },
+        {
+          "name": "intercept class1",
+          "value": 14.2184715747135
+        },
+        {
+          "name": "intercept class2",
+          "value": 4.24309741365544
+        },
+        {
+          "name": "intercept class3",
+          "value": 7.81303701979211
+        },
+        {
+          "name": "intercept class4",
+          "value": 6.42327759194906
+        },
+        {
+          "name": "intercept class5",
+          "value": 9.31387724765926
+        },
+        {
+          "name": "t10 class1",
+          "value": 0.0849953848824517
+        },
+        {
+          "name": "t10 class2",
+          "value": -0.256155790926364
+        },
+        {
+          "name": "t10 class3",
+          "value": 2.48991919094776
+        },
+        {
+          "name": "t10 class4",
+          "value": 0.38649230706276
+        },
+        {
+          "name": "t10 class5",
+          "value": 0.136666334660891
+        },
+        {
+          "name": "I(t10^2) class1",
+          "value": -0.0138650571781516
+        },
+        {
+          "name": "I(t10^2) class2",
+          "value": 0.035546326238531
+        },
+        {
+          "name": "I(t10^2) class3",
+          "value": -0.242770393286034
+        },
+        {
+          "name": "I(t10^2) class4",
+          "value": -0.0393322228155963
+        },
+        {
+          "name": "I(t10^2) class5",
+          "value": 0.00544336122491876
+        },
+        {
+          "name": "stderr",
+          "value": 1.48733764902502
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "eicu_icd9_top10": [
+    "518.81, J96.00",
+    "852.20, S06.5",
+    "852.00, S06.6",
+    "401.9, I10",
+    "432.9, I62.9",
+    "263.9, E46",
+    "790.6, R73.9",
+    "780.09, R41.82",
+    "851.80, S06.9",
+    "427.31, I48.0"
+  ],
+  "eicu_icd9_dot_format": true,
+  "eicu": {
+    "n_rows": 4440,
+    "n_cohort": 4440,
+    "coverage_pct": 100.0,
+    "score_median": 0.0,
+    "score_mean": 0.61,
+    "score_iqr": [
+      0.0,
+      1.0
+    ],
+    "score_zero_pct": 60.1,
+    "top5_prevalence": {
+      "cerebrovascular_disease": 30.4,
+      "renal_disease": 5.3,
+      "chronic_pulmonary_disease": 3.3,
+      "congestive_heart_failure": 2.7,
+      "malignant_cancer": 2.2
+    }
+  },
+  "mimic_iii": {
+    "n_rows": 1425,
+    "n_cohort": 1425,
+    "coverage_pct": 100.0,
+    "score_median": 0.0,
+    "score_mean": 1.1,
+    "score_iqr": [
+      0.0,
+      2.0
+    ],
+    "score_zero_pct": 51.9,
+    "top5_prevalence": {
+      "diabetes_without_cc": 15.1,
+      "congestive_heart_failure": 14.4,
+      "chronic_pulmonary_disease": 11.0,
+      "cerebrovascular_disease": 9.3,
+      "renal_disease": 7.6
+    }
+  },
+  "mimic_iv_anchor": {
+    "score_median": 1.0,
+    "score_mean": 1.42,
+    "n": 2751
+  }
+}

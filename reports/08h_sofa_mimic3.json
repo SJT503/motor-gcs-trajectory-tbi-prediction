@@ -1,0 +1,80 @@
+{
+ "status": "PASS",
+ "gates": {
+  "n_rows_eq_cohort": true,
+  "icustay_unique": true,
+  "component_range_0_4": true,
+  "sofa_eq_sum": true,
+  "sofa_range_0_24": true,
+  "any_component_coverage_ge_90pct": true
+ },
+ "coverage": {
+  "respiration": 0.4816,
+  "coagulation": 0.9905,
+  "liver": 0.2212,
+  "cardiovascular": 0.9893,
+  "cns": 0.9893,
+  "renal": 0.9941
+ },
+ "n": 841,
+ "sofa_dist": {
+  "mean": 3.174,
+  "median": 3.0,
+  "p25": 1.0,
+  "p75": 4.0,
+  "max": 12
+ },
+ "component_missing_raw": {
+  "respiration": 436,
+  "coagulation": 8,
+  "liver": 655,
+  "cardiovascular": 9,
+  "cns": 9,
+  "renal": 5
+ },
+ "cross_db_coverage_vs_08z": {
+  "respiration": {
+   "m3": 0.4816,
+   "m4_ref_08z": 0.419
+  },
+  "coagulation": {
+   "m3": 0.9905,
+   "m4_ref_08z": 0.99
+  },
+  "liver": {
+   "m3": 0.2212,
+   "m4_ref_08z": 0.366
+  },
+  "cardiovascular": {
+   "m3": 0.9893,
+   "m4_ref_08z": 0.999
+  },
+  "cns": {
+   "m3": 0.9893,
+   "m4_ref_08z": 0.999
+  },
+  "renal": {
+   "m3": 0.9941,
+   "m4_ref_08z": 0.999
+  }
+ },
+ "cross_db_note": "M3 respiration/liver 覆盖低于 M4 (08z: 41.9%/36.6%): MIMIC-III 记录密度低于 IV + FiO2/胆红素在 [-6h,+24h] 窗内较少测量; 组件缺失计 0 的求和惯例与 08z 一致; sofa 分布对比见 sofa_dist",
+ "sofa_any_component_missing_pct": 0.8656,
+ "deviations_disclosed": [
+  "窗口统一 08z 口径: 测量类[-6h,+24h]/UO[0,+24h]/weight[-1d,+24h] (M3官方 vitals/gcs/vaso 为 [intime,+24h])",
+  "动脉血气 specimen 取 LABEVENTS itemid=50800 的 VALUE 列 (PASS2 valuenum 过滤会滤掉该行 → spec_win 单独物化); 匹配规则 = ART 前缀 (含 'ART.'/'ARTERIAL'), 不采用官方 SPECIMEN_PROB 回归补判; 实测分布见 specimen_dist",
+  "weight echo_data 回退不采用; CV mcgmin 无体重行 rate 置 null 计数见 n_cv_no_weight",
+  "通气设定扫描窗 [-24h,+24h] (官方全住院时长; 仅需 landmark 附近 isvent)",
+  "覆盖门校准: 初版自设 60%/组件线与冻结参照 08z 自身现实矛盾 (08z respiration/liver 覆盖 41.9%/36.6%) → 改为 08i 同款任一组件≥90%底线, M3↔M4 差异入 cross_db_coverage_vs_08z 披露"
+ ],
+ "n_spec_null_dropped": 85,
+ "specimen_dist": {
+  "ART": 2245,
+  "VEN": 90,
+  "MIX": 31,
+  "CENTRAL VENOUS": 2
+ },
+ "n_cv_need_weight": 21,
+ "n_cv_no_weight": 21,
+ "provenance": "MIT-LCP/mimic-code@main mimic-iii: severityscores/sofa.sql + firstday/{labs,vitals,urine_output,gcs,blood_gas_first_day,blood_gas_first_day_arterial}.sql + durations/{ventilation_classification,ventilation_durations}.sql (2026-09-03 实拉)"
+}

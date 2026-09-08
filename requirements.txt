@@ -1,0 +1,41 @@
+# Environments used for the analyses reported in the manuscript.
+# Two interpreters were used: the modelling work ran under Python 3.12, and the
+# figure/document build under Python 3.14. Versions below are the ones actually
+# installed when the frozen results were produced.
+
+# ---------------------------------------------------------------------------
+# Modelling and statistics (Python 3.12.13)
+#   scripts/08*.py, 09*.py, 10*.py, 11*.py
+# ---------------------------------------------------------------------------
+numpy==2.5.2
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.0
+lightgbm==4.7.0
+xgboost==3.4.1
+pyarrow==25.0.1
+duckdb==1.5.5
+joblib==1.6.0
+
+# ---------------------------------------------------------------------------
+# Figures and document build (Python 3.14.4)
+#   manuscript/figures/fig_scripts/*.py
+#   Install these in a separate environment; matplotlib was not present in the
+#   modelling environment and the pandas/numpy majors differ.
+# ---------------------------------------------------------------------------
+# numpy==2.4.4
+# pandas==2.3.3
+# matplotlib==3.10.9
+# pyarrow==24.0.0
+# scikit-learn==1.8.0
+# joblib==1.5.3
+# python-docx==1.2.0
+# docx2pdf==0.1.8
+# pymupdf==1.27.2.3
+
+# ---------------------------------------------------------------------------
+# R (4.5.3) — latent-class trajectory modelling and sample-size calculation
+#   scripts/*.R
+# ---------------------------------------------------------------------------
+# lcmm 2.2.2
+# pmsampsize 1.1.3

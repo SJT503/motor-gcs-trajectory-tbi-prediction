@@ -1,0 +1,20 @@
+{
+ "version": "08f_v2_25feat",
+ "eval_set": "mimic4 intval n=483 ev=81",
+ "base5": {
+  "AUC_full": 0.9054,
+  "AUC_base": 0.8581,
+  "delta": 0.0473,
+  "se": 0.0154,
+  "p": 0.00213,
+  "n_eval": 483
+ },
+ "trad2": {
+  "AUC_full": 0.9054,
+  "AUC_base": 0.7993,
+  "delta": 0.1061,
+  "se": 0.0197,
+  "p": 0.0,
+  "n_eval": 483
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "seeds_intval_auroc": {
+  "42": 0.9054,
+  "43": 0.9053,
+  "44": 0.9058,
+  "45": 0.9055,
+  "46": 0.9047
+ },
+ "seeds_mean": 0.9053,
+ "seeds_range": [
+  0.9047,
+  0.9058
+ ],
+ "note_seeds": "08d_v2 seed loop was vacuous (random_state hard-coded 42 → identical 0.9054×5); this is the corrected sensitivity",
+ "tune_2018_2019": {
+  "n": 556,
+  "events": 73,
+  "AUROC": 0.8844,
+  "AUROC_boot95": [
+   0.841,
+   0.9238
+  ],
+  "AUPRC": 0.5963,
+  "Brier": 0.1038,
+  "note": "2018-2019 model-selection set; not used by nested CV (hyperparameters chosen by inner CV on training folds); reported as an additional temporal hold-out"
+ },
+ "intval_boot95": [
+  0.8748,
+  0.9365
+ ],
+ "eicu_boot95": [
+  0.7983,
+  0.8351
+ ],
+ "mimic3_boot95": [
+  0.8535,
+  0.91
+ ]
+}

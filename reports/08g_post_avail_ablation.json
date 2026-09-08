@@ -1,0 +1,129 @@
+{
+ "purpose": "eICU 后验可得亚组消融 — 回答'轨迹块 eICU 零增益是否被 35% 被插补患者稀释' (PI 2026-09-03 拍板②)",
+ "pi_decisions_2026_09_03": {
+  "framing": "B — '轨迹价值集中于连续GCS监测患者'升格为核心 Discussion 点(部署洞见)",
+  "analysis": "只在 post_avail 亚组内重做 A/AB/full 消融",
+  "sap_disclosure": "A — Methods 一句披露 SAP 估计 ~6681 vs 实际 4440"
+ },
+ "methodology": "与 08e 逐字同源: frozen_predict 冻结参数 M4-train 重训消融器(无调参/无阈值重选/无特征重选); post-hoc 敏感性(exploratory), 非确证性推断",
+ "reproduce_08e": {
+  "full": {
+   "ours": 0.83,
+   "08e": 0.83,
+   "match": true
+  },
+  "A": {
+   "ours": 0.8319,
+   "08e": 0.8319,
+   "match": true
+  },
+  "AB": {
+   "ours": 0.8308,
+   "08e": 0.8308,
+   "match": true
+  },
+  "avail": {
+   "ours": 0.8793,
+   "08e": 0.8793,
+   "match": true
+  },
+  "imputed": {
+   "ours": 0.7063,
+   "08e": 0.7063,
+   "match": true
+  }
+ },
+ "subgroup_post_avail": {
+  "A": {
+   "n": 2889,
+   "events": 345,
+   "AUROC": 0.8673,
+   "AUROC_boot95CI": [
+    0.8495,
+    0.8674,
+    0.8861
+   ]
+  },
+  "AB": {
+   "n": 2889,
+   "events": 345,
+   "AUROC": 0.8801,
+   "AUROC_boot95CI": [
+    0.8618,
+    0.88,
+    0.8984
+   ]
+  },
+  "full": {
+   "n": 2889,
+   "events": 345,
+   "AUROC": 0.8793,
+   "AUROC_boot95CI": [
+    0.8605,
+    0.8789,
+    0.8982
+   ]
+  },
+  "delong_AB_vs_A": {
+   "AUC_1": 0.8801,
+   "AUC_2": 0.8673,
+   "delta": 0.0128,
+   "se": 0.0057,
+   "z": 2.259,
+   "p": 0.0239
+  },
+  "delong_full_vs_A": {
+   "AUC_1": 0.8793,
+   "AUC_2": 0.8673,
+   "delta": 0.0121,
+   "se": 0.0064,
+   "z": 1.888,
+   "p": 0.05905
+  }
+ },
+ "subgroup_post_imputed": {
+  "A": {
+   "n": 1551,
+   "events": 175,
+   "AUROC": 0.7522,
+   "AUROC_boot95CI": [
+    0.7176,
+    0.7525,
+    0.788
+   ]
+  },
+  "AB": {
+   "n": 1551,
+   "events": 175,
+   "AUROC": 0.7177,
+   "AUROC_boot95CI": [
+    0.6801,
+    0.7178,
+    0.7541
+   ]
+  },
+  "full": {
+   "n": 1551,
+   "events": 175,
+   "AUROC": 0.7063,
+   "AUROC_boot95CI": [
+    0.6668,
+    0.7064,
+    0.7434
+   ]
+  },
+  "delong_AB_vs_A": {
+   "AUC_1": 0.7177,
+   "AUC_2": 0.7522,
+   "delta": -0.0345,
+   "se": 0.009,
+   "z": -3.835,
+   "p": 0.00013
+  }
+ },
+ "flags": [
+  "post-hoc 敏感性分析 (exploratory) — Discussion 引用时注明, 不进确证性主链",
+  "消融器为冻结参数 M4-train 重训 (与 08e 外验消融同一披露口径)",
+  "亚组按 prob_m1 可得性定义 (08b 后验引擎, 与 08e sens 分层同源)"
+ ]
+}

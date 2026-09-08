@@ -1,0 +1,302 @@
+{
+ "mimic4": {
+  "vital_rows": 1046980,
+  "lab_rows": 200876,
+  "gcs_rows": 82923,
+  "concepts": {
+   "aniongap": {
+    "n_rows": 12726,
+    "n_pat": 2732
+   },
+   "bicarbonate": {
+    "n_rows": 12751,
+    "n_pat": 2732
+   },
+   "bun": {
+    "n_rows": 13614,
+    "n_pat": 2733
+   },
+   "calcium": {
+    "n_rows": 11751,
+    "n_pat": 2721
+   },
+   "chloride": {
+    "n_rows": 13448,
+    "n_pat": 2732
+   },
+   "creatinine": {
+    "n_rows": 13536,
+    "n_pat": 2734
+   },
+   "dbp": {
+    "n_rows": 164653,
+    "n_pat": 2748
+   },
+   "glucose_lab": {
+    "n_rows": 12749,
+    "n_pat": 2732
+   },
+   "hematocrit": {
+    "n_rows": 14587,
+    "n_pat": 2733
+   },
+   "hemoglobin": {
+    "n_rows": 13237,
+    "n_pat": 2733
+   },
+   "hr": {
+    "n_rows": 165947,
+    "n_pat": 2749
+   },
+   "inr": {
+    "n_rows": 9298,
+    "n_pat": 2680
+   },
+   "mbp": {
+    "n_rows": 164346,
+    "n_pat": 2749
+   },
+   "platelet": {
+    "n_rows": 13458,
+    "n_pat": 2733
+   },
+   "potassium": {
+    "n_rows": 13656,
+    "n_pat": 2732
+   },
+   "pt": {
+    "n_rows": 9301,
+    "n_pat": 2680
+   },
+   "ptt": {
+    "n_rows": 9161,
+    "n_pat": 2677
+   },
+   "rr": {
+    "n_rows": 177170,
+    "n_pat": 2743
+   },
+   "sbp": {
+    "n_rows": 164721,
+    "n_pat": 2748
+   },
+   "sodium": {
+    "n_rows": 14405,
+    "n_pat": 2732
+   },
+   "spo2": {
+    "n_rows": 164011,
+    "n_pat": 2749
+   },
+   "temp": {
+    "n_rows": 46132,
+    "n_pat": 2744
+   },
+   "wbc": {
+    "n_rows": 13198,
+    "n_pat": 2733
+   }
+  }
+ },
+ "eicu_labname_vs_07c": {},
+ "eicu": {
+  "vital_rows": 11904225,
+  "lab_rows": 434728,
+  "concepts": {
+   "aniongap": {
+    "n_rows": 11505,
+    "n_pat": 3532
+   },
+   "bicarbonate": {
+    "n_rows": 19111,
+    "n_pat": 4157
+   },
+   "bun": {
+    "n_rows": 14533,
+    "n_pat": 4290
+   },
+   "calcium": {
+    "n_rows": 13886,
+    "n_pat": 4141
+   },
+   "chloride": {
+    "n_rows": 14506,
+    "n_pat": 4292
+   },
+   "creatinine": {
+    "n_rows": 14572,
+    "n_pat": 4292
+   },
+   "dbp": {
+    "n_rows": 1073903,
+    "n_pat": 4402
+   },
+   "glucose_lab": {
+    "n_rows": 42894,
+    "n_pat": 4330
+   },
+   "hematocrit": {
+    "n_rows": 13867,
+    "n_pat": 4270
+   },
+   "hemoglobin": {
+    "n_rows": 16393,
+    "n_pat": 4249
+   },
+   "hr": {
+    "n_rows": 2850561,
+    "n_pat": 4402
+   },
+   "inr": {
+    "n_rows": 5273,
+    "n_pat": 2348
+   },
+   "mbp": {
+    "n_rows": 1078419,
+    "n_pat": 4402
+   },
+   "platelet": {
+    "n_rows": 12698,
+    "n_pat": 4237
+   },
+   "potassium": {
+    "n_rows": 16428,
+    "n_pat": 4294
+   },
+   "pt": {
+    "n_rows": 4970,
+    "n_pat": 2256
+   },
+   "ptt": {
+    "n_rows": 3468,
+    "n_pat": 1570
+   },
+   "rr": {
+    "n_rows": 2603191,
+    "n_pat": 4198
+   },
+   "sbp": {
+    "n_rows": 1073994,
+    "n_pat": 4402
+   },
+   "sodium": {
+    "n_rows": 17761,
+    "n_pat": 4293
+   },
+   "spo2": {
+    "n_rows": 2680270,
+    "n_pat": 4387
+   },
+   "temp": {
+    "n_rows": 543887,
+    "n_pat": 4384
+   },
+   "wbc": {
+    "n_rows": 12547,
+    "n_pat": 4261
+   },
+   "NaN": {
+    "n_rows": 200316,
+    "n_pat": 4346
+   }
+  }
+ },
+ "mimic3": {
+  "vital_rows": 573955,
+  "lab_rows": 113222,
+  "concepts": {
+   "aniongap": {
+    "n_rows": 6119,
+    "n_pat": 1413
+   },
+   "bicarbonate": {
+    "n_rows": 6668,
+    "n_pat": 1416
+   },
+   "bun": {
+    "n_rows": 6664,
+    "n_pat": 1418
+   },
+   "calcium": {
+    "n_rows": 8634,
+    "n_pat": 1399
+   },
+   "chloride": {
+    "n_rows": 7390,
+    "n_pat": 1418
+   },
+   "creatinine": {
+    "n_rows": 6674,
+    "n_pat": 1418
+   },
+   "dbp": {
+    "n_rows": 89974,
+    "n_pat": 1413
+   },
+   "glucose_lab": {
+    "n_rows": 8621,
+    "n_pat": 1418
+   },
+   "hematocrit": {
+    "n_rows": 9074,
+    "n_pat": 1418
+   },
+   "hemoglobin": {
+    "n_rows": 7679,
+    "n_pat": 1417
+   },
+   "hr": {
+    "n_rows": 89945,
+    "n_pat": 1413
+   },
+   "inr": {
+    "n_rows": 5145,
+    "n_pat": 1395
+   },
+   "mbp": {
+    "n_rows": 89245,
+    "n_pat": 1413
+   },
+   "platelet": {
+    "n_rows": 6553,
+    "n_pat": 1417
+   },
+   "potassium": {
+    "n_rows": 8965,
+    "n_pat": 1418
+   },
+   "pt": {
+    "n_rows": 5148,
+    "n_pat": 1395
+   },
+   "ptt": {
+    "n_rows": 5039,
+    "n_pat": 1395
+   },
+   "rr": {
+    "n_rows": 88389,
+    "n_pat": 1412
+   },
+   "sbp": {
+    "n_rows": 90025,
+    "n_pat": 1413
+   },
+   "sodium": {
+    "n_rows": 8104,
+    "n_pat": 1417
+   },
+   "spo2": {
+    "n_rows": 88492,
+    "n_pat": 1413
+   },
+   "temp": {
+    "n_rows": 37885,
+    "n_pat": 1413
+   },
+   "wbc": {
+    "n_rows": 6745,
+    "n_pat": 1417
+   }
+  }
+ }
+}

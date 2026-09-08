@@ -1,0 +1,17 @@
+concept,labnames,n_rows
+aniongap,anion gap,4923
+bicarbonate,bicarbonate | HCO3,8707
+bun,BUN,6190
+calcium,calcium,5909
+chloride,chloride,6191
+creatinine,creatinine | urinary creatinine,6229
+glucose_lab,bedside glucose | glucose,17173
+sodium,sodium | urinary sodium,7445
+potassium,potassium,7016
+hematocrit,Hct,6211
+hemoglobin,Hgb | Methemoglobin | Carboxyhemoglobin,7439
+platelet,platelets x 1000,5577
+wbc,WBC x 1000,5507
+inr,PT - INR,3172
+pt,PT,2979
+ptt,PTT | PTT ratio,2055

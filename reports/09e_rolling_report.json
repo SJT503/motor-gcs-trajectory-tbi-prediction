@@ -1,0 +1,313 @@
+{
+ "threshold_frozen_youden": 0.313408,
+ "bootstrap_B": 500,
+ "confirmatory_anchor_h": 24,
+ "curves": {
+  "d28": {
+   "n_points": 201,
+   "by_db": {
+    "mimic4": 67,
+    "eicu": 67,
+    "mimic3": 67
+   }
+  },
+  "endpost": {
+   "n_points": 201,
+   "by_db": {
+    "mimic4": 67,
+    "eicu": 67,
+    "mimic3": 67
+   }
+  }
+ },
+ "warning": {
+  "mimic4": {
+   "end_single": {
+    "n_events": 219,
+    "detected_before_event": 128,
+    "detection_rate": 0.5845,
+    "warning_time_hr": {
+     "n": 128,
+     "median": 20.73,
+     "q1": 9.05,
+     "q3": 41.55
+    },
+    "sens_12h_window": 0.4521,
+    "spec_no_trigger": 0.4971,
+    "n_nonevent_for_spec": 173
+   },
+   "d28_single": {
+    "lead_time_hr": {
+     "n": 76,
+     "median": 165.12,
+     "q1": 80.97,
+     "q3": 334.21
+    }
+   },
+   "fac_end_single": {
+    "trigger_onsets": 151,
+    "patient_checkpoints": 11582,
+    "patient_days": 482.58,
+    "false_alarms_per_100_patient_days": 31.29
+   },
+   "fac_d28_single": {
+    "trigger_onsets": 315,
+    "patient_checkpoints": 22418,
+    "patient_days": 934.08,
+    "false_alarms_per_100_patient_days": 33.72
+   },
+   "end_two_consec": {
+    "n_events": 219,
+    "detected_before_event": 121,
+    "detection_rate": 0.5525,
+    "warning_time_hr": {
+     "n": 121,
+     "median": 19.98,
+     "q1": 8.08,
+     "q3": 41.07
+    },
+    "sens_12h_window": 0.4338,
+    "spec_no_trigger": 0.5202,
+    "n_nonevent_for_spec": 173
+   },
+   "d28_two_consec": {
+    "lead_time_hr": {
+     "n": 74,
+     "median": 159.15,
+     "q1": 74.48,
+     "q3": 330.22
+    }
+   },
+   "fac_end_two_consec": {
+    "trigger_onsets": 122,
+    "patient_checkpoints": 11582,
+    "patient_days": 482.58,
+    "false_alarms_per_100_patient_days": 25.28
+   },
+   "fac_d28_two_consec": {
+    "trigger_onsets": 243,
+    "patient_checkpoints": 22418,
+    "patient_days": 934.08,
+    "false_alarms_per_100_patient_days": 26.01
+   }
+  },
+  "eicu": {
+   "end_single": {
+    "n_events": 1282,
+    "detected_before_event": 777,
+    "detection_rate": 0.6061,
+    "warning_time_hr": {
+     "n": 777,
+     "median": 23.1,
+     "q1": 10.95,
+     "q3": 43.52
+    },
+    "sens_12h_window": 0.4758,
+    "spec_no_trigger": 0.4103,
+    "n_nonevent_for_spec": 987
+   },
+   "d28_single": {
+    "lead_time_hr": {
+     "n": 385,
+     "median": 69.23,
+     "q1": 37.75,
+     "q3": 153.75
+    }
+   },
+   "fac_end_single": {
+    "trigger_onsets": 1449,
+    "patient_checkpoints": 64402,
+    "patient_days": 2683.42,
+    "false_alarms_per_100_patient_days": 54.0
+   },
+   "fac_d28_single": {
+    "trigger_onsets": 3859,
+    "patient_checkpoints": 155145,
+    "patient_days": 6464.38,
+    "false_alarms_per_100_patient_days": 59.7
+   },
+   "end_two_consec": {
+    "n_events": 1282,
+    "detected_before_event": 702,
+    "detection_rate": 0.5476,
+    "warning_time_hr": {
+     "n": 702,
+     "median": 21.89,
+     "q1": 9.96,
+     "q3": 42.05
+    },
+    "sens_12h_window": 0.4384,
+    "spec_no_trigger": 0.4458,
+    "n_nonevent_for_spec": 987
+   },
+   "d28_two_consec": {
+    "lead_time_hr": {
+     "n": 378,
+     "median": 68.01,
+     "q1": 36.5,
+     "q3": 151.84
+    }
+   },
+   "fac_end_two_consec": {
+    "trigger_onsets": 997,
+    "patient_checkpoints": 64402,
+    "patient_days": 2683.42,
+    "false_alarms_per_100_patient_days": 37.15
+   },
+   "fac_d28_two_consec": {
+    "trigger_onsets": 2461,
+    "patient_checkpoints": 155145,
+    "patient_days": 6464.38,
+    "false_alarms_per_100_patient_days": 38.07
+   }
+  },
+  "mimic3": {
+   "end_single": {
+    "n_events": 444,
+    "detected_before_event": 277,
+    "detection_rate": 0.6239,
+    "warning_time_hr": {
+     "n": 277,
+     "median": 13.18,
+     "q1": 7.14,
+     "q3": 27.18
+    },
+    "sens_12h_window": 0.5743,
+    "spec_no_trigger": 0.28,
+    "n_nonevent_for_spec": 200
+   },
+   "d28_single": {
+    "lead_time_hr": {
+     "n": 145,
+     "median": 162.0,
+     "q1": 66.0,
+     "q3": 282.0
+    }
+   },
+   "fac_end_single": {
+    "trigger_onsets": 211,
+    "patient_checkpoints": 13378,
+    "patient_days": 557.42,
+    "false_alarms_per_100_patient_days": 37.85
+   },
+   "fac_d28_single": {
+    "trigger_onsets": 513,
+    "patient_checkpoints": 33588,
+    "patient_days": 1399.5,
+    "false_alarms_per_100_patient_days": 36.66
+   },
+   "end_two_consec": {
+    "n_events": 444,
+    "detected_before_event": 261,
+    "detection_rate": 0.5878,
+    "warning_time_hr": {
+     "n": 261,
+     "median": 12.56,
+     "q1": 6.43,
+     "q3": 26.18
+    },
+    "sens_12h_window": 0.5405,
+    "spec_no_trigger": 0.295,
+    "n_nonevent_for_spec": 200
+   },
+   "d28_two_consec": {
+    "lead_time_hr": {
+     "n": 145,
+     "median": 161.0,
+     "q1": 65.0,
+     "q3": 281.0
+    }
+   },
+   "fac_end_two_consec": {
+    "trigger_onsets": 194,
+    "patient_checkpoints": 13378,
+    "patient_days": 557.42,
+    "false_alarms_per_100_patient_days": 34.8
+   },
+   "fac_d28_two_consec": {
+    "trigger_onsets": 448,
+    "patient_checkpoints": 33588,
+    "patient_days": 1399.5,
+    "false_alarms_per_100_patient_days": 32.01
+   }
+  }
+ },
+ "fac": {},
+ "operationalizations": {
+  "12h_window": "事件时刻=各 t 窗最早 END 事件时刻; sens=事件者[ev-12,ev]内≥1触发; spec=END([0,72])=0者全程零触发",
+  "fac": "非事件者 0→1 触发转换数(首检超阈计1) / (在险检查点数/24h) × 100 患者-日"
+ },
+ "sofa_comparator": {
+  "flag": "rolling SOFA 未建且 SOFA 触发规则未冻结 — 挂旗待 PI, 不静默发明阈值",
+  "static_24h_context": {
+   "mimic4": {
+    "file": "08z_sofa_report.json",
+    "auroc_like": {}
+   },
+   "eicu": {
+    "file": "08i_sofa_eicu.json",
+    "auroc_like": {}
+   },
+   "mimic3": {
+    "file": "08h_sofa_mimic3.json",
+    "auroc_like": {}
+   }
+  }
+ },
+ "anchor_24h": {
+  "mimic4": {
+   "d28": {
+    "auroc": 0.9051,
+    "lo": 0.8772,
+    "hi": 0.9368,
+    "n": 483,
+    "events": 81
+   },
+   "endpost": {
+    "auroc": 0.5744,
+    "lo": 0.5029,
+    "hi": 0.6485,
+    "n": 368,
+    "events": 59
+   }
+  },
+  "eicu": {
+   "d28": {
+    "auroc": 0.862,
+    "lo": 0.8427,
+    "hi": 0.8805,
+    "n": 3403,
+    "events": 400
+   },
+   "endpost": {
+    "auroc": 0.586,
+    "lo": 0.5544,
+    "hi": 0.6159,
+    "n": 2406,
+    "events": 334
+   }
+  },
+  "mimic3": {
+   "d28": {
+    "auroc": 0.8703,
+    "lo": 0.8404,
+    "hi": 0.8984,
+    "n": 813,
+    "events": 138
+   },
+   "endpost": {
+    "auroc": 0.5526,
+    "lo": 0.5,
+    "hi": 0.6072,
+    "n": 511,
+    "events": 127
+   }
+  }
+ },
+ "flags": [
+  "M4 曲线人群 = temporal 内验子集 (spec §二预注册)",
+  "eICU 死亡时刻 = 出院时刻近似 (Methods 披露)",
+  "24h 外各 t 描述性不占 α",
+  "SOFA rolling 对照待 PI 决策"
+ ]
+}

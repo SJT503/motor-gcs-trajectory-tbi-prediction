@@ -1,0 +1,24 @@
+block,concept,label_pat,itemids,labels
+chart,hr,^Heart Rate$,"211,220045",Heart Rate
+chart,sbp,Blood Pressure (systolic|Systolic)|^Arterial BP \[Systolic\]$|^ABP \[Systolic\]$|^NBP \[Systolic\]$,"6,51,455,220050,220179,224167,227243",ABP [Systolic] | Arterial BP [Systolic] | Arterial Blood Pressure systolic | Manual Blood Pressure Systolic Left | Manual Blood Pressure Systolic Right | NBP [Systolic]
+chart,dbp,Blood Pressure (diastolic|Diastolic)|^Arterial BP \[Diastolic\]$|^ABP \[Diastolic\]$|^NBP \[Diastolic\]$,"8364,8368,8441,220051,220180,224643,227242",ABP [Diastolic] | Arterial BP [Diastolic] | Arterial Blood Pressure diastolic | Manual Blood Pressure Diastolic Left | Manual Blood Pressure Diastolic Right | NBP [Diastolic]
+chart,map,Blood Pressure mean|^Arterial BP Mean$|^NBP Mean$|^MAP$,"52,438,456,1321,220052,220181",Arterial BP Mean | Arterial Blood Pressure mean | MAP | NBP Mean | Non Invasive Blood Pressure mean | map
+chart,rr,^Respiratory Rate$|^Resp Rate$|^RR$,"618,3603,7884,220210",RR | Resp Rate | Respiratory Rate
+chart,temp,^(?!.*core)(?!.*skin)Temperature,"676,677,678,679,223761,223762,224642",Temperature C | Temperature C (calc) | Temperature Celsius | Temperature F | Temperature F (calc) | Temperature Fahrenheit
+chart,spo2,O2 saturation pulseoxymetry|^SpO2$,"646,220277",O2 saturation pulseoxymetry | SpO2
+lab,aniongap,anion gap,50868,Anion Gap
+lab,bicarbonate,bicarbonate,"50803,50882,51027,51061","Bicarbonate | Bicarbonate, Other Fluid | Bicarbonate, Stool | Calculated Bicarbonate, Whole Blood"
+lab,bun,urea nitrogen|BUN,"51006,51045","Urea Nitrogen | Urea Nitrogen, Body Fluid"
+lab,calcium,calcium,"50808,50893,51029,51066,51468,51469,51470","24 hr Calcium | Calcium Carbonate Crystals | Calcium Oxalate Crystals | Calcium Phosphate Crystals | Calcium, Body Fluid | Calcium, Total"
+lab,chloride,chloride,"50806,50902,51030,51062","Chloride | Chloride, Body Fluid | Chloride, Stool | Chloride, Whole Blood"
+lab,creatinine,creatinine,"50912,51021,51032,51067,51080,51081","24 hr Creatinine | Creatinine | Creatinine Clearance | Creatinine, Body Fluid | Creatinine, Joint Fluid | Creatinine, Serum"
+lab,glucose_lab,glucose,"50809,50931,51022,51034,51478,51529","Estimated Actual Glucose | Glucose | Glucose, Body Fluid | Glucose, Joint Fluid"
+lab,sodium,sodium,"50824,50834,50983,51042,51065","Sodium | Sodium, Body Fluid | Sodium, Stool | Sodium, Whole Blood"
+lab,potassium,potassium,"50822,50833,50971,51041,51064","Potassium | Potassium, Body Fluid | Potassium, Stool | Potassium, Whole Blood"
+lab,hematocrit,hematocrit,"50810,51221,51369,51422,51480","Hematocrit | Hematocrit, Calculated | Hematocrit, Joint Fluid | Hematocrit, Other Fluid"
+lab,hemoglobin,hemoglobin,"50805,50811,50814,50852,50855,51212,51222,51223,51224,51225,51285",% Hemoglobin A1c | Absolute Hemoglobin | Carboxyhemoglobin | Fetal Hemoglobin | Hemoglobin | Hemoglobin A2
+lab,platelet,platelet count|platelets,"51240,51265",Large Platelets | Platelet Count
+lab,wbc,\bwbc\b|white blood cell,"51300,51301,51516",WBC | WBC Count | White Blood Cells
+lab,inr,inr|international normalized,51237,INR(PT)
+lab,pt,prothrombin|\bpt\b|protime,51274,PT
+lab,ptt,ptt|partial thromboplastin,51275,PTT
