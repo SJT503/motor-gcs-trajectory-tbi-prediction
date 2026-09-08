@@ -27,8 +27,8 @@ Consequently the intermediate `.parquet` files the scripts read and write are ab
 scripts cannot be run end-to-end without first obtaining the databases and rebuilding those
 intermediates. Of the six figure scripts that draw the submitted figures, five read per-patient
 intermediates and will not run without them — `make_fig1_v1.py` (binned motor-GCS series),
-`make_fig2_v1.py`, `make_fig4_v1.py` (per-patient predicted risks), `make_supp_shapdep_v1.py`
-(per-patient SHAP values) and `make_supp_v1.py`. Only `make_fig3_v1.py` runs from the aggregate JSON
+`make_fig2_v1.py`, `make_fig3_v1.py` (per-patient predicted risks), `make_supp_shapdep_v1.py`
+(per-patient SHAP values) and `make_supp_v1.py`. Only `make_fig4_v1.py` runs from the aggregate JSON
 alone. The `reports/` JSON files let you check every reported number against the code that produced
 it without any data access.
 

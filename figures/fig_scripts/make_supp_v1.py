@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Supplementary figures S2 (fairness forest), S3 (hospital-level motor charting), S4 (END rolling AUROC)
+# Supplementary figures S1 (hospital-level motor charting), S2 (END rolling AUROC), S4 (fairness forest) — numbered by first citation in the manuscript
 import json, numpy as np, pandas as pd, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
 from pathlib import Path
@@ -18,7 +18,7 @@ for ax, (db, title) in zip(axes, [("mimic4_intval", "MIMIC-IV temporal"), ("eicu
         ax.text(1.005, y, f"{r['AUROC']:.3f} (n = {r['n']:,}; {r['events']} deaths)", fontsize=5.4, va="center", color="#333333", clip_on=False)
     ax.set_yticks(ys); ax.set_yticklabels([l for _, l in labs]); ax.set_xlim(0.65, 1.0); ax.set_title(title, pad=3); ax.set_xlabel("AUROC (95% CI)"); ax.spines[["top", "right"]].set_visible(False)
 fig.subplots_adjust(left=0.08, right=0.80, top=0.90, bottom=0.18, wspace=1.35)
-fig.savefig(OUT / "SuppFig_fairness_v1.png", dpi=300); fig.savefig(OUT / "SuppFig_fairness_v1.pdf"); print("[saved] S2")
+fig.savefig(OUT / "SuppFig_S4_fairness_v1.png", dpi=300); fig.savefig(OUT / "SuppFig_S4_fairness_v1.pdf"); print("[saved] S4 (fairness)")
 # S3 hospital charting
 fe = pd.read_parquet(D / "features_eicu.parquet"); post = pd.read_parquet(D / "08b_posterior24_eicu.parquet").rename(columns={"id": "icustay_id_eicu"})
 d = fe.merge(post[["icustay_id_eicu", "prob_m1"]], on="icustay_id_eicu", how="left"); d = d[~(((d.died_hosp == 1) & (d.los_h <= 24)) | (d.los_h < 24))]
@@ -27,12 +27,12 @@ fig, ax = plt.subplots(figsize=(3.6, 2.6)); bins = np.linspace(0, 1, 11)
 ax.hist(h.share, bins=bins, color="#D55E00", edgecolor="white", lw=0.5); ax.set_xlabel("Share of TBI patients with a motor-GCS score charted in first 24 h"); ax.set_ylabel("Hospitals, n")
 ax.text(0.02, 0.95, f"{int((h.share==0).sum())} hospitals: none charted\n{int((h.share==1).sum())} hospitals: all charted\n{len(h)} hospitals, {len(d):,} patients", fontsize=6.0, va="top", transform=ax.transAxes)
 ax.spines[["top", "right"]].set_visible(False); fig.subplots_adjust(left=0.16, right=0.97, top=0.95, bottom=0.2)
-fig.savefig(OUT / "SuppFig_hospital_v1.png", dpi=300); fig.savefig(OUT / "SuppFig_hospital_v1.pdf"); print("[saved] S3", int((h.share==0).sum()), int((h.share==1).sum()), len(h))
+fig.savefig(OUT / "SuppFig_S1_hospital_v1.png", dpi=300); fig.savefig(OUT / "SuppFig_S1_hospital_v1.pdf"); print("[saved] S1 (hospital)", int((h.share==0).sum()), int((h.share==1).sum()), len(h))
 # S4 END rolling
 r = pd.read_csv(REP / "09e_fig2_endpost.csv"); fig, ax = plt.subplots(figsize=(3.6, 2.6))
 for db, col, lab in [("mimic4", C["mimic4_intval"], "MIMIC-IV (temporal)"), ("eicu", C["eicu"], "eICU-CRD"), ("mimic3", C["mimic3_carevue"], "MIMIC-III CareVue")]:
     s = r[r.db == db].sort_values("t"); ax.plot(s.t, s.auroc, color=col, lw=1.0, label=lab); ax.fill_between(s.t, s.lo, s.hi, color=col, alpha=0.15, lw=0)
 ax.axhline(0.5, color="#AAAAAA", lw=0.7, ls=":"); ax.axvline(24, color="#BBBBBB", lw=0.7, ls="--"); ax.set_xlim(6, 72); ax.set_ylim(0.35, 0.8); ax.set_xticks([6, 12, 24, 36, 48, 60, 72])
-ax.set_xlabel("Hours since ICU admission"); ax.set_ylabel("AUROC, END within 48 h"); ax.legend(frameon=True, framealpha=0.9, edgecolor="#CCCCCC", loc="upper right", handlelength=1.3)
-ax.spines[["top", "right"]].set_visible(False); fig.subplots_adjust(left=0.16, right=0.97, top=0.95, bottom=0.2)
-fig.savefig(OUT / "SuppFig_endroll_v1.png", dpi=300); fig.savefig(OUT / "SuppFig_endroll_v1.pdf"); print("[saved] S4")
+ax.set_xlabel("Hours since ICU admission"); ax.set_ylabel("AUROC, END within 48 h"); ax.legend(frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=3, handlelength=1.0, columnspacing=0.9, fontsize=6.0)
+ax.spines[["top", "right"]].set_visible(False); fig.subplots_adjust(left=0.16, right=0.97, top=0.95, bottom=0.30)
+fig.savefig(OUT / "SuppFig_S2_endroll_v1.png", dpi=300); fig.savefig(OUT / "SuppFig_S2_endroll_v1.pdf"); print("[saved] S2 (endroll)")

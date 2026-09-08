@@ -1,61 +1,48 @@
 # -*- coding: utf-8 -*-
-# Fig 4 — (a) calibration deciles ×3 db (frozen v2), (b) held-out-half calibration before/after logistic recalibration (eICU, M3),
-#         (c) decision curves before/after in the held-out halves. Also prints the eICU threshold where original NB crosses zero (full set).
-import numpy as np, pandas as pd, matplotlib
+# Fig 4 v1 — (a) END warning lead time (layout fixed: no truncation, db names as ticks), (b) FAC, (c) SHAP top-15 with readable names; numbered by first citation in the manuscript
+import json, numpy as np, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 from pathlib import Path
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-ROOT = Path("E:/TBI subtype"); D = ROOT / "07_prediction_system/data"; OUT = ROOT / "07_prediction_system/manuscript/figures"
-plt.rcParams.update({"font.family": "Arial", "font.size": 7, "axes.titlesize": 7.2, "axes.labelsize": 7.2, "xtick.labelsize": 6.3, "ytick.labelsize": 6.3,
-                     "legend.fontsize": 6.0, "axes.linewidth": 0.6, "pdf.fonttype": 42})
-C = {"m4": "#0072B2", "eicu": "#D55E00", "m3": "#009E73", "grey": "#999999", "recal": "#333333"}
-sets = {"MIMIC-IV temporal": (pd.read_parquet(D / "08d_v2_preds_mimic4.parquet"), C["m4"]), "eICU-CRD": (pd.read_parquet(D / "08e_v2_preds_eicu.parquet"), C["eicu"]),
-        "MIMIC-III CareVue": (pd.read_parquet(D / "08e_v2_preds_mimic3.parquet"), C["m3"])}
-def deciles(y, p):
-    y = np.asarray(y, int); p = np.asarray(p, float); qs = np.unique(np.percentile(p, np.linspace(0, 100, 11))); idx = np.clip(np.digitize(p, qs[1:-1]), 0, len(qs) - 2)
-    return np.array([p[idx == b].mean() for b in range(len(qs) - 1) if (idx == b).any()]), np.array([y[idx == b].mean() for b in range(len(qs) - 1) if (idx == b).any()])
-def slope_citl(y, p):
-    y = np.asarray(y, int); p = np.clip(np.asarray(p, float), 1e-6, 1 - 1e-6); lg = np.log(p / (1 - p))
-    lr = LogisticRegression(C=1e6, max_iter=2000).fit(lg.reshape(-1, 1), y); return float(lr.coef_[0][0]), float(np.log(y.mean()/(1-y.mean())) - np.log(p.mean()/(1-p.mean())))
-def nb_curve(y, p, ts):
-    y = np.asarray(y, int); p = np.asarray(p, float); n = len(y); out = []
-    for t in ts:
-        pos = p >= t; out.append(((pos & (y == 1)).sum() - (pos & (y == 0)).sum() * t / (1 - t)) / n)
-    return np.array(out)
-ts = np.round(np.arange(0.05, 0.501, 0.01), 2)
-fig = plt.figure(figsize=(7.2, 5.4)); gs = fig.add_gridspec(2, 12, hspace=0.55, wspace=2.2)
-# (a)
-for i, (name, (df, col)) in enumerate(sets.items()):
-    ax = fig.add_subplot(gs[0, 4*i:4*i+4]); x, o = deciles(df.d28, df.p_full); s, c = slope_citl(df.d28, df.p_full)
-    ax.plot([0, 1], [0, 1], ls="--", color="#AAAAAA", lw=0.7); ax.plot(x, o, "o-", color=col, lw=1.0, ms=3.5, markeredgecolor="white", markeredgewidth=0.5)
-    ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.set_title(name, pad=3); ax.set_xlabel("Predicted probability")
-    if i == 0: ax.set_ylabel("Observed frequency")
-    ax.text(0.04, 0.93, f"slope {s:.2f}\ncal.-in-the-large {c:+.2f}", fontsize=5.8, va="top", transform=ax.transAxes, color="#333333")
-    ax.spines[["top", "right"]].set_visible(False)
-    if i == 0: fig.text(0.012, 0.965, "a", fontsize=9, fontweight="bold")
-# (b) + (c)
-cross = None
-for j, (name, col, key) in enumerate([("eICU-CRD", C["eicu"], "eICU-CRD"), ("MIMIC-III CareVue", C["m3"], "MIMIC-III CareVue")]):
-    df = sets[key][0]; y = df.d28.values.astype(int); p = np.clip(df.p_full.values, 1e-6, 1 - 1e-6)
-    if key == "eICU-CRD":
-        nb_full = nb_curve(y, p, ts); neg = np.where(nb_full < 0)[0]; cross = float(ts[neg[0]]) if len(neg) else None
-    ia, ib = train_test_split(np.arange(len(y)), test_size=0.5, stratify=y, random_state=0)
-    la, lb = np.log(p[ia]/(1-p[ia])), np.log(p[ib]/(1-p[ib])); pl = LogisticRegression(C=1e6, max_iter=2000).fit(la.reshape(-1, 1), y[ia]); pr = pl.predict_proba(lb.reshape(-1, 1))[:, 1]
-    axb = fig.add_subplot(gs[1, 6*j:6*j+3]); axb.plot([0, 1], [0, 1], ls="--", color="#AAAAAA", lw=0.7)
-    x0, o0 = deciles(y[ib], p[ib]); x1, o1 = deciles(y[ib], pr)
-    axb.plot(x0, o0, "o-", color=col, lw=1.0, ms=3.2, markeredgecolor="white", markeredgewidth=0.5, label="original"); axb.plot(x1, o1, "s-", color=C["recal"], lw=1.0, ms=3.0, markeredgecolor="white", markeredgewidth=0.5, label="recalibrated")
-    axb.set_xlim(0, 1); axb.set_ylim(0, 1); axb.set_title(f"{name}: held-out half", pad=3); axb.set_xlabel("Predicted probability")
-    if j == 0: axb.set_ylabel("Observed frequency")
-    axb.legend(frameon=False, loc="upper left", handlelength=1.2); axb.spines[["top", "right"]].set_visible(False)
-    if j == 0: fig.text(0.012, 0.47, "b", fontsize=9, fontweight="bold")
-    axc = fig.add_subplot(gs[1, 6*j+3:6*j+6]); yb = y[ib]; prev = yb.mean()
-    axc.plot(ts, nb_curve(yb, p[ib], ts), color=col, lw=1.0, label="original"); axc.plot(ts, nb_curve(yb, pr, ts), color=C["recal"], lw=1.0, label="recalibrated")
-    axc.plot(ts, prev - (1 - prev) * ts / (1 - ts), color=C["grey"], lw=0.8, ls="--", label="treat all"); axc.axhline(0, color="#555555", lw=0.6, label="treat none")
-    axc.set_xlim(0.05, 0.50); axc.set_ylim(-0.06, max(prev, 0.15) + 0.03); axc.set_xticks([0.05, 0.20, 0.35, 0.50]); axc.set_xlabel("Threshold probability"); axc.set_title(f"{name}: net benefit", pad=3)
-    if j == 0: axc.set_ylabel("Net benefit")
-    axc.legend(frameon=False, loc="upper right", handlelength=1.2, fontsize=5.6); axc.spines[["top", "right"]].set_visible(False)
-    if j == 0: fig.text(0.255, 0.47, "c", fontsize=9, fontweight="bold")
-fig.subplots_adjust(left=0.08, right=0.985, top=0.94, bottom=0.10)
-print("[eICU original NB crosses zero at threshold]", cross)
+ROOT = Path("E:/TBI subtype"); REP = ROOT / "07_prediction_system/reports"; OUT = ROOT / "07_prediction_system/manuscript/figures"
+plt.rcParams.update({"font.family": "Arial", "font.size": 7, "axes.titlesize": 7.5, "axes.labelsize": 7.5, "xtick.labelsize": 6.5,
+                     "ytick.labelsize": 6.5, "legend.fontsize": 6.3, "axes.linewidth": 0.6, "pdf.fonttype": 42})
+C = {"m4": "#0072B2", "eicu": "#D55E00", "m3": "#009E73", "traj": "#0072B2", "band": "#BBBBBB"}
+e = json.load(open(REP / "09e_rolling_report.json", encoding="utf-8")); d8 = json.load(open(REP / "08d_v2_lgbm_main.json", encoding="utf-8")); W = e["warning"]
+dbs = [("mimic4", "MIMIC-IV", C["m4"]), ("eicu", "eICU-CRD", C["eicu"]), ("mimic3", "MIMIC-III CareVue", C["m3"])]
+fig = plt.figure(figsize=(7.2, 5.6)); gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 1.12], hspace=0.50, wspace=0.42)
+axa = fig.add_subplot(gs[0, :]); centers = []
+for i, (db, lab, col) in enumerate(dbs):
+    base = i * 2.6
+    for j, (rule, alpha) in enumerate([("end_single", 1.0), ("end_two_consec", 0.45)]):
+        x = base + j * 0.85; wt = W[db][rule]["warning_time_hr"]; det = W[db][rule]["detection_rate"]
+        axa.plot([x, x], [wt["q1"], wt["q3"]], color=col, lw=5.5, alpha=alpha, solid_capstyle="butt", zorder=2)
+        axa.plot(x, wt["median"], "o", color=col, ms=4.5 if j == 0 else 3.5, markeredgecolor="white", markeredgewidth=0.6, zorder=3)
+        axa.text(x, wt["q3"] + 1.8, f"{det*100:.0f}%", fontsize=5.6, ha="center", color="#333333")
+    centers.append(base + 0.425)
+    axa.text(base + 0.425, -4.5, f"28-d mortality lead {W[db]['d28_single']['lead_time_hr']['median']:.0f} h", fontsize=5.6, ha="center", color="#666666")
+axa.axhline(12, color=C["band"], lw=0.7, ls="--"); axa.text(6.55, 12.8, "12 h", fontsize=5.5, color="#888888", ha="right")
+axa.set_xlim(-0.6, 6.6); axa.set_ylim(-7.5, 52); axa.set_xticks(centers); axa.set_xticklabels([lab for _, lab, _ in dbs]); axa.tick_params(axis="x", length=0)
+axa.set_yticks([0, 10, 20, 30, 40, 50]); axa.set_ylabel("Warning lead time before END (h)")
+axa.plot([], [], color="#333333", lw=5.5, label="single crossing (dark) / two consecutive (light): IQR; dot = median; % = events flagged")
+axa.legend(frameon=False, loc="upper right", handlelength=1.4, borderpad=0.2, fontsize=5.8); fig.text(0.012, 0.975, "a", fontsize=9, fontweight="bold")
+axb = fig.add_subplot(gs[1, 0]); x = np.arange(len(dbs)); w = 0.34
+single = [W[db]["fac_end_single"]["false_alarms_per_100_patient_days"] for db, _, _ in dbs]; two = [W[db]["fac_end_two_consec"]["false_alarms_per_100_patient_days"] for db, _, _ in dbs]
+b1 = axb.bar(x - w/2, single, w, color=[c for _, _, c in dbs], label="Single crossing"); b2 = axb.bar(x + w/2, two, w, color=[c for _, _, c in dbs], alpha=0.45, label="Two consecutive")
+for bars in (b1, b2):
+    for b in bars: axb.text(b.get_x() + b.get_width()/2, b.get_height() + 0.8, f"{b.get_height():.1f}", ha="center", fontsize=5.6, color="#333333")
+axb.set_xticks(x); axb.set_xticklabels(["MIMIC-IV", "eICU-CRD", "MIMIC-III\nCareVue"], fontsize=6.3); axb.set_ylim(0, 64); axb.set_ylabel("False alarms / 100 event-free patient-days")
+axb.legend(frameon=True, framealpha=0.9, edgecolor="#CCCCCC", loc="upper left", handlelength=1.1, borderpad=0.4); fig.text(0.012, 0.50, "b", fontsize=9, fontweight="bold")
+axc = fig.add_subplot(gs[1, 1]); top = list(d8["shap_top20"].items())[:15]; names = [k for k, _ in top][::-1]; vals = [v for _, v in top][::-1]
+nice = {"admission_age": "Age", "gcs_eye_first": "GCS eye (first)", "gcs_total_first": "GCS total (first)", "motor_last": "Motor GCS (last)", "pt_min": "PT (min)", "wbc_min": "WBC (min)",
+        "prob_m2": "Posterior, high-stable", "prob_m3": "Posterior, low-declining", "prob_m1": "Posterior, moderate-improving", "hemoglobin_min": "Haemoglobin (min)",
+        "hemoglobin_max": "Haemoglobin (max)", "rr_mean": "Respiratory rate (mean)", "bun_min": "Urea (min)", "motor_slope": "Motor GCS slope", "motor_max": "Motor GCS (max)",
+        "platelet_max": "Platelets (max)", "platelet_min": "Platelets (min)", "temp_min": "Temperature (min)", "creatinine_min": "Creatinine (min)", "pt_max": "PT (max)", "motor_sd": "Motor GCS SD"}
+cols = [C["traj"] if (k.startswith("motor") or k.startswith("prob")) else "#AAAAAA" for k in names]
+axc.barh(np.arange(len(names)), vals, color=cols, height=0.62, edgecolor="white", lw=0.3); axc.set_yticks(np.arange(len(names))); axc.set_yticklabels([nice.get(k, k) for k in names], fontsize=5.8)
+for yv, v in enumerate(vals): axc.text(v + max(vals)*0.015, yv, f"{v:.2f}", fontsize=5.2, va="center", color="#333333")
+axc.set_xlim(0, max(vals) * 1.17); axc.set_xlabel("Mean |SHAP value| (log-odds)")
+axc.legend(handles=[Patch(fc=C["traj"], label="Trajectory-derived"), Patch(fc="#AAAAAA", label="Static")], frameon=False, loc="lower right", fontsize=6.0, handlelength=1.0)
+axc.spines[["top", "right"]].set_visible(False); axc.text(-0.62, 1.05, "c", fontsize=9, fontweight="bold", transform=axc.transAxes)
+fig.subplots_adjust(left=0.10, right=0.975, top=0.955, bottom=0.08)
 fig.savefig(OUT / "Fig4_v1.png", dpi=300); fig.savefig(OUT / "Fig4_v1.pdf"); print("[saved]", OUT / "Fig4_v1.png")

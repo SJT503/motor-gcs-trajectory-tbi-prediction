@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Supp Fig S1 v1 — SHAP dependence for the frozen v2 (25-feature) model (the v0 figure had used the 79-feature booster)
+# Supp Fig S3 v1 — SHAP dependence for the frozen v2 (25-feature) model (the v0 figure had used the 79-feature booster); numbered by first citation in the manuscript
 # two stages: `compute` (tbi_ml env: lightgbm/joblib) -> parquet; `plot` (Python314: matplotlib)
 import sys, json, numpy as np, pandas as pd
 stage = sys.argv[1]; ROOT = "E:/TBI subtype"; REP = f"{ROOT}/07_prediction_system/reports"; MODELS = f"{ROOT}/07_prediction_system/models"; FIGD = f"{ROOT}/07_prediction_system/manuscript/figures"
@@ -29,4 +29,4 @@ elif stage == "plot":
         o = np.argsort(x); k = 40; ax.plot(np.convolve(x[o], np.ones(k)/k, mode="valid"), np.convolve(y[o], np.ones(k)/k, mode="valid"), color="#222222", lw=1.1, zorder=3)
     fig.subplots_adjust(left=0.08, right=0.98, top=0.96, bottom=0.17, wspace=0.34)
     cb = fig.colorbar(sc, ax=axes, shrink=0.85, pad=0.015); cb.set_label("SHAP value", fontsize=6.5); cb.ax.tick_params(labelsize=6)
-    fig.savefig(f"{FIGD}/SuppFig_shapdep_v1.png", dpi=300); fig.savefig(f"{FIGD}/SuppFig_shapdep_v1.pdf"); print("[saved] SuppFig_shapdep_v1.png")
+    fig.savefig(f"{FIGD}/SuppFig_S3_shapdep_v1.png", dpi=300); fig.savefig(f"{FIGD}/SuppFig_S3_shapdep_v1.pdf"); print("[saved] SuppFig_S3_shapdep_v1.png")
