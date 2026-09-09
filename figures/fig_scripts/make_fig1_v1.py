@@ -64,7 +64,7 @@ for k, col in zip([1, 2, 3], [C["c1"], C["c2"], C["c3"]]):
     axb.fill_between(g.index, g["mean"] - 1.96*g["sem"], g["mean"] + 1.96*g["sem"], color=col, alpha=0.15, lw=0)
 axb.set_xlabel("Hours since ICU admission"); axb.set_ylabel("Motor GCS (mean, 95% CI)"); axb.set_xlim(0, 72); axb.set_ylim(0, 6.3)
 axb.set_xticks([0, 12, 24, 36, 48, 60, 72]); axb.set_yticks([0, 1, 2, 3, 4, 5, 6])
-axb.legend(frameon=True, framealpha=0.9, edgecolor="#CCCCCC", loc="center left", bbox_to_anchor=(0.0, 0.52), handlelength=1.4, borderpad=0.4)
+axb.legend(frameon=True, framealpha=0.9, edgecolor="#CCCCCC", loc="upper center", bbox_to_anchor=(0.5, -0.21), handlelength=1.4, borderpad=0.4)
 axb.text(-0.20, 1.04, "b", fontsize=9, fontweight="bold", transform=axb.transAxes)
 
 # ---------- (c) stability forest ----------
@@ -87,8 +87,18 @@ axc.set_xlim(0.3, 1.02); axc.set_ylim(-1.4, len(rows) - 0.4); axc.set_xticks([0.
 axc.set_xlabel("Bootstrap adjusted Rand index\n(median, IQR; 100 main / 50 sensitivity replicates)")
 axc.spines[["top", "right"]].set_visible(False)
 axc.text(-0.50, 1.04, "c", fontsize=9, fontweight="bold", transform=axc.transAxes)
-fig.subplots_adjust(left=0.07, right=0.86, top=0.985, bottom=0.10)
+fig.subplots_adjust(left=0.07, right=0.86, top=0.985, bottom=0.17)
 issues = []
+# legend placement check: must sit fully below panel b's data area and inside the figure
+fig.canvas.draw()
+lb = axb.get_legend().get_window_extent(fig.canvas.get_renderer()).expanded(1.0, 1.0)
+if lb.y1 > axb.bbox.y0 + 1: issues.append(f"LEGEND intrudes into panel b data area (legend top {lb.y1:.1f} >= axes bottom {axb.bbox.y0:.1f})")
+if lb.y0 < 0: issues.append(f"LEGEND clipped at figure bottom (y0 {lb.y0:.1f})")
+print(f"[legend-check] legend bbox y {lb.y0:.1f}-{lb.y1:.1f} px; panel b axes bottom {axb.bbox.y0:.1f} px; figure bottom 0")
+for txt in axc.get_xticklabels() + [axc.xaxis.label]:
+    tb = txt.get_window_extent(fig.canvas.get_renderer())
+    if lb.overlaps(tb): issues.append(f"LEGEND overlaps panel c x-label text")
+if lb.x1 > axc.get_window_extent().x0 - 8: issues.append(f"LEGEND too close to panel c (x1 {lb.x1:.1f})")
 for k1 in B:
     for k2 in B:
         if k1 < k2:
