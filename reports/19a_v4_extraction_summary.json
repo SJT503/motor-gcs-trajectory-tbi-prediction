@@ -1,0 +1,137 @@
+{
+  "amsterdam_trauma_n": 1052,
+  "amsterdam_trauma_d28": 92,
+  "amsterdam_trauma_d28_rate": 0.0875,
+  "amsterdam_strict_trauma_dx_n": 910,
+  "amsterdam_strict_trauma_dx_d28": 87,
+  "amsterdam_abi_n": 2038,
+  "amsterdam_abi_d28": 255,
+  "amsterdam_abi_d28_rate": 0.1251,
+  "amsterdam_abi_end_24_72h": 304,
+  "amsterdam_icp_24h_n": 403,
+  "amsterdam_trauma_icp_24h_n": 170,
+  "jinhua_tbi_s06_n": 1941,
+  "jinhua_tbi_s06_d28": 240,
+  "jinhua_tbi_s06_d28_sens": 255,
+  "jinhua_tbi_s06_died_in_hosp": 286,
+  "jinhua_strict_s06_code_only_n": 1720,
+  "jinhua_strict_s06_code_only_d28": 225,
+  "jinhua_gcs_proxy_mapped_n": 1670,
+  "jinhua_gcs_proxy_missing_nan_n": 271,
+  "jinhua_gcs_proxy_source_breakdown": {
+    "impaired_unresponsive": 614,
+    "coma_deep": 439,
+    "explicit_alert_clear": 269,
+    "uninformative_no_kw": 213,
+    "coma_light": 167,
+    "drowsy": 99,
+    "missing_text": 58,
+    "coma_unspec": 46,
+    "stupor_confused": 36
+  },
+  "jinhua_gcs_proxy_source_detail": {
+    "coma_deep": {
+      "n": 439,
+      "pct": 22.6,
+      "deaths": 135,
+      "mort_pct": 30.8
+    },
+    "coma_light": {
+      "n": 167,
+      "pct": 8.6,
+      "deaths": 6,
+      "mort_pct": 3.6
+    },
+    "coma_unspec": {
+      "n": 46,
+      "pct": 2.4,
+      "deaths": 10,
+      "mort_pct": 21.7
+    },
+    "drowsy": {
+      "n": 99,
+      "pct": 5.1,
+      "deaths": 4,
+      "mort_pct": 4.0
+    },
+    "explicit_alert_clear": {
+      "n": 269,
+      "pct": 13.9,
+      "deaths": 12,
+      "mort_pct": 4.5
+    },
+    "impaired_unresponsive": {
+      "n": 614,
+      "pct": 31.6,
+      "deaths": 60,
+      "mort_pct": 9.8
+    },
+    "missing_text": {
+      "n": 58,
+      "pct": 3.0,
+      "deaths": 4,
+      "mort_pct": 6.9
+    },
+    "stupor_confused": {
+      "n": 36,
+      "pct": 1.9,
+      "deaths": 0,
+      "mort_pct": 0.0
+    },
+    "uninformative_no_kw": {
+      "n": 213,
+      "pct": 11.0,
+      "deaths": 9,
+      "mort_pct": 4.2
+    }
+  },
+  "jinhua_abi_n": 4765,
+  "jinhua_abi_d28": 464,
+  "jinhua_abi_d28_sens": 494,
+  "jinhua_abi_died_in_hosp": 566,
+  "total_ct_matched_24h_n": 6551,
+  "ct_structured_exam_verification": {
+    "mimic4_source": "radiology_detail.csv.gz field_name='exam_name' word-bounded \\b(ct|cta)\\b + \\b(head|brain|cranial)\\b",
+    "mimic4_top_exam_names": {
+      "CT HEAD W/O CONTRAST": 3209,
+      "CTA HEAD W&W/O C & RECONS": 276,
+      "CTA HEAD AND CTA NECK": 67,
+      "PORTABLE HEAD CT W/O CONTRAST": 57,
+      "CT HEAD W/ CONTRAST": 12,
+      "CT HEAD W/ & W/O CONTRAST": 3,
+      "CT BRAIN PERFUSION": 2
+    },
+    "mimic3_top_exam_descriptions": {
+      "CT HEAD W/O CONTRAST": 1212,
+      "CTA HEAD W&W/O C & RECONS": 45,
+      "CT EMERGENCY HEAD W/O CONTRAST": 17,
+      "CT HEAD W/ & W/O CONTRAST": 11,
+      "CT HEAD W/ CONTRAST": 5,
+      "BY SAME PHYSICIAN": 5,
+      "BY DIFFERENT PHYSICIAN": 4
+    },
+    "validation_method_note": "Timestamp-restricted structured exam_name/DESCRIPTION filter + bilingual rule-based regex with negation lookahead; no human clinician chart adjudication."
+  },
+  "ct_coverage_strict_24h": {
+    "MIMIC-IV": {
+      "n": 2700,
+      "ct_24h_n": 1969,
+      "pct": 72.9
+    },
+    "MIMIC-III": {
+      "n": 839,
+      "ct_24h_n": 716,
+      "pct": 85.3
+    },
+    "JinhuaNSICU_TBI": {
+      "n": 1941,
+      "ct_24h_n": 1580,
+      "pct": 81.4
+    },
+    "JinhuaNSICU_ABI": {
+      "n": 4765,
+      "ct_24h_n": 3866,
+      "pct": 81.1
+    }
+  }
+}

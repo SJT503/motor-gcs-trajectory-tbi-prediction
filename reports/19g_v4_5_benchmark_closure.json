@@ -1,0 +1,1116 @@
+{
+  "conformal_alpha_sweep": {
+    "MIMIC_IV_IntVal": {
+      "80": {
+        "target_coverage": 0.8,
+        "empirical_coverage": 0.8323,
+        "empirical_error": 0.1677,
+        "retained_singleton_frac": 0.853,
+        "auroc_definitive": 0.9275
+      },
+      "82": {
+        "target_coverage": 0.82,
+        "empirical_coverage": 0.8571,
+        "empirical_error": 0.1429,
+        "retained_singleton_frac": 0.8137,
+        "auroc_definitive": 0.9376
+      },
+      "85": {
+        "target_coverage": 0.85,
+        "empirical_coverage": 0.8758,
+        "empirical_error": 0.1242,
+        "retained_singleton_frac": 0.7743,
+        "auroc_definitive": 0.9449
+      },
+      "88": {
+        "target_coverage": 0.88,
+        "empirical_coverage": 0.9006,
+        "empirical_error": 0.0994,
+        "retained_singleton_frac": 0.7122,
+        "auroc_definitive": 0.9555
+      },
+      "90": {
+        "target_coverage": 0.9,
+        "empirical_coverage": 0.9234,
+        "empirical_error": 0.0766,
+        "retained_singleton_frac": 0.6253,
+        "auroc_definitive": 0.97
+      },
+      "92": {
+        "target_coverage": 0.92,
+        "empirical_coverage": 0.9607,
+        "empirical_error": 0.0393,
+        "retained_singleton_frac": 0.4555,
+        "auroc_definitive": 0.9764
+      },
+      "95": {
+        "target_coverage": 0.95,
+        "empirical_coverage": 0.9752,
+        "empirical_error": 0.0248,
+        "retained_singleton_frac": 0.4099,
+        "auroc_definitive": 0.9837
+      }
+    },
+    "MIMIC_III_CareVue": {
+      "80": {
+        "target_coverage": 0.8,
+        "empirical_coverage": 0.8052,
+        "empirical_error": 0.1948,
+        "retained_singleton_frac": 0.954,
+        "auroc_definitive": 0.8917
+      },
+      "82": {
+        "target_coverage": 0.82,
+        "empirical_coverage": 0.8255,
+        "empirical_error": 0.1745,
+        "retained_singleton_frac": 0.9263,
+        "auroc_definitive": 0.897
+      },
+      "85": {
+        "target_coverage": 0.85,
+        "empirical_coverage": 0.8548,
+        "empirical_error": 0.1452,
+        "retained_singleton_frac": 0.866,
+        "auroc_definitive": 0.9068
+      },
+      "88": {
+        "target_coverage": 0.88,
+        "empirical_coverage": 0.8847,
+        "empirical_error": 0.1153,
+        "retained_singleton_frac": 0.8049,
+        "auroc_definitive": 0.915
+      },
+      "90": {
+        "target_coverage": 0.9,
+        "empirical_coverage": 0.9033,
+        "empirical_error": 0.0967,
+        "retained_singleton_frac": 0.7384,
+        "auroc_definitive": 0.9227
+      },
+      "92": {
+        "target_coverage": 0.92,
+        "empirical_coverage": 0.9239,
+        "empirical_error": 0.0761,
+        "retained_singleton_frac": 0.6753,
+        "auroc_definitive": 0.9315
+      },
+      "95": {
+        "target_coverage": 0.95,
+        "empirical_coverage": 0.9533,
+        "empirical_error": 0.0467,
+        "retained_singleton_frac": 0.5067,
+        "auroc_definitive": 0.9471
+      }
+    },
+    "eICU_CRD": {
+      "80": {
+        "target_coverage": 0.8,
+        "empirical_coverage": 0.8861,
+        "empirical_error": 0.1139,
+        "retained_singleton_frac": 0.5773,
+        "auroc_definitive": 0.8912
+      },
+      "82": {
+        "target_coverage": 0.82,
+        "empirical_coverage": 0.8972,
+        "empirical_error": 0.1028,
+        "retained_singleton_frac": 0.551,
+        "auroc_definitive": 0.8977
+      },
+      "85": {
+        "target_coverage": 0.85,
+        "empirical_coverage": 0.9118,
+        "empirical_error": 0.0882,
+        "retained_singleton_frac": 0.5151,
+        "auroc_definitive": 0.9037
+      },
+      "88": {
+        "target_coverage": 0.88,
+        "empirical_coverage": 0.9281,
+        "empirical_error": 0.0719,
+        "retained_singleton_frac": 0.4662,
+        "auroc_definitive": 0.913
+      },
+      "90": {
+        "target_coverage": 0.9,
+        "empirical_coverage": 0.9393,
+        "empirical_error": 0.0607,
+        "retained_singleton_frac": 0.4262,
+        "auroc_definitive": 0.9202
+      },
+      "92": {
+        "target_coverage": 0.92,
+        "empirical_coverage": 0.9509,
+        "empirical_error": 0.0491,
+        "retained_singleton_frac": 0.3725,
+        "auroc_definitive": 0.9296
+      },
+      "95": {
+        "target_coverage": 0.95,
+        "empirical_coverage": 0.9678,
+        "empirical_error": 0.0322,
+        "retained_singleton_frac": 0.2975,
+        "auroc_definitive": 0.9405
+      }
+    },
+    "HiRID_Trauma": {
+      "80": {
+        "target_coverage": 0.8,
+        "empirical_coverage": 0.8016,
+        "empirical_error": 0.1984,
+        "retained_singleton_frac": 0.9904,
+        "auroc_definitive": 0.8951
+      },
+      "82": {
+        "target_coverage": 0.82,
+        "empirical_coverage": 0.8223,
+        "empirical_error": 0.1777,
+        "retained_singleton_frac": 0.9673,
+        "auroc_definitive": 0.899
+      },
+      "85": {
+        "target_coverage": 0.85,
+        "empirical_coverage": 0.852,
+        "empirical_error": 0.148,
+        "retained_singleton_frac": 0.8805,
+        "auroc_definitive": 0.9091
+      },
+      "88": {
+        "target_coverage": 0.88,
+        "empirical_coverage": 0.8818,
+        "empirical_error": 0.1182,
+        "retained_singleton_frac": 0.8164,
+        "auroc_definitive": 0.9146
+      },
+      "90": {
+        "target_coverage": 0.9,
+        "empirical_coverage": 0.9002,
+        "empirical_error": 0.0998,
+        "retained_singleton_frac": 0.7595,
+        "auroc_definitive": 0.9198
+      },
+      "92": {
+        "target_coverage": 0.92,
+        "empirical_coverage": 0.9203,
+        "empirical_error": 0.0797,
+        "retained_singleton_frac": 0.6926,
+        "auroc_definitive": 0.9265
+      },
+      "95": {
+        "target_coverage": 0.95,
+        "empirical_coverage": 0.9523,
+        "empirical_error": 0.0477,
+        "retained_singleton_frac": 0.4737,
+        "auroc_definitive": 0.9375
+      }
+    },
+    "AmsterdamUMCdb_Trauma": {
+      "80": {
+        "target_coverage": 0.8,
+        "empirical_coverage": 0.8006,
+        "empirical_error": 0.1994,
+        "retained_singleton_frac": 0.9297,
+        "auroc_definitive": 0.8636
+      },
+      "82": {
+        "target_coverage": 0.82,
+        "empirical_coverage": 0.8228,
+        "empirical_error": 0.1772,
+        "retained_singleton_frac": 0.8957,
+        "auroc_definitive": 0.8723
+      },
+      "85": {
+        "target_coverage": 0.85,
+        "empirical_coverage": 0.8516,
+        "empirical_error": 0.1484,
+        "retained_singleton_frac": 0.8509,
+        "auroc_definitive": 0.8845
+      },
+      "88": {
+        "target_coverage": 0.88,
+        "empirical_coverage": 0.8829,
+        "empirical_error": 0.1171,
+        "retained_singleton_frac": 0.7733,
+        "auroc_definitive": 0.8966
+      },
+      "90": {
+        "target_coverage": 0.9,
+        "empirical_coverage": 0.9011,
+        "empirical_error": 0.0989,
+        "retained_singleton_frac": 0.7309,
+        "auroc_definitive": 0.9046
+      },
+      "92": {
+        "target_coverage": 0.92,
+        "empirical_coverage": 0.9215,
+        "empirical_error": 0.0785,
+        "retained_singleton_frac": 0.6655,
+        "auroc_definitive": 0.9101
+      },
+      "95": {
+        "target_coverage": 0.95,
+        "empirical_coverage": 0.9506,
+        "empirical_error": 0.0494,
+        "retained_singleton_frac": 0.5552,
+        "auroc_definitive": 0.9195
+      }
+    },
+    "JinhuaNSICU_TBI_S06": {
+      "80": {
+        "target_coverage": 0.8,
+        "empirical_coverage": 0.8483,
+        "empirical_error": 0.1517,
+        "retained_singleton_frac": 0.6931,
+        "auroc_definitive": 0.8045
+      },
+      "82": {
+        "target_coverage": 0.82,
+        "empirical_coverage": 0.8658,
+        "empirical_error": 0.1342,
+        "retained_singleton_frac": 0.6546,
+        "auroc_definitive": 0.8137
+      },
+      "85": {
+        "target_coverage": 0.85,
+        "empirical_coverage": 0.8912,
+        "empirical_error": 0.1088,
+        "retained_singleton_frac": 0.6072,
+        "auroc_definitive": 0.8241
+      },
+      "88": {
+        "target_coverage": 0.88,
+        "empirical_coverage": 0.9139,
+        "empirical_error": 0.0861,
+        "retained_singleton_frac": 0.5452,
+        "auroc_definitive": 0.8363
+      },
+      "90": {
+        "target_coverage": 0.9,
+        "empirical_coverage": 0.9302,
+        "empirical_error": 0.0698,
+        "retained_singleton_frac": 0.5069,
+        "auroc_definitive": 0.8413
+      },
+      "92": {
+        "target_coverage": 0.92,
+        "empirical_coverage": 0.9452,
+        "empirical_error": 0.0548,
+        "retained_singleton_frac": 0.4482,
+        "auroc_definitive": 0.8441
+      },
+      "95": {
+        "target_coverage": 0.95,
+        "empirical_coverage": 0.9672,
+        "empirical_error": 0.0328,
+        "retained_singleton_frac": 0.3602,
+        "auroc_definitive": 0.8497
+      }
+    }
+  },
+  "local_calibration_sample_size_curve": {
+    "MIMIC_III_CareVue": {
+      "50": {
+        "n_cal": 50,
+        "approx_deaths_in_cal": 9.2,
+        "coverage_mean": 0.9131,
+        "coverage_iqr": [
+          0.8948,
+          0.9404
+        ],
+        "platt_slope_mean": 1.0712,
+        "brier_mean": 0.099,
+        "retained_mean": 0.6282
+      },
+      "100": {
+        "n_cal": 100,
+        "approx_deaths_in_cal": 18.5,
+        "coverage_mean": 0.9125,
+        "coverage_iqr": [
+          0.8897,
+          0.9381
+        ],
+        "platt_slope_mean": 0.9662,
+        "brier_mean": 0.0973,
+        "retained_mean": 0.612
+      },
+      "150": {
+        "n_cal": 150,
+        "approx_deaths_in_cal": 27.7,
+        "coverage_mean": 0.9123,
+        "coverage_iqr": [
+          0.8959,
+          0.9303
+        ],
+        "platt_slope_mean": 1.0274,
+        "brier_mean": 0.0961,
+        "retained_mean": 0.6814
+      },
+      "200": {
+        "n_cal": 200,
+        "approx_deaths_in_cal": 36.9,
+        "coverage_mean": 0.91,
+        "coverage_iqr": [
+          0.8967,
+          0.9249
+        ],
+        "platt_slope_mean": 0.9632,
+        "brier_mean": 0.0966,
+        "retained_mean": 0.7082
+      },
+      "300": {
+        "n_cal": 300,
+        "approx_deaths_in_cal": 55.4,
+        "coverage_mean": 0.903,
+        "coverage_iqr": [
+          0.8873,
+          0.916
+        ],
+        "platt_slope_mean": 0.9896,
+        "brier_mean": 0.0965,
+        "retained_mean": 0.7376
+      }
+    },
+    "eICU_CRD": {
+      "50": {
+        "n_cal": 50,
+        "approx_deaths_in_cal": 5.9,
+        "coverage_mean": 0.9463,
+        "coverage_iqr": [
+          0.9333,
+          0.9592
+        ],
+        "platt_slope_mean": 1.1316,
+        "brier_mean": 0.0849,
+        "retained_mean": 0.4259
+      },
+      "100": {
+        "n_cal": 100,
+        "approx_deaths_in_cal": 11.7,
+        "coverage_mean": 0.9484,
+        "coverage_iqr": [
+          0.9384,
+          0.9603
+        ],
+        "platt_slope_mean": 1.0306,
+        "brier_mean": 0.0834,
+        "retained_mean": 0.3572
+      },
+      "150": {
+        "n_cal": 150,
+        "approx_deaths_in_cal": 17.6,
+        "coverage_mean": 0.9416,
+        "coverage_iqr": [
+          0.9331,
+          0.9506
+        ],
+        "platt_slope_mean": 0.9706,
+        "brier_mean": 0.0828,
+        "retained_mean": 0.3205
+      },
+      "200": {
+        "n_cal": 200,
+        "approx_deaths_in_cal": 23.4,
+        "coverage_mean": 0.9441,
+        "coverage_iqr": [
+          0.9397,
+          0.9492
+        ],
+        "platt_slope_mean": 1.0035,
+        "brier_mean": 0.0821,
+        "retained_mean": 0.3631
+      },
+      "300": {
+        "n_cal": 300,
+        "approx_deaths_in_cal": 35.1,
+        "coverage_mean": 0.9414,
+        "coverage_iqr": [
+          0.9361,
+          0.9482
+        ],
+        "platt_slope_mean": 0.9404,
+        "brier_mean": 0.0821,
+        "retained_mean": 0.3893
+      }
+    },
+    "HiRID_Trauma": {
+      "50": {
+        "n_cal": 50,
+        "approx_deaths_in_cal": 4.2,
+        "coverage_mean": 0.9052,
+        "coverage_iqr": [
+          0.8919,
+          0.9243
+        ],
+        "platt_slope_mean": 1.0718,
+        "brier_mean": 0.0572,
+        "retained_mean": 0.7853
+      },
+      "100": {
+        "n_cal": 100,
+        "approx_deaths_in_cal": 8.4,
+        "coverage_mean": 0.8947,
+        "coverage_iqr": [
+          0.8704,
+          0.9168
+        ],
+        "platt_slope_mean": 1.0078,
+        "brier_mean": 0.0551,
+        "retained_mean": 0.7074
+      },
+      "150": {
+        "n_cal": 150,
+        "approx_deaths_in_cal": 12.5,
+        "coverage_mean": 0.907,
+        "coverage_iqr": [
+          0.8907,
+          0.9242
+        ],
+        "platt_slope_mean": 1.0275,
+        "brier_mean": 0.0542,
+        "retained_mean": 0.6005
+      },
+      "200": {
+        "n_cal": 200,
+        "approx_deaths_in_cal": 16.7,
+        "coverage_mean": 0.9081,
+        "coverage_iqr": [
+          0.8917,
+          0.9284
+        ],
+        "platt_slope_mean": 1.023,
+        "brier_mean": 0.0542,
+        "retained_mean": 0.5602
+      },
+      "300": {
+        "n_cal": 300,
+        "approx_deaths_in_cal": 25.1,
+        "coverage_mean": 0.9054,
+        "coverage_iqr": [
+          0.8925,
+          0.9183
+        ],
+        "platt_slope_mean": 0.9928,
+        "brier_mean": 0.0542,
+        "retained_mean": 0.6579
+      }
+    },
+    "AmsterdamUMCdb_Trauma": {
+      "50": {
+        "n_cal": 50,
+        "approx_deaths_in_cal": 4.4,
+        "coverage_mean": 0.9013,
+        "coverage_iqr": [
+          0.8775,
+          0.9279
+        ],
+        "platt_slope_mean": 0.9655,
+        "brier_mean": 0.0736,
+        "retained_mean": 0.7789
+      },
+      "100": {
+        "n_cal": 100,
+        "approx_deaths_in_cal": 8.7,
+        "coverage_mean": 0.901,
+        "coverage_iqr": [
+          0.8818,
+          0.9191
+        ],
+        "platt_slope_mean": 1.014,
+        "brier_mean": 0.0706,
+        "retained_mean": 0.6458
+      },
+      "150": {
+        "n_cal": 150,
+        "approx_deaths_in_cal": 13.1,
+        "coverage_mean": 0.9059,
+        "coverage_iqr": [
+          0.8864,
+          0.9235
+        ],
+        "platt_slope_mean": 0.9937,
+        "brier_mean": 0.0709,
+        "retained_mean": 0.6325
+      },
+      "200": {
+        "n_cal": 200,
+        "approx_deaths_in_cal": 17.5,
+        "coverage_mean": 0.9086,
+        "coverage_iqr": [
+          0.8944,
+          0.9246
+        ],
+        "platt_slope_mean": 1.0469,
+        "brier_mean": 0.0703,
+        "retained_mean": 0.5936
+      },
+      "300": {
+        "n_cal": 300,
+        "approx_deaths_in_cal": 26.2,
+        "coverage_mean": 0.9019,
+        "coverage_iqr": [
+          0.8936,
+          0.9122
+        ],
+        "platt_slope_mean": 0.9578,
+        "brier_mean": 0.0707,
+        "retained_mean": 0.6864
+      }
+    },
+    "JinhuaNSICU_TBI_S06": {
+      "50": {
+        "n_cal": 50,
+        "approx_deaths_in_cal": 6.2,
+        "coverage_mean": 0.9295,
+        "coverage_iqr": [
+          0.9086,
+          0.9568
+        ],
+        "platt_slope_mean": 0.9935,
+        "brier_mean": 0.0963,
+        "retained_mean": 0.5197
+      },
+      "100": {
+        "n_cal": 100,
+        "approx_deaths_in_cal": 12.4,
+        "coverage_mean": 0.9395,
+        "coverage_iqr": [
+          0.928,
+          0.9561
+        ],
+        "platt_slope_mean": 1.0854,
+        "brier_mean": 0.0938,
+        "retained_mean": 0.398
+      },
+      "150": {
+        "n_cal": 150,
+        "approx_deaths_in_cal": 18.5,
+        "coverage_mean": 0.9274,
+        "coverage_iqr": [
+          0.9129,
+          0.9442
+        ],
+        "platt_slope_mean": 0.9815,
+        "brier_mean": 0.0932,
+        "retained_mean": 0.5049
+      },
+      "200": {
+        "n_cal": 200,
+        "approx_deaths_in_cal": 24.7,
+        "coverage_mean": 0.9357,
+        "coverage_iqr": [
+          0.9263,
+          0.9453
+        ],
+        "platt_slope_mean": 1.0047,
+        "brier_mean": 0.0925,
+        "retained_mean": 0.4392
+      },
+      "300": {
+        "n_cal": 300,
+        "approx_deaths_in_cal": 37.1,
+        "coverage_mean": 0.9313,
+        "coverage_iqr": [
+          0.9235,
+          0.942
+        ],
+        "platt_slope_mean": 1.0116,
+        "brier_mean": 0.0924,
+        "retained_mean": 0.462
+      }
+    }
+  },
+  "eicu_leave_hospitals_out_conformal": {
+    "n_hospitals": 130,
+    "splits": "20x 50/50 GroupShuffleSplit by hospitalid (zero hospital overlap)",
+    "empirical_coverage_overall": 0.9392,
+    "empirical_coverage_deaths": 0.9545,
+    "empirical_coverage_survivors": 0.937,
+    "retained_singleton_frac": 0.4224,
+    "auroc_definitive_mean": 0.9193,
+    "platt_slope_mean": 1.0054,
+    "platt_brier_mean": 0.0819
+  },
+  "mimic4_v4_harmonized_sensitivities": {
+    "primary_baseline_v4": {
+      "n": 483,
+      "events": 81,
+      "auroc": 0.9111
+    },
+    "excl_early_code_limit_24h": {
+      "n": 477,
+      "events": 79,
+      "auroc": 0.9118,
+      "ci95": [
+        0.8814,
+        0.9376
+      ]
+    },
+    "excl_any_code_limit": {
+      "n": 465,
+      "events": 71,
+      "auroc": 0.9092,
+      "ci95": [
+        0.8777,
+        0.9381
+      ]
+    },
+    "sedative_infusion_censored_frozen25": {
+      "n": 483,
+      "n_with_noninf_motor": 470,
+      "auroc": 0.913,
+      "ci95": [
+        0.8841,
+        0.9377
+      ]
+    },
+    "sedative_infusion_censored_adaptive": {
+      "n": 483,
+      "n_with_noninf_motor": 470,
+      "auroc": 0.9075,
+      "ci95": [
+        0.8777,
+        0.9358
+      ]
+    }
+  },
+  "patient_vignettes_mimic4_val": {
+    "rapid_improver_survivor": {
+      "age_decade": "50s",
+      "gcs_total_first": 3,
+      "gcs_motor_first": 1,
+      "motor_24h_last": 6,
+      "p_static_s0": 0.6861,
+      "p_24h_primary": 0.0157,
+      "d28_outcome": 0,
+      "motor_checks_hr_val": [
+        [
+          1.7,
+          1
+        ],
+        [
+          3.3,
+          5
+        ],
+        [
+          5.3,
+          6
+        ],
+        [
+          7.3,
+          6
+        ],
+        [
+          9.3,
+          6
+        ],
+        [
+          11.3,
+          6
+        ],
+        [
+          13.3,
+          6
+        ],
+        [
+          15.3,
+          6
+        ],
+        [
+          17.3,
+          6
+        ],
+        [
+          19.3,
+          6
+        ],
+        [
+          21.3,
+          6
+        ],
+        [
+          23.3,
+          6
+        ],
+        [
+          26.3,
+          6
+        ],
+        [
+          29.3,
+          6
+        ],
+        [
+          32.3,
+          6
+        ],
+        [
+          32.6,
+          6
+        ],
+        [
+          33.3,
+          6
+        ],
+        [
+          36.1,
+          6
+        ],
+        [
+          38.3,
+          6
+        ],
+        [
+          41.4,
+          6
+        ],
+        [
+          43.3,
+          6
+        ]
+      ],
+      "rolling_trajectory": [
+        {
+          "hr": 6,
+          "motor_last": 6.0,
+          "p_risk": 0.0287,
+          "conformal_set": "{0,1} Defer"
+        },
+        {
+          "hr": 9,
+          "motor_last": 6.0,
+          "p_risk": 0.0272,
+          "conformal_set": "{0,1} Defer"
+        },
+        {
+          "hr": 12,
+          "motor_last": 6.0,
+          "p_risk": 0.0272,
+          "conformal_set": "{0,1} Defer"
+        },
+        {
+          "hr": 15,
+          "motor_last": 6.0,
+          "p_risk": 0.0235,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 18,
+          "motor_last": 6.0,
+          "p_risk": 0.0369,
+          "conformal_set": "{0,1} Defer"
+        },
+        {
+          "hr": 21,
+          "motor_last": 6.0,
+          "p_risk": 0.0376,
+          "conformal_set": "{0,1} Defer"
+        },
+        {
+          "hr": 24,
+          "motor_last": 6.0,
+          "p_risk": 0.0416,
+          "conformal_set": "{0,1} Defer"
+        },
+        {
+          "hr": 27,
+          "motor_last": 6.0,
+          "p_risk": 0.0317,
+          "conformal_set": "{0,1} Defer"
+        },
+        {
+          "hr": 30,
+          "motor_last": 6.0,
+          "p_risk": 0.0318,
+          "conformal_set": "{0,1} Defer"
+        },
+        {
+          "hr": 33,
+          "motor_last": 6.0,
+          "p_risk": 0.0343,
+          "conformal_set": "{0,1} Defer"
+        },
+        {
+          "hr": 36,
+          "motor_last": 6.0,
+          "p_risk": 0.0343,
+          "conformal_set": "{0,1} Defer"
+        },
+        {
+          "hr": 39,
+          "motor_last": 6.0,
+          "p_risk": 0.02,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 42,
+          "motor_last": 6.0,
+          "p_risk": 0.02,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 45,
+          "motor_last": 6.0,
+          "p_risk": 0.0155,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 48,
+          "motor_last": 6.0,
+          "p_risk": 0.0155,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 51,
+          "motor_last": 6.0,
+          "p_risk": 0.0155,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 54,
+          "motor_last": 6.0,
+          "p_risk": 0.0155,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 57,
+          "motor_last": 6.0,
+          "p_risk": 0.0155,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 60,
+          "motor_last": 6.0,
+          "p_risk": 0.0155,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 63,
+          "motor_last": 6.0,
+          "p_risk": 0.0155,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 66,
+          "motor_last": 6.0,
+          "p_risk": 0.0155,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 69,
+          "motor_last": 6.0,
+          "p_risk": 0.0155,
+          "conformal_set": "{0} Low-risk"
+        },
+        {
+          "hr": 72,
+          "motor_last": 6.0,
+          "p_risk": 0.0155,
+          "conformal_set": "{0} Low-risk"
+        }
+      ]
+    },
+    "persistent_depressed_nonsurvivor": {
+      "age_decade": "20s",
+      "gcs_total_first": 3,
+      "gcs_motor_first": 1,
+      "motor_24h_last": 1,
+      "p_static_s0": 0.938,
+      "p_24h_primary": 0.9019,
+      "d28_outcome": 1,
+      "motor_checks_hr_val": [
+        [
+          0.3,
+          1
+        ],
+        [
+          2.3,
+          1
+        ],
+        [
+          6.3,
+          1
+        ],
+        [
+          30.3,
+          1
+        ],
+        [
+          34.3,
+          1
+        ],
+        [
+          42.3,
+          1
+        ],
+        [
+          46.3,
+          1
+        ],
+        [
+          50.3,
+          1
+        ],
+        [
+          54.3,
+          1
+        ],
+        [
+          58.3,
+          1
+        ],
+        [
+          62.3,
+          1
+        ],
+        [
+          66.3,
+          1
+        ],
+        [
+          70.3,
+          1
+        ]
+      ],
+      "rolling_trajectory": [
+        {
+          "hr": 6,
+          "motor_last": 1.0,
+          "p_risk": 0.8083,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 9,
+          "motor_last": 1.0,
+          "p_risk": 0.8949,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 12,
+          "motor_last": 1.0,
+          "p_risk": 0.8949,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 15,
+          "motor_last": 1.0,
+          "p_risk": 0.8949,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 18,
+          "motor_last": 1.0,
+          "p_risk": 0.8949,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 21,
+          "motor_last": 1.0,
+          "p_risk": 0.8949,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 24,
+          "motor_last": 1.0,
+          "p_risk": 0.8949,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 27,
+          "motor_last": 1.0,
+          "p_risk": 0.8949,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 30,
+          "motor_last": 1.0,
+          "p_risk": 0.8949,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 33,
+          "motor_last": 1.0,
+          "p_risk": 0.9098,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 36,
+          "motor_last": 1.0,
+          "p_risk": 0.9087,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 39,
+          "motor_last": 1.0,
+          "p_risk": 0.9087,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 42,
+          "motor_last": 1.0,
+          "p_risk": 0.9087,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 45,
+          "motor_last": 1.0,
+          "p_risk": 0.9219,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 48,
+          "motor_last": 1.0,
+          "p_risk": 0.9245,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 51,
+          "motor_last": 1.0,
+          "p_risk": 0.9344,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 54,
+          "motor_last": 1.0,
+          "p_risk": 0.9344,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 57,
+          "motor_last": 1.0,
+          "p_risk": 0.9356,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 60,
+          "motor_last": 1.0,
+          "p_risk": 0.9348,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 63,
+          "motor_last": 1.0,
+          "p_risk": 0.9356,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 66,
+          "motor_last": 1.0,
+          "p_risk": 0.9356,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 69,
+          "motor_last": 1.0,
+          "p_risk": 0.9235,
+          "conformal_set": "{1} High-risk"
+        },
+        {
+          "hr": 72,
+          "motor_last": 1.0,
+          "p_risk": 0.9332,
+          "conformal_set": "{1} High-risk"
+        }
+      ]
+    }
+  }
+}

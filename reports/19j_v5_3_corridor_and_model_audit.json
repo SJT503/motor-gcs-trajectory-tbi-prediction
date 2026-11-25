@@ -1,0 +1,167 @@
+{
+  "pooled_5_serial_decomposition": {
+    "n_total": 6472,
+    "t0_definitive_n": 3635,
+    "t0_to_24h_reverted_n": 532,
+    "t0_to_24h_reversion_pct": 14.6,
+    "t24_definitive_n": 4794,
+    "t24_definitive_pct": 74.1,
+    "new_48_72h_definitive_n": 379,
+    "new_48_72h_definitive_pct": 5.9,
+    "pure_conformal_singleton_by_72h_n": 5173,
+    "pure_conformal_singleton_by_72h_pct": 79.9,
+    "net_pre72h_unresolved_exit_n": 675,
+    "net_pre72h_unresolved_exit_pct": 10.4,
+    "net_pre72h_unresolved_exit_alive_d28_n": 596,
+    "net_pre72h_unresolved_exit_died_d28_n": 79,
+    "active_in_icu_at_72h_total_n": 3119,
+    "persistent_72h_uncertain_n": 624,
+    "persistent_72h_pct_of_all": 9.6,
+    "persistent_72h_pct_of_active_72h": 20.0,
+    "first_hit_stopping_24_48_72h_coverage_pct": 88.7
+  },
+  "by_cohort_decomposition": {
+    "MIMIC_IV_IntVal": {
+      "n_24h": 483,
+      "t0_definitive_n": 218,
+      "t0_to_24h_reverted_to_uncertain_n": 24,
+      "t0_to_24h_reversion_pct": 11.0,
+      "t24_definitive_n": 399,
+      "new_48_72h_definitive_n": 34,
+      "pure_conformal_singleton_by_72h_n": 433,
+      "pure_conformal_singleton_by_72h_pct": 89.6,
+      "net_pre72h_unresolved_exit_n": 23,
+      "net_pre72h_unresolved_exit_pct": 4.8,
+      "net_pre72h_unresolved_exit_alive_d28_n": 17,
+      "net_pre72h_unresolved_exit_died_d28_n": 6,
+      "active_in_icu_at_72h_total_n": 264,
+      "persistent_72h_uncertain_n": 27,
+      "persistent_72h_pct_of_active_72h": 10.2,
+      "first_hit_stopping_24_48_72h_coverage": 0.8861
+    },
+    "MIMIC_III_CareVue": {
+      "n_24h": 839,
+      "t0_definitive_n": 484,
+      "t0_to_24h_reverted_to_uncertain_n": 58,
+      "t0_to_24h_reversion_pct": 12.0,
+      "t24_definitive_n": 626,
+      "new_48_72h_definitive_n": 47,
+      "pure_conformal_singleton_by_72h_n": 673,
+      "pure_conformal_singleton_by_72h_pct": 80.2,
+      "net_pre72h_unresolved_exit_n": 109,
+      "net_pre72h_unresolved_exit_pct": 13.0,
+      "net_pre72h_unresolved_exit_alive_d28_n": 92,
+      "net_pre72h_unresolved_exit_died_d28_n": 17,
+      "active_in_icu_at_72h_total_n": 373,
+      "persistent_72h_uncertain_n": 57,
+      "persistent_72h_pct_of_active_72h": 15.3,
+      "first_hit_stopping_24_48_72h_coverage": 0.8903
+    },
+    "eICU_CRD_Motor_Charted": {
+      "n_24h": 2889,
+      "t0_definitive_n": 1533,
+      "t0_to_24h_reverted_to_uncertain_n": 237,
+      "t0_to_24h_reversion_pct": 15.5,
+      "t24_definitive_n": 2096,
+      "new_48_72h_definitive_n": 173,
+      "pure_conformal_singleton_by_72h_n": 2269,
+      "pure_conformal_singleton_by_72h_pct": 78.5,
+      "net_pre72h_unresolved_exit_n": 346,
+      "net_pre72h_unresolved_exit_pct": 12.0,
+      "net_pre72h_unresolved_exit_alive_d28_n": 319,
+      "net_pre72h_unresolved_exit_died_d28_n": 27,
+      "active_in_icu_at_72h_total_n": 1364,
+      "persistent_72h_uncertain_n": 274,
+      "persistent_72h_pct_of_active_72h": 20.1,
+      "first_hit_stopping_24_48_72h_coverage": 0.883
+    },
+    "HiRID_Trauma": {
+      "n_24h": 1209,
+      "t0_definitive_n": 798,
+      "t0_to_24h_reverted_to_uncertain_n": 130,
+      "t0_to_24h_reversion_pct": 16.3,
+      "t24_definitive_n": 909,
+      "new_48_72h_definitive_n": 49,
+      "pure_conformal_singleton_by_72h_n": 958,
+      "pure_conformal_singleton_by_72h_pct": 79.2,
+      "net_pre72h_unresolved_exit_n": 115,
+      "net_pre72h_unresolved_exit_pct": 9.5,
+      "net_pre72h_unresolved_exit_alive_d28_n": 108,
+      "net_pre72h_unresolved_exit_died_d28_n": 7,
+      "active_in_icu_at_72h_total_n": 568,
+      "persistent_72h_uncertain_n": 136,
+      "persistent_72h_pct_of_active_72h": 23.9,
+      "first_hit_stopping_24_48_72h_coverage": 0.8908
+    },
+    "AmsterdamUMCdb_Trauma": {
+      "n_24h": 1052,
+      "t0_definitive_n": 602,
+      "t0_to_24h_reverted_to_uncertain_n": 83,
+      "t0_to_24h_reversion_pct": 13.8,
+      "t24_definitive_n": 764,
+      "new_48_72h_definitive_n": 76,
+      "pure_conformal_singleton_by_72h_n": 840,
+      "pure_conformal_singleton_by_72h_pct": 79.8,
+      "net_pre72h_unresolved_exit_n": 82,
+      "net_pre72h_unresolved_exit_pct": 7.8,
+      "net_pre72h_unresolved_exit_alive_d28_n": 60,
+      "net_pre72h_unresolved_exit_died_d28_n": 22,
+      "active_in_icu_at_72h_total_n": 550,
+      "persistent_72h_uncertain_n": 130,
+      "persistent_72h_pct_of_active_72h": 23.6,
+      "first_hit_stopping_24_48_72h_coverage": 0.8897
+    }
+  },
+  "eicu_motor_charted_sequence_benchmark": {
+    "n": 2889,
+    "events": 345,
+    "CT_DecayNet_AUROC": 0.8743,
+    "Tabular_MLP_AUROC": 0.8733,
+    "LightGBM_AUROC": 0.8759,
+    "CatBoost_AUROC": 0.8733,
+    "Modality_Adaptive_GBDT_AUROC": 0.8759
+  },
+  "local_calib_n150_vs_n300_retention": {
+    "MIMIC_III_CareVue": {
+      "n150_cov": 91.2,
+      "n150_ret": 68.1,
+      "n300_cov": 90.3,
+      "n300_ret": 73.8
+    },
+    "eICU_CRD": {
+      "n150_cov": 94.2,
+      "n150_ret": 32.0,
+      "n300_cov": 94.1,
+      "n300_ret": 38.9
+    },
+    "HiRID_Trauma": {
+      "n150_cov": 90.7,
+      "n150_ret": 60.1,
+      "n300_cov": 90.5,
+      "n300_ret": 65.8
+    },
+    "AmsterdamUMCdb_Trauma": {
+      "n150_cov": 90.6,
+      "n150_ret": 63.2,
+      "n300_cov": 90.2,
+      "n300_ret": 68.6
+    },
+    "JinhuaNSICU_TBI_S06": {
+      "n150_cov": 92.7,
+      "n150_ret": 50.5,
+      "n300_cov": 93.1,
+      "n300_ret": 46.2
+    }
+  },
+  "model_hyperparameters": {
+    "LightGBM_25feat": {
+      "nl": "15",
+      "md": "3",
+      "lr": "0.03",
+      "col": "0.8",
+      "sub": "0.8",
+      "mcs": "20"
+    },
+    "LightGBM_scale_pos_weight": 5.6976
+  }
+}

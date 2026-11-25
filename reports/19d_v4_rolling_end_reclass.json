@@ -1,0 +1,679 @@
+{
+  "rolling_cohorts": {
+    "MIMIC_IV": {
+      "n_6h": 477,
+      "n_24h": 483,
+      "n_72h": 264,
+      "auroc_6h": 0.8427,
+      "auroc_12h": 0.8741,
+      "auroc_24h": 0.9062,
+      "auroc_36h": 0.8874,
+      "auroc_48h": 0.8974,
+      "auroc_72h": 0.8967,
+      "paired_24h_vs_6h": {
+        "n_common_6_24h": 477,
+        "delta_24h_vs_6h": 0.0687,
+        "ci95": [
+          0.0421,
+          0.0955
+        ],
+        "p_paired_boot": 5.42528e-07
+      },
+      "mann_kendall_tau_6_36h": 0.3591,
+      "mann_kendall_p_6_36h": 0.00416085,
+      "mann_kendall_tau_6_72h": 0.1676,
+      "mann_kendall_p_6_72h": 0.0452344
+    },
+    "MIMIC_III": {
+      "n_6h": 813,
+      "n_24h": 813,
+      "n_72h": 373,
+      "auroc_6h": 0.862,
+      "auroc_12h": 0.8656,
+      "auroc_24h": 0.8714,
+      "auroc_36h": 0.8808,
+      "auroc_48h": 0.8545,
+      "auroc_72h": 0.8671,
+      "paired_24h_vs_6h": {
+        "n_common_6_24h": 797,
+        "delta_24h_vs_6h": 0.0211,
+        "ci95": [
+          0.0019,
+          0.0421
+        ],
+        "p_paired_boot": 0.0387119
+      },
+      "mann_kendall_tau_6_36h": 0.5167,
+      "mann_kendall_p_6_36h": 4.50882e-05,
+      "mann_kendall_tau_6_72h": -0.2021,
+      "mann_kendall_p_6_72h": 0.0157846
+    },
+    "eICU_CRD_All": {
+      "n_6h": 3144,
+      "n_24h": 3403,
+      "n_72h": 1627,
+      "auroc_6h": 0.8194,
+      "auroc_12h": 0.8495,
+      "auroc_24h": 0.8657,
+      "auroc_36h": 0.858,
+      "auroc_48h": 0.8402,
+      "auroc_72h": 0.8187,
+      "paired_24h_vs_6h": {
+        "n_common_6_24h": 3144,
+        "delta_24h_vs_6h": 0.0477,
+        "ci95": [
+          0.0316,
+          0.0645
+        ],
+        "p_paired_boot": 9.44984e-09
+      },
+      "mann_kendall_tau_6_36h": 0.4454,
+      "mann_kendall_p_6_36h": 0.000458681,
+      "mann_kendall_tau_6_72h": -0.5238,
+      "mann_kendall_p_6_72h": 4.06771e-10
+    },
+    "eICU_CRD_Charted": {
+      "n_6h": 2675,
+      "n_24h": 2889,
+      "n_72h": 1364,
+      "auroc_6h": 0.8351,
+      "auroc_12h": 0.8649,
+      "auroc_24h": 0.8814,
+      "auroc_36h": 0.8712,
+      "auroc_48h": 0.8504,
+      "auroc_72h": 0.836,
+      "paired_24h_vs_6h": {
+        "n_common_6_24h": 2675,
+        "delta_24h_vs_6h": 0.0473,
+        "ci95": [
+          0.0301,
+          0.0636
+        ],
+        "p_paired_boot": 3.17034e-08
+      },
+      "mann_kendall_tau_6_36h": 0.4133,
+      "mann_kendall_p_6_36h": 0.00109935,
+      "mann_kendall_tau_6_72h": -0.5534,
+      "mann_kendall_p_6_72h": 3.62896e-11
+    },
+    "HiRID": {
+      "n_6h": 1623,
+      "n_24h": 1209,
+      "n_72h": 571,
+      "auroc_6h": 0.8945,
+      "auroc_12h": 0.908,
+      "auroc_24h": 0.8995,
+      "auroc_36h": 0.8734,
+      "auroc_48h": 0.8537,
+      "auroc_72h": 0.8553,
+      "paired_24h_vs_6h": {
+        "n_common_6_24h": 1173,
+        "delta_24h_vs_6h": 0.05,
+        "ci95": [
+          0.0281,
+          0.0703
+        ],
+        "p_paired_boot": 9.10674e-06
+      },
+      "mann_kendall_tau_6_36h": -0.5985,
+      "mann_kendall_p_6_36h": 2.29339e-06,
+      "mann_kendall_tau_6_72h": -0.62,
+      "mann_kendall_p_6_72h": 1.22443e-13
+    },
+    "AmsterdamUMCdb_Trauma": {
+      "n_6h": 1237,
+      "n_24h": 1052,
+      "n_72h": 626,
+      "auroc_6h": 0.8404,
+      "auroc_12h": 0.8443,
+      "auroc_24h": 0.8442,
+      "auroc_36h": 0.8254,
+      "auroc_48h": 0.8162,
+      "auroc_72h": 0.811,
+      "paired_24h_vs_6h": {
+        "n_common_6_24h": 896,
+        "delta_24h_vs_6h": 0.0428,
+        "ci95": [
+          0.0224,
+          0.0645
+        ],
+        "p_paired_boot": 0.000105472
+      },
+      "mann_kendall_tau_6_36h": -0.568,
+      "mann_kendall_p_6_36h": 7.72589e-06,
+      "mann_kendall_tau_6_72h": -0.6318,
+      "mann_kendall_p_6_72h": 4.53223e-14
+    }
+  },
+  "amsterdam_truncation_ari_vs_72h": {
+    "n": 1052,
+    "24": {
+      "ari": 0.7262,
+      "ci95": [
+        0.6789,
+        0.7697
+      ]
+    },
+    "48": {
+      "ari": 0.8846,
+      "ci95": [
+        0.85,
+        0.917
+      ]
+    }
+  },
+  "secondary_endpoints_end_icp": {
+    "MIMIC_IV_Composite_END_Mortality": {
+      "n": 453,
+      "end_events": 88,
+      "d28_events": 75,
+      "composite_events": 141,
+      "auroc_composite": 0.7508
+    },
+    "MIMIC_III_Composite_END_Mortality": {
+      "n": 715,
+      "end_events": 199,
+      "d28_events": 134,
+      "composite_events": 287,
+      "auroc_composite": 0.7215
+    },
+    "eICU_Composite_END_Mortality": {
+      "n": 3082,
+      "end_events": 509,
+      "d28_events": 352,
+      "composite_events": 769,
+      "auroc_composite": 0.6968
+    },
+    "AmsterdamUMCdb_Composite_END_Mortality": {
+      "n": 2038,
+      "end_events": 304,
+      "d28_events": 255,
+      "composite_events": 507,
+      "auroc_composite": 0.7052
+    },
+    "HiRID_Invasive_ICP_Subgroup": {
+      "scope": "Expanded ABI (trauma subset reported alongside)",
+      "n_icp_monitored": 1736,
+      "n_icp_hypertension_gt20": 1340,
+      "auroc_icp_monitored": 0.7958,
+      "auroc_icp_gt20": 0.7911,
+      "trauma_only_icp_n": 330,
+      "trauma_only_icp_events": 47,
+      "trauma_only_auroc_hybrid": 0.8305
+    },
+    "AmsterdamUMCdb_Invasive_ICP_Subgroup": {
+      "scope": "Expanded ABI (trauma subset reported alongside)",
+      "n_icp_monitored": 403,
+      "n_icp_hypertension_gt20": 193,
+      "auroc_icp_monitored": 0.7841,
+      "auroc_icp_gt20": 0.7337,
+      "trauma_only_icp_n": 170,
+      "trauma_only_icp_events": 29,
+      "trauma_only_auroc_hybrid": 0.7743
+    }
+  },
+  "end_warning_and_false_alarm_summary": {
+    "MIMIC_IV": {
+      "single_trigger": {
+        "n_end_events": 219,
+        "detected_before_event": 130,
+        "detection_rate": 0.5936,
+        "median_lead_hr": 20.93,
+        "iqr_lead_hr": [
+          9.16,
+          40.83
+        ],
+        "sens_12h_window": 0.4612,
+        "spec_no_trigger": 0.4971,
+        "false_alarms_per_100_patient_days": 31.5
+      },
+      "two_consecutive_triggers": {
+        "n_end_events": 219,
+        "detected_before_event": 121,
+        "detection_rate": 0.5525,
+        "median_lead_hr": 19.48,
+        "iqr_lead_hr": [
+          8.15,
+          40.28
+        ],
+        "sens_12h_window": 0.4429,
+        "spec_no_trigger": 0.5202,
+        "false_alarms_per_100_patient_days": 25.28
+      }
+    },
+    "MIMIC_III": {
+      "single_trigger": {
+        "n_end_events": 444,
+        "detected_before_event": 279,
+        "detection_rate": 0.6284,
+        "median_lead_hr": 13.36,
+        "iqr_lead_hr": [
+          7.21,
+          27.64
+        ],
+        "sens_12h_window": 0.5788,
+        "spec_no_trigger": 0.275,
+        "false_alarms_per_100_patient_days": 39.83
+      },
+      "two_consecutive_triggers": {
+        "n_end_events": 444,
+        "detected_before_event": 265,
+        "detection_rate": 0.5968,
+        "median_lead_hr": 12.56,
+        "iqr_lead_hr": [
+          6.57,
+          26.18
+        ],
+        "sens_12h_window": 0.5518,
+        "spec_no_trigger": 0.28,
+        "false_alarms_per_100_patient_days": 36.42
+      }
+    },
+    "eICU_CRD": {
+      "single_trigger": {
+        "n_end_events": 1282,
+        "detected_before_event": 788,
+        "detection_rate": 0.6147,
+        "median_lead_hr": 22.67,
+        "iqr_lead_hr": [
+          10.83,
+          42.36
+        ],
+        "sens_12h_window": 0.4821,
+        "spec_no_trigger": 0.4113,
+        "false_alarms_per_100_patient_days": 55.53
+      },
+      "two_consecutive_triggers": {
+        "n_end_events": 1282,
+        "detected_before_event": 720,
+        "detection_rate": 0.5616,
+        "median_lead_hr": 22.19,
+        "iqr_lead_hr": [
+          9.86,
+          41.66
+        ],
+        "sens_12h_window": 0.4431,
+        "spec_no_trigger": 0.4488,
+        "false_alarms_per_100_patient_days": 37.45
+      }
+    }
+  },
+  "severe_tbi_5cohorts_unmasking": {
+    "cohorts": {
+      "MIMIC_IV_IntVal": {
+        "cohort": "MIMIC-IV temporal validation",
+        "n_severe_documented": 114,
+        "deaths_severe": 42,
+        "mort_severe_pct": 36.8,
+        "rapid_awakeners_m5_6": {
+          "n": 74,
+          "pct_of_severe": 64.9,
+          "deaths": 15,
+          "mort_pct": 20.3,
+          "mort_wilson95": [
+            12.69,
+            30.79
+          ],
+          "mean_p_S": 0.465,
+          "mean_p_SLDP": 0.211,
+          "survivors_n": 59,
+          "survivors_risk_lowered_pct": 100.0,
+          "survivors_flagged_high_S": 29,
+          "survivors_flagged_high_SLDP": 13
+        },
+        "withdraws_m4": {
+          "n": 15,
+          "pct_of_severe": 13.2,
+          "deaths": 9,
+          "mort_pct": 60.0,
+          "mort_wilson95": [
+            35.75,
+            80.18
+          ]
+        },
+        "depressed_m1_3": {
+          "n": 25,
+          "pct_of_severe": 21.9,
+          "deaths": 18,
+          "mort_pct": 72.0,
+          "mort_wilson95": [
+            52.42,
+            85.72
+          ]
+        },
+        "non_awakened_m1_4": {
+          "n": 40,
+          "pct_of_severe": 35.1,
+          "deaths": 27,
+          "mort_pct": 67.5,
+          "mort_wilson95": [
+            52.02,
+            79.92
+          ]
+        },
+        "mort_ratio_m1_3_vs_m5_6": 3.55,
+        "reclassification_SLDP_vs_S": {
+          "cNRI_events": -0.762,
+          "cNRI_nonevents": 0.972,
+          "cNRI_total": 0.21,
+          "IDI": 0.094
+        }
+      },
+      "MIMIC_III_CareVue": {
+        "cohort": "MIMIC-III CareVue",
+        "n_severe_documented": 320,
+        "deaths_severe": 101,
+        "mort_severe_pct": 31.6,
+        "rapid_awakeners_m5_6": {
+          "n": 202,
+          "pct_of_severe": 63.1,
+          "deaths": 32,
+          "mort_pct": 15.8,
+          "mort_wilson95": [
+            11.45,
+            21.51
+          ],
+          "mean_p_S": 0.501,
+          "mean_p_SLDP": 0.177,
+          "survivors_n": 170,
+          "survivors_risk_lowered_pct": 100.0,
+          "survivors_flagged_high_S": 98,
+          "survivors_flagged_high_SLDP": 22
+        },
+        "withdraws_m4": {
+          "n": 58,
+          "pct_of_severe": 18.1,
+          "deaths": 23,
+          "mort_pct": 39.7,
+          "mort_wilson95": [
+            28.09,
+            52.51
+          ]
+        },
+        "depressed_m1_3": {
+          "n": 60,
+          "pct_of_severe": 18.8,
+          "deaths": 46,
+          "mort_pct": 76.7,
+          "mort_wilson95": [
+            64.56,
+            85.56
+          ]
+        },
+        "non_awakened_m1_4": {
+          "n": 118,
+          "pct_of_severe": 36.9,
+          "deaths": 69,
+          "mort_pct": 58.5,
+          "mort_wilson95": [
+            49.45,
+            66.96
+          ]
+        },
+        "mort_ratio_m1_3_vs_m5_6": 4.84,
+        "reclassification_SLDP_vs_S": {
+          "cNRI_events": -0.545,
+          "cNRI_nonevents": 0.963,
+          "cNRI_total": 0.419,
+          "IDI": 0.133
+        }
+      },
+      "eICU_Documented": {
+        "cohort": "eICU-CRD motor-documented",
+        "n_severe_documented": 697,
+        "deaths_severe": 229,
+        "mort_severe_pct": 32.9,
+        "rapid_awakeners_m5_6": {
+          "n": 363,
+          "pct_of_severe": 52.1,
+          "deaths": 49,
+          "mort_pct": 13.5,
+          "mort_wilson95": [
+            10.36,
+            17.4
+          ],
+          "mean_p_S": 0.494,
+          "mean_p_SLDP": 0.18,
+          "survivors_n": 314,
+          "survivors_risk_lowered_pct": 99.7,
+          "survivors_flagged_high_S": 193,
+          "survivors_flagged_high_SLDP": 64
+        },
+        "withdraws_m4": {
+          "n": 142,
+          "pct_of_severe": 20.4,
+          "deaths": 45,
+          "mort_pct": 31.7,
+          "mort_wilson95": [
+            24.61,
+            39.74
+          ]
+        },
+        "depressed_m1_3": {
+          "n": 192,
+          "pct_of_severe": 27.5,
+          "deaths": 135,
+          "mort_pct": 70.3,
+          "mort_wilson95": [
+            63.5,
+            76.33
+          ]
+        },
+        "non_awakened_m1_4": {
+          "n": 334,
+          "pct_of_severe": 47.9,
+          "deaths": 180,
+          "mort_pct": 53.9,
+          "mort_wilson95": [
+            48.53,
+            59.16
+          ]
+        },
+        "mort_ratio_m1_3_vs_m5_6": 5.21,
+        "reclassification_SLDP_vs_S": {
+          "cNRI_events": -0.537,
+          "cNRI_nonevents": 0.85,
+          "cNRI_total": 0.313,
+          "IDI": 0.107
+        }
+      },
+      "HiRID_Trauma": {
+        "cohort": "HiRID Swiss external",
+        "n_severe_documented": 376,
+        "deaths_severe": 75,
+        "mort_severe_pct": 19.9,
+        "rapid_awakeners_m5_6": {
+          "n": 236,
+          "pct_of_severe": 62.8,
+          "deaths": 12,
+          "mort_pct": 5.1,
+          "mort_wilson95": [
+            2.93,
+            8.68
+          ],
+          "mean_p_S": 0.482,
+          "mean_p_SLDP": 0.121,
+          "survivors_n": 224,
+          "survivors_risk_lowered_pct": 99.6,
+          "survivors_flagged_high_S": 144,
+          "survivors_flagged_high_SLDP": 24
+        },
+        "withdraws_m4": {
+          "n": 36,
+          "pct_of_severe": 9.6,
+          "deaths": 1,
+          "mort_pct": 2.8,
+          "mort_wilson95": [
+            0.49,
+            14.17
+          ]
+        },
+        "depressed_m1_3": {
+          "n": 104,
+          "pct_of_severe": 27.7,
+          "deaths": 62,
+          "mort_pct": 59.6,
+          "mort_wilson95": [
+            50.01,
+            68.54
+          ]
+        },
+        "non_awakened_m1_4": {
+          "n": 140,
+          "pct_of_severe": 37.2,
+          "deaths": 63,
+          "mort_pct": 45.0,
+          "mort_wilson95": [
+            37.0,
+            53.26
+          ]
+        },
+        "mort_ratio_m1_3_vs_m5_6": 11.72,
+        "reclassification_SLDP_vs_S": {
+          "cNRI_events": -0.387,
+          "cNRI_nonevents": 0.814,
+          "cNRI_total": 0.427,
+          "IDI": 0.208
+        }
+      },
+      "AmsterdamUMCdb_Trauma": {
+        "cohort": "AmsterdamUMCdb Trauma",
+        "n_severe_documented": 384,
+        "deaths_severe": 50,
+        "mort_severe_pct": 13.0,
+        "rapid_awakeners_m5_6": {
+          "n": 201,
+          "pct_of_severe": 52.3,
+          "deaths": 8,
+          "mort_pct": 4.0,
+          "mort_wilson95": [
+            2.03,
+            7.66
+          ],
+          "mean_p_S": 0.481,
+          "mean_p_SLDP": 0.099,
+          "survivors_n": 193,
+          "survivors_risk_lowered_pct": 100.0,
+          "survivors_flagged_high_S": 125,
+          "survivors_flagged_high_SLDP": 19
+        },
+        "withdraws_m4": {
+          "n": 44,
+          "pct_of_severe": 11.5,
+          "deaths": 5,
+          "mort_pct": 11.4,
+          "mort_wilson95": [
+            4.95,
+            23.98
+          ]
+        },
+        "depressed_m1_3": {
+          "n": 139,
+          "pct_of_severe": 36.2,
+          "deaths": 37,
+          "mort_pct": 26.6,
+          "mort_wilson95": [
+            19.97,
+            34.52
+          ]
+        },
+        "non_awakened_m1_4": {
+          "n": 183,
+          "pct_of_severe": 47.7,
+          "deaths": 42,
+          "mort_pct": 23.0,
+          "mort_wilson95": [
+            17.45,
+            29.56
+          ]
+        },
+        "mort_ratio_m1_3_vs_m5_6": 6.69,
+        "reclassification_SLDP_vs_S": {
+          "cNRI_events": -0.4,
+          "cNRI_nonevents": 0.886,
+          "cNRI_total": 0.486,
+          "IDI": 0.153
+        }
+      }
+    },
+    "amsterdam_abi_sensitivity": {
+      "cohort": "AmsterdamUMCdb Expanded ABI",
+      "n_severe_documented": 875,
+      "deaths_severe": 168,
+      "mort_severe_pct": 19.2,
+      "rapid_awakeners_m5_6": {
+        "n": 435,
+        "pct_of_severe": 49.7,
+        "deaths": 38,
+        "mort_pct": 8.7,
+        "mort_wilson95": [
+          6.43,
+          11.76
+        ],
+        "mean_p_S": 0.509,
+        "mean_p_SLDP": 0.258,
+        "survivors_n": 397,
+        "survivors_risk_lowered_pct": 81.6,
+        "survivors_flagged_high_S": 266,
+        "survivors_flagged_high_SLDP": 111
+      },
+      "withdraws_m4": {
+        "n": 120,
+        "pct_of_severe": 13.7,
+        "deaths": 22,
+        "mort_pct": 18.3,
+        "mort_wilson95": [
+          12.43,
+          26.2
+        ]
+      },
+      "depressed_m1_3": {
+        "n": 320,
+        "pct_of_severe": 36.6,
+        "deaths": 108,
+        "mort_pct": 33.8,
+        "mort_wilson95": [
+          28.79,
+          39.1
+        ]
+      },
+      "non_awakened_m1_4": {
+        "n": 440,
+        "pct_of_severe": 50.3,
+        "deaths": 130,
+        "mort_pct": 29.5,
+        "mort_wilson95": [
+          25.47,
+          33.97
+        ]
+      },
+      "mort_ratio_m1_3_vs_m5_6": 3.86,
+      "reclassification_SLDP_vs_S": {
+        "cNRI_events": 0.393,
+        "cNRI_nonevents": 0.117,
+        "cNRI_total": 0.51,
+        "IDI": 0.17
+      }
+    },
+    "pooled_5_validation_cohorts": {
+      "n_severe_documented": 1891,
+      "deaths_severe": 497,
+      "rapid_awakeners_n": 1076,
+      "rapid_awakeners_pct": 56.9,
+      "rapid_awakeners_deaths": 116,
+      "rapid_awakeners_mort_pct": 10.8,
+      "rapid_awakeners_wilson95": [
+        9.07,
+        12.78
+      ],
+      "non_awakened_n": 815,
+      "non_awakened_deaths": 381,
+      "non_awakened_mort_pct": 46.7,
+      "non_awakened_wilson95": [
+        43.35,
+        50.18
+      ],
+      "mortality_fold_reduction": 4.34
+    }
+  }
+}

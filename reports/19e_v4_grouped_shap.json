@@ -1,0 +1,115 @@
+{
+  "source": "data/19c_v4_intval_shap_matrix.parquet (deterministic v4.2 5-imputation TreeSHAP, n=483)",
+  "overall": {
+    "n": 483,
+    "blocks": {
+      "S_static": {
+        "mean_abs_shap": 1.5888,
+        "pct_of_total": 61.39
+      },
+      "LEVEL": {
+        "mean_abs_shap": 0.4816,
+        "pct_of_total": 18.61
+      },
+      "CHANGE": {
+        "mean_abs_shap": 0.1705,
+        "pct_of_total": 6.59
+      },
+      "POST": {
+        "mean_abs_shap": 0.347,
+        "pct_of_total": 13.41
+      }
+    },
+    "motor_total_pct": 38.61
+  },
+  "by_stratum": {
+    "13-15": {
+      "n": 274,
+      "blocks": {
+        "S_static": {
+          "mean_abs_shap": 1.4915,
+          "pct_of_total": 65.23
+        },
+        "LEVEL": {
+          "mean_abs_shap": 0.3535,
+          "pct_of_total": 15.46
+        },
+        "CHANGE": {
+          "mean_abs_shap": 0.1265,
+          "pct_of_total": 5.53
+        },
+        "POST": {
+          "mean_abs_shap": 0.3151,
+          "pct_of_total": 13.78
+        }
+      },
+      "motor_total_pct": 34.77
+    },
+    "9-12": {
+      "n": 95,
+      "blocks": {
+        "S_static": {
+          "mean_abs_shap": 1.726,
+          "pct_of_total": 67.43
+        },
+        "LEVEL": {
+          "mean_abs_shap": 0.4218,
+          "pct_of_total": 16.48
+        },
+        "CHANGE": {
+          "mean_abs_shap": 0.1993,
+          "pct_of_total": 7.79
+        },
+        "POST": {
+          "mean_abs_shap": 0.2124,
+          "pct_of_total": 8.3
+        }
+      },
+      "motor_total_pct": 32.57
+    },
+    "3-8": {
+      "n": 114,
+      "blocks": {
+        "S_static": {
+          "mean_abs_shap": 1.7084,
+          "pct_of_total": 51.21
+        },
+        "LEVEL": {
+          "mean_abs_shap": 0.8395,
+          "pct_of_total": 25.16
+        },
+        "CHANGE": {
+          "mean_abs_shap": 0.2522,
+          "pct_of_total": 7.56
+        },
+        "POST": {
+          "mean_abs_shap": 0.5359,
+          "pct_of_total": 16.06
+        }
+      },
+      "motor_total_pct": 48.79
+    }
+  },
+  "shap_top20": {
+    "admission_age": 1.0187,
+    "gcs_total_first": 0.4062,
+    "motor_last": 0.366,
+    "gcs_eye_first": 0.3304,
+    "wbc_min": 0.2724,
+    "prob_m1": 0.2599,
+    "pt_min": 0.247,
+    "hemoglobin_min": 0.2126,
+    "rr_mean": 0.2075,
+    "hemoglobin_max": 0.1802,
+    "bun_min": 0.1548,
+    "prob_m2": 0.1304,
+    "motor_max": 0.1301,
+    "platelet_min": 0.128,
+    "motor_slope": 0.1261,
+    "platelet_max": 0.1041,
+    "temp_min": 0.1036,
+    "creatinine_min": 0.102,
+    "bun_max": 0.0947,
+    "prob_m3": 0.0921
+  }
+}

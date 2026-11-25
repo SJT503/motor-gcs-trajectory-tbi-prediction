@@ -1,0 +1,216 @@
+{
+  "sequential_0_24_48_72h_corridor_by_cohort": {
+    "MIMIC_IV_IntVal": {
+      "n_total_24h": 483,
+      "t0_arrival_static3": {
+        "auroc": 0.8069,
+        "coverage": 0.9089,
+        "definitive_pct": 45.1,
+        "uncertain_n": 265,
+        "uncertain_pct": 54.9
+      },
+      "t0_to_t24_chronological_voi": {
+        "resolved_by_primary_n": 205,
+        "resolved_by_primary_pct": 77.4,
+        "selective_nnr_primary": 1.29,
+        "resolved_by_bedside5_n": 80,
+        "resolved_by_bedside5_pct": 30.2,
+        "selective_nnr_bedside5": 3.31
+      },
+      "t24_residual_to_48_72h_closure": {
+        "t24_uncertain_n": 84,
+        "t24_uncertain_pct": 17.4,
+        "active_in_icu_48h_n": 64,
+        "newly_resolved_at_48h_n": 26,
+        "newly_resolved_at_48h_pct_of_active48": 40.6,
+        "coverage_48h": 0.9073,
+        "active_in_icu_72h_n": 56,
+        "newly_resolved_by_48_or_72h_n": 34,
+        "newly_resolved_by_48_or_72h_pct_of_t24_uncertain": 40.5,
+        "exited_icu_clinically_24_72h_n": 28,
+        "coverage_72h": 0.9129,
+        "persistent_72h_uncertain_n": 27,
+        "persistent_72h_uncertain_pct_of_cohort": 5.6,
+        "cumulative_conformal_or_clinical_resolved_by_72h_pct": 94.4
+      }
+    },
+    "MIMIC_III_CareVue": {
+      "n_total_24h": 839,
+      "t0_arrival_static3": {
+        "auroc": 0.8272,
+        "coverage": 0.9023,
+        "definitive_pct": 57.7,
+        "uncertain_n": 355,
+        "uncertain_pct": 42.3
+      },
+      "t0_to_t24_chronological_voi": {
+        "resolved_by_primary_n": 200,
+        "resolved_by_primary_pct": 56.3,
+        "selective_nnr_primary": 1.77,
+        "resolved_by_bedside5_n": 107,
+        "resolved_by_bedside5_pct": 30.1,
+        "selective_nnr_bedside5": 3.32
+      },
+      "t24_residual_to_48_72h_closure": {
+        "t24_uncertain_n": 213,
+        "t24_uncertain_pct": 25.4,
+        "active_in_icu_48h_n": 136,
+        "newly_resolved_at_48h_n": 29,
+        "newly_resolved_at_48h_pct_of_active48": 21.3,
+        "coverage_48h": 0.9068,
+        "active_in_icu_72h_n": 96,
+        "newly_resolved_by_48_or_72h_n": 47,
+        "newly_resolved_by_48_or_72h_pct_of_t24_uncertain": 22.1,
+        "exited_icu_clinically_24_72h_n": 117,
+        "coverage_72h": 0.9062,
+        "persistent_72h_uncertain_n": 57,
+        "persistent_72h_uncertain_pct_of_cohort": 6.8,
+        "cumulative_conformal_or_clinical_resolved_by_72h_pct": 93.2
+      }
+    },
+    "eICU_CRD_Motor_Charted": {
+      "n_total_24h": 2889,
+      "t0_arrival_static3": {
+        "auroc": 0.8141,
+        "coverage": 0.9013,
+        "definitive_pct": 53.1,
+        "uncertain_n": 1356,
+        "uncertain_pct": 46.9
+      },
+      "t0_to_t24_chronological_voi": {
+        "resolved_by_primary_n": 800,
+        "resolved_by_primary_pct": 59.0,
+        "selective_nnr_primary": 1.7,
+        "resolved_by_bedside5_n": 260,
+        "resolved_by_bedside5_pct": 19.2,
+        "selective_nnr_bedside5": 5.22
+      },
+      "t24_residual_to_48_72h_closure": {
+        "t24_uncertain_n": 793,
+        "t24_uncertain_pct": 27.4,
+        "active_in_icu_48h_n": 563,
+        "newly_resolved_at_48h_n": 142,
+        "newly_resolved_at_48h_pct_of_active48": 25.2,
+        "coverage_48h": 0.9016,
+        "active_in_icu_72h_n": 414,
+        "newly_resolved_by_48_or_72h_n": 173,
+        "newly_resolved_by_48_or_72h_pct_of_t24_uncertain": 21.8,
+        "exited_icu_clinically_24_72h_n": 379,
+        "coverage_72h": 0.9018,
+        "persistent_72h_uncertain_n": 274,
+        "persistent_72h_uncertain_pct_of_cohort": 9.5,
+        "cumulative_conformal_or_clinical_resolved_by_72h_pct": 90.5
+      }
+    },
+    "HiRID_Trauma": {
+      "n_total_24h": 1209,
+      "t0_arrival_static3": {
+        "auroc": 0.8452,
+        "coverage": 0.9049,
+        "definitive_pct": 66.0,
+        "uncertain_n": 411,
+        "uncertain_pct": 34.0
+      },
+      "t0_to_t24_chronological_voi": {
+        "resolved_by_primary_n": 241,
+        "resolved_by_primary_pct": 58.6,
+        "selective_nnr_primary": 1.71,
+        "resolved_by_bedside5_n": 156,
+        "resolved_by_bedside5_pct": 38.0,
+        "selective_nnr_bedside5": 2.63
+      },
+      "t24_residual_to_48_72h_closure": {
+        "t24_uncertain_n": 300,
+        "t24_uncertain_pct": 24.8,
+        "active_in_icu_48h_n": 222,
+        "newly_resolved_at_48h_n": 28,
+        "newly_resolved_at_48h_pct_of_active48": 12.6,
+        "coverage_48h": 0.9045,
+        "active_in_icu_72h_n": 177,
+        "newly_resolved_by_48_or_72h_n": 49,
+        "newly_resolved_by_48_or_72h_pct_of_t24_uncertain": 16.3,
+        "exited_icu_clinically_24_72h_n": 123,
+        "coverage_72h": 0.9049,
+        "persistent_72h_uncertain_n": 136,
+        "persistent_72h_uncertain_pct_of_cohort": 11.2,
+        "cumulative_conformal_or_clinical_resolved_by_72h_pct": 88.8
+      }
+    },
+    "AmsterdamUMCdb_Trauma": {
+      "n_total_24h": 1052,
+      "t0_arrival_static3": {
+        "auroc": 0.781,
+        "coverage": 0.9068,
+        "definitive_pct": 57.2,
+        "uncertain_n": 450,
+        "uncertain_pct": 42.8
+      },
+      "t0_to_t24_chronological_voi": {
+        "resolved_by_primary_n": 245,
+        "resolved_by_primary_pct": 54.4,
+        "selective_nnr_primary": 1.84,
+        "resolved_by_bedside5_n": 118,
+        "resolved_by_bedside5_pct": 26.2,
+        "selective_nnr_bedside5": 3.81
+      },
+      "t24_residual_to_48_72h_closure": {
+        "t24_uncertain_n": 288,
+        "t24_uncertain_pct": 27.4,
+        "active_in_icu_48h_n": 231,
+        "newly_resolved_at_48h_n": 52,
+        "newly_resolved_at_48h_pct_of_active48": 22.5,
+        "coverage_48h": 0.904,
+        "active_in_icu_72h_n": 193,
+        "newly_resolved_by_48_or_72h_n": 76,
+        "newly_resolved_by_48_or_72h_pct_of_t24_uncertain": 26.4,
+        "exited_icu_clinically_24_72h_n": 95,
+        "coverage_72h": 0.9055,
+        "persistent_72h_uncertain_n": 130,
+        "persistent_72h_uncertain_pct_of_cohort": 12.4,
+        "cumulative_conformal_or_clinical_resolved_by_72h_pct": 87.6
+      }
+    },
+    "JinhuaNSICU_CT_Imaged_0h_to_24h": {
+      "n_ct_imaged": 1580,
+      "t0_arrival_static3_auroc": 0.7369,
+      "t0_arrival_definitive_pct": 45.6,
+      "t0_arrival_uncertain_n": 860,
+      "resolved_at_24h_by_labs_and_ct_n": 362,
+      "resolved_at_24h_pct": 42.1,
+      "selective_nnr": 2.38
+    }
+  },
+  "pooled_5_serial_cohorts_corridor": {
+    "n_pooled_5_serial_cohorts": 6472,
+    "t0_arrival_uncertain_n": 2837,
+    "t0_arrival_uncertain_pct_of_all": 43.8,
+    "t0_uncertain_resolved_at_24h_primary_n": 1691,
+    "t0_uncertain_resolved_at_24h_primary_pct": 59.6,
+    "t0_to_24h_primary_nnr": 1.68,
+    "t0_uncertain_resolved_at_24h_bedside5_n": 721,
+    "t0_uncertain_resolved_at_24h_bedside5_pct": 25.4,
+    "t0_to_24h_bedside5_nnr": 3.93,
+    "t24_residual_uncertain_n": 1678,
+    "t24_residual_uncertain_pct_of_all": 25.9,
+    "t24_uncertain_active_48h_n": 1216,
+    "t24_uncertain_newly_resolved_at_48h_n": 277,
+    "t24_uncertain_newly_resolved_at_48h_pct_of_active48": 22.8,
+    "t24_uncertain_newly_resolved_by_48_or_72h_n": 379,
+    "t24_uncertain_newly_resolved_by_48_or_72h_pct": 22.6,
+    "t24_uncertain_exited_icu_clinically_24_72h_n": 742,
+    "t24_uncertain_exited_icu_clinically_24_72h_pct": 44.2,
+    "persistent_72h_uncertain_n": 624,
+    "persistent_72h_uncertain_pct_of_all_stays": 9.6,
+    "cumulative_0_to_72h_resolved_pct_of_all_stays": 90.4
+  },
+  "unsedated_vs_sedated_coma_profile": {
+    "sedated_n": 1293,
+    "unsedated_n": 150,
+    "sedated_median_age": 55.0,
+    "unsedated_median_age": 68.5,
+    "sedated_nonawakener_m1_pct": 51.9,
+    "unsedated_nonawakener_m1_pct": 40.7,
+    "sedated_age_ge70_pct": 26.0,
+    "unsedated_age_ge70_pct": 46.7
+  }
+}

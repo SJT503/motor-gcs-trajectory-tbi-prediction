@@ -1,0 +1,291 @@
+{
+  "sedation_decoupled_awakening": {
+    "MIMIC_IV_All_TBI_Severe": {
+      "all_severe": {
+        "n": 683,
+        "n_awakeners_m56": 436,
+        "awakening_pct": 63.8,
+        "mort_awakeners_pct": 19.7,
+        "mort_nonawakeners_pct": 59.5,
+        "mortality_fold_reduction": 3.02
+      },
+      "sedated_or_deep_rass": {
+        "n": 549,
+        "n_awakeners_m56": 360,
+        "awakening_pct": 65.6,
+        "mort_awakeners_pct": 16.4,
+        "mort_nonawakeners_pct": 53.4,
+        "mortality_fold_reduction": 3.26
+      },
+      "unsedated_or_light": {
+        "n": 134,
+        "n_awakeners_m56": 76,
+        "awakening_pct": 56.7,
+        "mort_awakeners_pct": 35.5,
+        "mort_nonawakeners_pct": 79.3,
+        "mortality_fold_reduction": 2.23
+      }
+    },
+    "HiRID_Trauma_Severe": {
+      "all_severe": {
+        "n": 376,
+        "n_awakeners_m56": 236,
+        "awakening_pct": 62.8,
+        "mort_awakeners_pct": 5.1,
+        "mort_nonawakeners_pct": 45.0,
+        "mortality_fold_reduction": 8.85
+      },
+      "sedated_or_deep_rass": {
+        "n": 370,
+        "n_awakeners_m56": 230,
+        "awakening_pct": 62.2,
+        "mort_awakeners_pct": 5.2,
+        "mort_nonawakeners_pct": 45.0,
+        "mortality_fold_reduction": 8.62
+      },
+      "unsedated_or_light": {
+        "n": 6,
+        "n_awakeners_m56": 6,
+        "awakening_pct": 100.0,
+        "mort_awakeners_pct": 0.0,
+        "mort_nonawakeners_pct": null,
+        "mortality_fold_reduction": null
+      }
+    },
+    "AmsterdamUMCdb_Trauma_Severe": {
+      "all_severe": {
+        "n": 384,
+        "n_awakeners_m56": 201,
+        "awakening_pct": 52.3,
+        "mort_awakeners_pct": 4.0,
+        "mort_nonawakeners_pct": 23.0,
+        "mortality_fold_reduction": 5.77
+      },
+      "sedated_or_deep_rass": {
+        "n": 374,
+        "n_awakeners_m56": 192,
+        "awakening_pct": 51.3,
+        "mort_awakeners_pct": 3.6,
+        "mort_nonawakeners_pct": 22.5,
+        "mortality_fold_reduction": 6.18
+      },
+      "unsedated_or_light": {
+        "n": 10,
+        "n_awakeners_m56": 9,
+        "awakening_pct": 90.0,
+        "mort_awakeners_pct": 11.1,
+        "mort_nonawakeners_pct": 100.0,
+        "mortality_fold_reduction": 9.0
+      }
+    },
+    "Pooled_3Country_Severe": {
+      "all_severe": {
+        "n": 1443,
+        "n_awakeners_m56": 873,
+        "awakening_pct": 60.5,
+        "mort_awakeners_pct": 12.1,
+        "mort_nonawakeners_pct": 44.2,
+        "mortality_fold_reduction": 3.64
+      },
+      "sedated_or_deep_rass": {
+        "n": 1293,
+        "n_awakeners_m56": 782,
+        "awakening_pct": 60.5,
+        "mort_awakeners_pct": 10.0,
+        "mort_nonawakeners_pct": 40.1,
+        "mortality_fold_reduction": 4.02
+      },
+      "unsedated_or_light": {
+        "n": 150,
+        "n_awakeners_m56": 91,
+        "awakening_pct": 60.7,
+        "mort_awakeners_pct": 30.8,
+        "mort_nonawakeners_pct": 79.7,
+        "mortality_fold_reduction": 2.59
+      }
+    }
+  },
+  "proactive_conformal_voi": {
+    "MIMIC_IV_IntVal": {
+      "n": 483,
+      "events": 81,
+      "static_s0_coverage": 0.9027,
+      "static_s0_retained_pct": 78.7,
+      "static_s0_ambiguous_n": 103,
+      "static_s0_ambiguous_pct": 21.3,
+      "motor_s1_retained_pct": 79.9,
+      "primary_coverage": 0.9068,
+      "primary_retained_pct": 82.6,
+      "net_singleton_gain_pp": 3.9,
+      "s0_ambiguous_resolved_n": 40,
+      "s0_ambiguous_conversion_pct": 38.8,
+      "converted_to_low_risk_0_n": 29,
+      "converted_to_high_risk_1_n": 11,
+      "converted_singleton_concordance_pct": 77.5,
+      "selective_nnr_in_ambiguous_zone": 2.58,
+      "entropy_s0_bits": 0.4168,
+      "entropy_primary_bits": 0.3814,
+      "relative_entropy_reduction_pct": 8.5,
+      "severe_survivors_n": 72,
+      "severe_survivors_s0_uncertain_or_high_n": 42,
+      "severe_survivors_proactively_shielded_low0_n": 8,
+      "severe_survivors_shielded_pct_of_flagged": 19.0
+    },
+    "MIMIC_III_CareVue": {
+      "n": 839,
+      "events": 155,
+      "static_s0_coverage": 0.9058,
+      "static_s0_retained_pct": 64.5,
+      "static_s0_ambiguous_n": 298,
+      "static_s0_ambiguous_pct": 35.5,
+      "motor_s1_retained_pct": 72.6,
+      "primary_coverage": 0.9035,
+      "primary_retained_pct": 74.4,
+      "net_singleton_gain_pp": 9.9,
+      "s0_ambiguous_resolved_n": 130,
+      "s0_ambiguous_conversion_pct": 43.6,
+      "converted_to_low_risk_0_n": 61,
+      "converted_to_high_risk_1_n": 69,
+      "converted_singleton_concordance_pct": 75.4,
+      "selective_nnr_in_ambiguous_zone": 2.29,
+      "entropy_s0_bits": 0.513,
+      "entropy_primary_bits": 0.4448,
+      "relative_entropy_reduction_pct": 13.3,
+      "severe_survivors_n": 219,
+      "severe_survivors_s0_uncertain_or_high_n": 149,
+      "severe_survivors_proactively_shielded_low0_n": 47,
+      "severe_survivors_shielded_pct_of_flagged": 31.5
+    },
+    "eICU_CRD": {
+      "n": 4440,
+      "events": 520,
+      "static_s0_coverage": 0.9009,
+      "static_s0_retained_pct": 58.4,
+      "static_s0_ambiguous_n": 1849,
+      "static_s0_ambiguous_pct": 41.6,
+      "motor_s1_retained_pct": 43.3,
+      "primary_coverage": 0.9394,
+      "primary_retained_pct": 42.6,
+      "net_singleton_gain_pp": -15.8,
+      "s0_ambiguous_resolved_n": 290,
+      "s0_ambiguous_conversion_pct": 15.7,
+      "converted_to_low_risk_0_n": 169,
+      "converted_to_high_risk_1_n": 121,
+      "converted_singleton_concordance_pct": 70.7,
+      "selective_nnr_in_ambiguous_zone": 6.38,
+      "entropy_s0_bits": 0.4177,
+      "entropy_primary_bits": 0.4011,
+      "relative_entropy_reduction_pct": 4.0,
+      "severe_survivors_n": 554,
+      "severe_survivors_s0_uncertain_or_high_n": 433,
+      "severe_survivors_proactively_shielded_low0_n": 83,
+      "severe_survivors_shielded_pct_of_flagged": 19.2
+    },
+    "HiRID_Trauma": {
+      "n": 1209,
+      "events": 101,
+      "static_s0_coverage": 0.9024,
+      "static_s0_retained_pct": 61.4,
+      "static_s0_ambiguous_n": 467,
+      "static_s0_ambiguous_pct": 38.6,
+      "motor_s1_retained_pct": 70.7,
+      "primary_coverage": 0.9007,
+      "primary_retained_pct": 75.2,
+      "net_singleton_gain_pp": 13.8,
+      "s0_ambiguous_resolved_n": 238,
+      "s0_ambiguous_conversion_pct": 51.0,
+      "converted_to_low_risk_0_n": 167,
+      "converted_to_high_risk_1_n": 71,
+      "converted_singleton_concordance_pct": 77.7,
+      "selective_nnr_in_ambiguous_zone": 1.96,
+      "entropy_s0_bits": 0.3211,
+      "entropy_primary_bits": 0.2695,
+      "relative_entropy_reduction_pct": 16.1,
+      "severe_survivors_n": 301,
+      "severe_survivors_s0_uncertain_or_high_n": 253,
+      "severe_survivors_proactively_shielded_low0_n": 84,
+      "severe_survivors_shielded_pct_of_flagged": 33.2
+    },
+    "AmsterdamUMCdb_Trauma": {
+      "n": 1052,
+      "events": 92,
+      "static_s0_coverage": 0.9002,
+      "static_s0_retained_pct": 59.1,
+      "static_s0_ambiguous_n": 430,
+      "static_s0_ambiguous_pct": 40.9,
+      "motor_s1_retained_pct": 73.7,
+      "primary_coverage": 0.9021,
+      "primary_retained_pct": 72.6,
+      "net_singleton_gain_pp": 13.5,
+      "s0_ambiguous_resolved_n": 205,
+      "s0_ambiguous_conversion_pct": 47.7,
+      "converted_to_low_risk_0_n": 149,
+      "converted_to_high_risk_1_n": 56,
+      "converted_singleton_concordance_pct": 79.0,
+      "selective_nnr_in_ambiguous_zone": 2.1,
+      "entropy_s0_bits": 0.366,
+      "entropy_primary_bits": 0.3368,
+      "relative_entropy_reduction_pct": 8.0,
+      "severe_survivors_n": 334,
+      "severe_survivors_s0_uncertain_or_high_n": 298,
+      "severe_survivors_proactively_shielded_low0_n": 92,
+      "severe_survivors_shielded_pct_of_flagged": 30.9
+    },
+    "JinhuaNSICU_TBI_S06": {
+      "n": 1941,
+      "events": 240,
+      "static_s0_coverage": 0.9006,
+      "static_s0_retained_pct": 56.5,
+      "static_s0_ambiguous_n": 844,
+      "static_s0_ambiguous_pct": 43.5,
+      "motor_s1_retained_pct": 46.5,
+      "primary_coverage": 0.931,
+      "primary_retained_pct": 50.6,
+      "net_singleton_gain_pp": -5.9,
+      "s0_ambiguous_resolved_n": 176,
+      "s0_ambiguous_conversion_pct": 20.9,
+      "converted_to_low_risk_0_n": 134,
+      "converted_to_high_risk_1_n": 42,
+      "converted_singleton_concordance_pct": 80.1,
+      "selective_nnr_in_ambiguous_zone": 4.8,
+      "entropy_s0_bits": 0.4562,
+      "entropy_primary_bits": 0.4373,
+      "relative_entropy_reduction_pct": 4.1,
+      "severe_survivors_n": 1055,
+      "severe_survivors_s0_uncertain_or_high_n": 783,
+      "severe_survivors_proactively_shielded_low0_n": 108,
+      "severe_survivors_shielded_pct_of_flagged": 13.8
+    },
+    "eICU_CRD_Motor_Charted": {
+      "n": 2889,
+      "static_s0_retained_pct": 68.8,
+      "primary_retained_pct": 72.5,
+      "net_singleton_gain_pp": 3.7,
+      "static_s0_ambiguous_n": 900,
+      "s0_ambiguous_resolved_n": 301,
+      "s0_ambiguous_conversion_pct": 33.4,
+      "selective_nnr_in_ambiguous_zone": 2.99,
+      "relative_entropy_reduction_pct": 7.2
+    },
+    "JinhuaNSICU_CT_Imaged": {
+      "n": 1580,
+      "static_s0_retained_pct": 50.1,
+      "primary_retained_pct": 57.9,
+      "net_singleton_gain_pp": 7.7,
+      "static_s0_ambiguous_n": 788,
+      "s0_ambiguous_resolved_n": 203,
+      "s0_ambiguous_conversion_pct": 25.8,
+      "selective_nnr_in_ambiguous_zone": 3.88,
+      "relative_entropy_reduction_pct": 2.8
+    }
+  },
+  "pooled_proactive_summary": {
+    "five_charted_cohorts_s0_ambiguous_n": 2198,
+    "five_charted_cohorts_resolved_by_motor_n": 914,
+    "five_charted_cohorts_conversion_pct": 41.6,
+    "five_charted_cohorts_nnr": 2.4,
+    "all_six_cohorts_s0_ambiguous_n": 3991,
+    "all_six_cohorts_resolved_n": 1079,
+    "all_six_cohorts_conversion_pct": 27.0
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "source_verification": "Queried directly from F:/AmsterdamUMCdb/listitems.csv (Latin-1) and F:/AmsterdamUMCdb/admissions.csv on disk",
+  "amsterdamumcdb_official_dictionary": {
+    "eye_itemids_6": [
+      6732,
+      13077,
+      19638,
+      19635,
+      16628,
+      14470
+    ],
+    "motor_itemids_6": [
+      6734,
+      13072,
+      19639,
+      19636,
+      16634,
+      14476
+    ],
+    "verbal_itemids_6": [
+      6735,
+      13066,
+      19637,
+      19640,
+      16640,
+      14482
+    ],
+    "motor_offset_formulas": {
+      "6734": "7 - valueid",
+      "13072": "valueid",
+      "19639": "valueid - 12",
+      "19636_16634_14476": "valueid - 6"
+    },
+    "eye_offset_formulas": {
+      "6732": "5 - valueid",
+      "13077": "valueid",
+      "19638": "valueid - 8",
+      "19635_16628_14470": "valueid - 4"
+    },
+    "verbal_offset_formulas": {
+      "6735": "6 - valueid for valueid 1..5; valueid 8 (Geïntubeerd) -> 1.0 (no valueid 6 or 7 exists in listitems.csv)",
+      "13066": "valueid (1..5)",
+      "19637": "valueid - 9 for 10..14; 9 -> 1.0",
+      "19640_16640_14482": "valueid - 4 for 5..9; valueid <= 4 -> 1.0"
+    },
+    "queried_listitems_18_gcs_itemids": {
+      "6732": {
+        "item_name": "Actief openen van de ogen",
+        "valueid_to_dutch_value": {
+          "1": "Spontane reactie",
+          "2": "Reactie op verbale prikkel",
+          "3": "Reactie op pijnprikkel",
+          "4": "Geen reactie"
+        }
+      },
+      "6734": {
+        "item_name": "Beste motore reactie van de armen",
+        "valueid_to_dutch_value": {
+          "1": "Volgt verbale commando's op",
+          "2": "Localiseert pijn",
+          "3": "Spastische reactie (terugtrekken)",
+          "4": "Decortatie reflex (abnormaal buigen)",
+          "5": "Strekken",
+          "6": "Geen reactie"
+        }
+      },
+      "6735": {
+        "item_name": "Beste verbale reactie",
+        "valueid_to_dutch_value": {
+          "1": "Helder en adequaat (communicatie mogelijk)",
+          "2": "Verwarde conversatie",
+          "3": "Onduidelijke woorden (pogingen tot communicatie, maar onduidelijk)",
+          "4": "Onbegrijpelijke geluiden",
+          "5": "Geen reactie (geen zichtbare poging tot praten)",
+          "8": "Geïntubeerd"
+        }
+      },
+      "13066": {
+        "item_name": "A_Verbal",
+        "valueid_to_dutch_value": {
+          "1": "Geen geluid",
+          "2": "Onverstaanbare woorden",
+          "3": "Onjuiste woorden",
+          "4": "Verwarde taal",
+          "5": "Georiënteerd"
+        }
+      },
+      "13072": {
+        "item_name": "A_Motoriek",
+        "valueid_to_dutch_value": {
+          "1": "Geen reactie",
+          "2": "Strekken op pijn",
+          "3": "Abnormaal buigen bij pijn",
+          "4": "Terugtrekken bij pijn",
+          "5": "Localiseren pijn",
+          "6": "Voert opdrachten uit"
+        }
+      },
+      "13077": {
+        "item_name": "A_Eye",
+        "valueid_to_dutch_value": {
+          "1": "Niet",
+          "2": "Op pijn",
+          "3": "Op aanspreken",
+          "4": "Spontaan"
+        }
+      },
+      "14470": {
+        "item_name": "RA_Eye",
+        "valueid_to_dutch_value": {
+          "5": "Niet",
+          "7": "Op aanspreken",
+          "8": "Spontaan"
+        }
+      },
+      "14476": {
+        "item_name": "RA_Motoriek",
+        "valueid_to_dutch_value": {
+          "7": "Geen reactie",
+          "10": "Terugtrekken bij pijn",
+          "11": "Localiseren pijn",
+          "12": "Voert opdrachten uit"
+        }
+      },
+      "14482": {
+        "item_name": "RA_Verbal",
+        "valueid_to_dutch_value": {
+          "6": "Geen geluid",
+          "9": "Verwarde taal",
+          "10": "Georiënteerd"
+        }
+      },
+      "16628": {
+        "item_name": "MCA_Eye",
+        "valueid_to_dutch_value": {
+          "5": "Niet",
+          "6": "Op pijn",
+          "7": "Op aanspreken",
+          "8": "Spontaan"
+        }
+      },
+      "16634": {
+        "item_name": "MCA_Motoriek",
+        "valueid_to_dutch_value": {
+          "7": "Geen reactie",
+          "8": "Strekken op pijn",
+          "9": "Abnormaal buigen bij pijn",
+          "10": "Terugtrekken bij pijn",
+          "11": "Localiseren pijn",
+          "12": "Voert opdrachten uit"
+        }
+      },
+      "16640": {
+        "item_name": "MCA_Verbal",
+        "valueid_to_dutch_value": {
+          "6": "Geen geluid",
+          "7": "Onverstaanbare woorden",
+          "8": "Onjuiste woorden",
+          "9": "Verwarde taal",
+          "10": "Georiënteerd"
+        }
+      },
+      "19635": {
+        "item_name": "E_EMV_NICE_24uur",
+        "valueid_to_dutch_value": {
+          "5": "Geen reactie",
+          "6": "Reactie op pijnprikkel",
+          "7": "Reactie op verbale prikkel",
+          "8": "Spontane reactie"
+        }
+      },
+      "19636": {
+        "item_name": "M_EMV_NICE_24uur",
+        "valueid_to_dutch_value": {
+          "7": "Geen reactie",
+          "8": "Strekken",
+          "9": "Decortatie reflex (abnormaal buigen)",
+          "10": "Spastische reactie (terugtrekken)",
+          "11": "Localiseert pijn",
+          "12": "Volgt verbale commando's op"
+        }
+      },
+      "19637": {
+        "item_name": "V_EMV_NICE_24uur",
+        "valueid_to_dutch_value": {
+          "9": "Geïntubeerd",
+          "10": "Geen reactie (geen zichtbare poging tot praten)",
+          "11": "Onbegrijpelijke geluiden",
+          "12": "Onduidelijke woorden (pogingen tot communicatie, maar onduidelijk)",
+          "13": "Verwarde conversatie",
+          "14": "Helder en adequaat (communicatie mogelijk)"
+        }
+      },
+      "19638": {
+        "item_name": "E_EMV_NICE_Opname",
+        "valueid_to_dutch_value": {
+          "9": "Geen reactie",
+          "10": "Reactie op pijnprikkel",
+          "11": "Reactie op verbale prikkel",
+          "12": "Spontane reactie"
+        }
+      },
+      "19639": {
+        "item_name": "M_EMV_NICE_Opname",
+        "valueid_to_dutch_value": {
+          "13": "Geen reactie",
+          "14": "Strekken",
+          "15": "Decortatie reflex (abnormaal buigen)",
+          "16": "Spastische reactie (terugtrekken)",
+          "17": "Localiseert pijn",
+          "18": "Volgt verbale commando's op"
+        }
+      },
+      "19640": {
+        "item_name": "V_EMV_NICE_Opname",
+        "valueid_to_dutch_value": {
+          "15": "Geïntubeerd",
+          "16": "Geen reactie (geen zichtbare poging tot praten)",
+          "17": "Onbegrijpelijke geluiden",
+          "18": "Onduidelijke woorden (pogingen tot communicatie, maar onduidelijk)",
+          "19": "Verwarde conversatie",
+          "20": "Helder en adequaat (communicatie mogelijk)"
+        }
+      }
+    },
+    "trauma_cohort_agegroup_counts": {
+      "18-39": 359,
+      "40-49": 162,
+      "50-59": 160,
+      "70-79": 141,
+      "60-69": 128,
+      "80+": 102
+    },
+    "agegroup_midpoint_mapping": {
+      "18-39": 29.0,
+      "40-49": 45.0,
+      "50-59": 55.0,
+      "60-69": 65.0,
+      "70-79": 75.0,
+      "80+": 84.0
+    }
+  },
+  "hirid_apache_group_provenance": {
+    "variableids": {
+      "9990002": "APACHE II Group (103=Non-op Trauma, 111=Post-op Trauma; 101=Non-op Neuro, 110=Post-op Neurosurg)",
+      "9990004": "APACHE IV Group (194=Non-op Trauma, 203=Post-op Trauma; 193=Non-op Neuro, 202=Post-op Neurosurg)"
+    },
+    "provenance_note": "Follows HiRID-ICU-Benchmark (Yeche et al., NeurIPS Datasets & Benchmarks 2021) diagnostic group mapping; local F:/HiRID/ordinal_vars_ref.csv covers physiological variables only and does not list 9990002/9990004 string labels."
+  }
+}

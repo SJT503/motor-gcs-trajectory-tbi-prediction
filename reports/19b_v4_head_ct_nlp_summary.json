@@ -1,0 +1,34 @@
+{
+  "mimic4": {
+    "n_total": 2700,
+    "n_with_ct_24h": 2070,
+    "pct_with_ct_24h": 76.7,
+    "prevalence": {
+      "ct_midline_shift": 30.4,
+      "ct_cistern_compressed": 2.3,
+      "ct_herniation": 13.3,
+      "ct_sdh": 50.6,
+      "ct_edh": 10.3,
+      "ct_sah": 41.0,
+      "ct_contusion_ich": 41.3,
+      "ct_ivh": 13.9,
+      "ct_edema_mass_effect": 39.8
+    }
+  },
+  "mimic3_carevue": {
+    "n_total": 839,
+    "n_with_ct_24h": 756,
+    "pct_with_ct_24h": 90.1,
+    "prevalence": {
+      "ct_midline_shift": 28.4,
+      "ct_cistern_compressed": 1.9,
+      "ct_herniation": 18.6,
+      "ct_sdh": 55.3,
+      "ct_edh": 4.1,
+      "ct_sah": 46.6,
+      "ct_contusion_ich": 48.5,
+      "ct_ivh": 12.9,
+      "ct_edema_mass_effect": 45.5
+    }
+  }
+}
