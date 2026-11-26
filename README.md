@@ -2,7 +2,7 @@
 
 Open analytical pipeline, six-cohort external validation scripts, sequential 0-to-72-h Mondrian split-conformal triage, and zero-server 1,500-tree bedside calculator for:
 
-> Sheng J†,*, Huang S†, Liu X, Lin R, Sun Q, Chen X, Li K, Chen W*. **Post-resuscitation motor phenotyping and conformal routing guide proactive traumatic brain injury triage.** *npj Digital Medicine* (submitted to Thematic Collection: *Digital Biomarkers for Enabling Proactive Clinical Decisions*).
+> Sheng J*, Liu X, Lin R, Sun Q, Chen X, Li K, Chen W*. **Post-resuscitation motor phenotyping and conformal routing guide proactive traumatic brain injury triage.** *npj Digital Medicine* (submitted to Thematic Collection: *Digital Biomarkers for Enabling Proactive Clinical Decisions*).
 
 ## Overview (`v5.3` Six-Cohort Transcontinental Edition)
 - **Study scale**: `12,181` primary trauma/TBI admissions (`21,131` expanded acute brain injury [ABI] stays) across `134` unique hospitals in North America, Europe, and Asia (`MIMIC-IV`, `MIMIC-III CareVue`, `eICU-CRD`, Swiss `HiRID`, Dutch `AmsterdamUMCdb`, and Chinese `JinhuaNSICU` [CNCB-NGDC `OMIX011033`]).
